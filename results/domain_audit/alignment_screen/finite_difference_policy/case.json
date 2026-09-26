@@ -1,0 +1,5 @@
+{
+  "name": "finite_difference_policy",
+  "mode": "policy",
+  "hull_vertices": 256
+}

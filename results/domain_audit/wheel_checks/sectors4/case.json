@@ -1,0 +1,6 @@
+{
+  "name": "sectors4",
+  "mode": "replay",
+  "duration": 0.1,
+  "wheel_sectors": 4
+}

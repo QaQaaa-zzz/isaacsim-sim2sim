@@ -1,0 +1,35 @@
+{
+  "purpose": "Matched actuator and integration audit; user approved; no training",
+  "source_integrators": [
+    "RK4",
+    "IMPLICITFAST"
+  ],
+  "contact": false,
+  "gravity": [
+    0,
+    0,
+    0
+  ],
+  "other_servos": "disabled",
+  "bike_initial_pose": "original keyframe except hip=-0.8 knee=1.0, zero velocities",
+  "cases": [
+    {
+      "name": "rotor_servo_0.005",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.02
+    },
+    {
+      "name": "bike_torque_steering_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    }
+  ]
+}

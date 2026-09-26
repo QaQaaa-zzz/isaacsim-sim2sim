@@ -1,0 +1,56 @@
+[
+  {
+    "case": {
+      "name": "bike_servo_rearwheel_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    "engine": "MJX-Warp in original training virtual environment",
+    "max_abs_qd_difference_from_cpu": 0.00014152795949712521,
+    "qd_rmse_from_cpu": [
+      9.019849939044715e-05,
+      7.54013040214438e-08,
+      3.068656463568762e-06,
+      1.9771526858625494e-06,
+      1.6522983641616372e-06
+    ],
+    "mjx_final_qd": [
+      0.0023608398623764515,
+      0.0002929674228653312,
+      0.00996264349669218,
+      0.0024434090591967106,
+      -0.010088504292070866
+    ]
+  },
+  {
+    "case": {
+      "name": "bike_servo_steering_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    "engine": "MJX-Warp in original training virtual environment",
+    "max_abs_qd_difference_from_cpu": 0.00027207416859953426,
+    "qd_rmse_from_cpu": [
+      3.8746584722631074e-08,
+      0.00012730415489001462,
+      2.4930060483207274e-08,
+      5.3559493558044715e-06,
+      7.041047262442414e-09
+    ],
+    "mjx_final_qd": [
+      -7.421793270623311e-06,
+      -0.20028327405452728,
+      -2.5104636733885854e-05,
+      0.006762442644685507,
+      2.2055055524106137e-05
+    ]
+  }
+]

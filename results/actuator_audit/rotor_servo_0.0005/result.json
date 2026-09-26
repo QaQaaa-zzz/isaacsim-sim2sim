@@ -1,0 +1,76 @@
+{
+  "case": {
+    "name": "rotor_servo_0.0005",
+    "model": "rotor",
+    "mode": "servo",
+    "joint": "rearwheel_joint",
+    "input": 12.0,
+    "dt": 0.0005,
+    "duration": 0.02
+  },
+  "joint_names": [
+    "rearwheel_joint"
+  ],
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "runtime_gains": [
+    [
+      [
+        -0.0
+      ]
+    ],
+    [
+      [
+        5.0
+      ]
+    ]
+  ],
+  "runtime_max_forces": [
+    [
+      6.0
+    ]
+  ],
+  "drive_force_note": "Only isolated rotor: I*delta(v)/dt is actual net step-average joint torque. Full-body target drive force not separately measured.",
+  "RK4": {
+    "qd_rmse_rad_s": [
+      1.0387471723288852
+    ],
+    "qd_relative_l2": 0.09588057273004744,
+    "source_final_qd": [
+      10.79984210678967
+    ],
+    "physx_final_qd": [
+      11.999998092651367
+    ]
+  },
+  "IMPLICITFAST": {
+    "qd_rmse_rad_s": [
+      3.151509306118807
+    ],
+    "qd_relative_l2": 0.29407756675664604,
+    "source_final_qd": [
+      12.0
+    ],
+    "physx_final_qd": [
+      11.999998092651367
+    ]
+  },
+  "physx_analytic": {
+    "velocity_rmse_rad_s": 0.004702972234466023,
+    "position_rmse_rad": 0.0020435271609264755,
+    "velocity_relative_l2": 0.00040004480970136136,
+    "step_average_torque_peak_Nm": 6.0
+  },
+  "RK4_analytic": {
+    "velocity_rmse_rad_s": 1.0387782829293841,
+    "position_rmse_rad": 0.0010615362077109733,
+    "velocity_relative_l2": 0.08836068762450922,
+    "step_average_torque_peak_Nm": 5.999999999999998
+  },
+  "IMPLICITFAST_analytic": {
+    "velocity_rmse_rad_s": 3.1492044324797486,
+    "position_rmse_rad": 0.024927028303823755,
+    "velocity_relative_l2": 0.2678780194935778,
+    "step_average_torque_peak_Nm": 0.8568489627978747
+  },
+  "wall_s": 0.8206572489871178
+}

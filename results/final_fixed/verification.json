@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "samples": 800,
+  "frames": 100,
+  "video_frame_std": 60.56444812139346,
+  "video_first_last_mean_abs_difference": 2.8590321180555556,
+  "physical_task_success": "not evaluated; no balance or learned policy"
+}

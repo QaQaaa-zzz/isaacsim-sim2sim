@@ -1,0 +1,5 @@
+{
+  "name": "fine_hull_replay",
+  "mode": "replay",
+  "hull_vertices": 256
+}

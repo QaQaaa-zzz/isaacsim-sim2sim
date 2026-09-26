@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "source_jax_reward_rows": 768,
+  "max_abs_error": 4.291534423828125e-06
+}

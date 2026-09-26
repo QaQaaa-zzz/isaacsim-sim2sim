@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/results/isaac_training_engineering/ppo_vector32/checkpoints/transition_00004096",
+  "training_transitions": 4096,
+  "development_mean_return": 588.8777859759706,
+  "selection": "fixed 4-ground/4-airborne development mean original episode return; earlier wins tie",
+  "qualified": false
+}

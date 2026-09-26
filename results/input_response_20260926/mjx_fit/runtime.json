@@ -1,0 +1,31 @@
+{
+  "engine": "MJX-Warp",
+  "python": "/home/qy/mujoco_playground/.venv/bin/python",
+  "python_version": "3.12.13 (main, Jun 23 2026, 15:18:55) [Clang 22.1.3 ]",
+  "python_prefix": "/home/qy/mujoco_playground/.venv",
+  "mujoco": "3.6.0",
+  "mujoco_module": "/home/qy/mujoco_playground/.venv/lib/python3.12/site-packages/mujoco/__init__.py",
+  "mjx_module": "/home/qy/mujoco_playground/.venv/lib/python3.12/site-packages/mujoco/mjx/__init__.py",
+  "warp_version": "1.11.0",
+  "warp_module": "/home/qy/mujoco_playground/.venv/lib/python3.12/site-packages/warp/__init__.py",
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "model_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "config_sha256": "8acf905c87abf6ab5e6aa028aa2cf0333e59b647ce2009e82f5cb081a977c879",
+  "packages": {
+    "mujoco": "3.6.0",
+    "mujoco-mjx": "3.6.0",
+    "jax": "0.6.2",
+    "jaxlib": "0.6.2",
+    "warp-lang": "1.11.0",
+    "numpy": "2.4.0"
+  },
+  "input_semantics": "absolute actuator ctrl, held piecewise constant; set before each native physical step",
+  "sample_semantics": "row 0 is initial state; row k ctrl caused transition from k-1 to k",
+  "native_derived_arrays": "raw MJX-Warp after step; RK4 sensor and actuator force arrays may belong to the last internal stage, not final integrated qpos/qvel",
+  "final_angular_state": "body omega=qvel[3:6]; world omega=R(final qpos quaternion)*body omega",
+  "initialization": "fresh complete MjData/keyframe, declared full qpos/qvel, one CPU mj_forward, then mjx.put_data; no CPU physical steps or later forward refresh",
+  "training_interactions": 0,
+  "data_implementation": "DataWarp"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "isotropic_mid_dr",
+  "mode": "policy",
+  "actor": "results/dr_solver_training/update_0064/actor.npz",
+  "source_actor": "results/dr_solver_training/update_0064/actor.npz",
+  "duration": 3.0,
+  "stop_on_source_failure": false,
+  "friction": 1.58113883
+}

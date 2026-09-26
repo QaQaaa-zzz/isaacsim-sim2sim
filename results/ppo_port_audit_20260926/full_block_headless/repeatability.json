@@ -1,0 +1,42 @@
+[
+  {
+    "seed": 1820701,
+    "identical": false,
+    "max_abs_difference": null
+  },
+  {
+    "seed": 1820702,
+    "identical": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "seed": 1820703,
+    "identical": false,
+    "max_abs_difference": null
+  },
+  {
+    "seed": 1820704,
+    "identical": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "seed": 1820717,
+    "identical": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "seed": 1820735,
+    "identical": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "seed": 1820740,
+    "identical": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "seed": 1820756,
+    "identical": true,
+    "max_abs_difference": 0.0
+  }
+]

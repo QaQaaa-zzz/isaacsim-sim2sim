@@ -1,0 +1,9 @@
+{
+  "name": "bike_servo_rearwheel_joint_0.005",
+  "model": "bike",
+  "mode": "servo",
+  "joint": "rearwheel_joint",
+  "input": 12.0,
+  "dt": 0.005,
+  "duration": 0.05
+}

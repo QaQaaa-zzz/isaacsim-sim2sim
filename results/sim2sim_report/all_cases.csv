@@ -1,0 +1,65 @@
+engine,domain,actor,mode,duration_s,end_code,apex_seen,qualified,observed_speed_rmse_m_s,common_window_s,common_speed_rmse_m_s
+source,0,Original transition_4988928,isotropic,1.94,4,True,False,1.414679043601409,1.94,1.414679043601409
+source,0,DR update_0064 (not adopted),isotropic,3.0,0,True,True,0.43824466987881655,1.94,0.490219888162642
+source,1,Original transition_4988928,identity,3.0,0,True,True,0.30152496610403073,3.0,0.30152496610403073
+source,1,DR update_0064 (not adopted),identity,3.0,0,True,True,0.3102220569259869,3.0,0.3102220569259869
+source,2,Original transition_4988928,anisotropic,1.9000000000000001,10,True,False,1.2100333784393251,1.3800000000000001,0.6765223778140316
+source,2,DR update_0064 (not adopted),anisotropic,1.3800000000000001,8,False,False,0.5782359682398549,1.3800000000000001,0.5782359682398549
+source,3,Original transition_4988928,isotropic,1.58,8,False,False,0.8133732016095092,1.58,0.8133732016095092
+source,3,DR update_0064 (not adopted),isotropic,2.0,3,True,False,1.2623653434241378,1.58,0.9964542600672662
+source,4,Original transition_4988928,identity,3.0,0,True,True,0.30152496610403073,3.0,0.30152496610403073
+source,4,DR update_0064 (not adopted),identity,3.0,0,True,True,0.3102220569259869,3.0,0.3102220569259869
+source,5,Original transition_4988928,identity,3.0,0,True,True,0.30152496610403073,3.0,0.30152496610403073
+source,5,DR update_0064 (not adopted),identity,3.0,0,True,True,0.3102220569259869,3.0,0.3102220569259869
+source,6,Original transition_4988928,anisotropic,1.3800000000000001,3,True,False,0.3407865155426384,1.3800000000000001,0.3407865155426384
+source,6,DR update_0064 (not adopted),anisotropic,1.46,3,True,False,0.5948108023111403,1.3800000000000001,0.4946909193315011
+source,7,Original transition_4988928,isotropic,2.02,8,False,False,1.1168151739134191,1.72,1.1037732012800718
+source,7,DR update_0064 (not adopted),isotropic,1.72,8,False,False,1.0281419486336,1.72,1.0281419486336
+source,8,Original transition_4988928,isotropic,1.36,8,False,False,0.6909971717583673,1.28,0.6244350269988244
+source,8,DR update_0064 (not adopted),isotropic,1.28,8,False,False,0.5385912025756201,1.28,0.5385912025756201
+source,9,Original transition_4988928,isotropic,2.18,8,False,False,1.1163102566981238,1.84,1.0888172434483605
+source,9,DR update_0064 (not adopted),isotropic,1.84,8,False,False,1.0196591387106084,1.84,1.0196591387106084
+source,10,Original transition_4988928,isotropic,1.6400000000000001,3,True,False,0.8983410986843137,1.6400000000000001,0.8983410986843137
+source,10,DR update_0064 (not adopted),isotropic,1.6600000000000001,8,False,False,0.8933357236533416,1.6400000000000001,0.8669050476571537
+source,11,Original transition_4988928,isotropic,1.6400000000000001,8,False,False,1.003108226302863,1.62,0.9775564896107097
+source,11,DR update_0064 (not adopted),isotropic,1.62,4,True,False,0.7731773339761235,1.62,0.7731773339761235
+source,12,Original transition_4988928,anisotropic,1.5,8,False,False,0.8489483076316126,1.46,0.8192794425692341
+source,12,DR update_0064 (not adopted),anisotropic,1.46,8,False,False,0.8136848367907425,1.46,0.8136848367907425
+source,13,Original transition_4988928,isotropic,1.8800000000000001,3,False,False,1.0910799357279295,1.78,1.0803700922753228
+source,13,DR update_0064 (not adopted),isotropic,1.78,8,False,False,1.0539544544784216,1.78,1.0539544544784216
+source,14,Original transition_4988928,anisotropic,1.68,8,False,False,0.865942848267437,1.4000000000000001,0.8281841010488549
+source,14,DR update_0064 (not adopted),anisotropic,1.4000000000000001,8,False,False,0.7733557095473212,1.4000000000000001,0.7733557095473212
+source,15,Original transition_4988928,identity,3.0,0,True,True,0.30152496610403073,3.0,0.30152496610403073
+source,15,DR update_0064 (not adopted),identity,3.0,0,True,True,0.3102220569259869,3.0,0.3102220569259869
+target,0,Original transition_4988928,isotropic,0.62,3,False,False,0.9417522366134338,0.62,0.9417522366134338
+target,0,DR update_0064 (not adopted),isotropic,1.62,10,False,False,0.9991039384385899,0.62,1.0180544711898172
+target,1,Original transition_4988928,identity,0.32,3,False,False,0.31669021037213857,0.32,0.31669021037213857
+target,1,DR update_0064 (not adopted),identity,0.38,10,False,False,0.7224192061053735,0.32,0.6713573130675098
+target,2,Original transition_4988928,anisotropic,2.46,3,True,False,1.1156085151688888,0.52,0.9888859858231573
+target,2,DR update_0064 (not adopted),anisotropic,0.52,3,False,False,1.6002469631805123,0.52,1.6002469631805123
+target,3,Original transition_4988928,isotropic,2.02,8,False,False,1.1002669542497898,2.02,1.1002669542497898
+target,3,DR update_0064 (not adopted),isotropic,2.14,3,True,False,1.2284919448217781,2.02,1.1799067320093735
+target,4,Original transition_4988928,identity,0.32,3,False,False,0.31669021037213857,0.32,0.31669021037213857
+target,4,DR update_0064 (not adopted),identity,0.38,10,False,False,0.7224192061053735,0.32,0.6713573130675098
+target,5,Original transition_4988928,identity,0.32,3,False,False,0.31669021037213857,0.32,0.31669021037213857
+target,5,DR update_0064 (not adopted),identity,0.38,10,False,False,0.7224192061053735,0.32,0.6713573130675098
+target,6,Original transition_4988928,anisotropic,0.34,10,False,False,0.9307654396660279,0.2,0.45583414315585286
+target,6,DR update_0064 (not adopted),anisotropic,0.2,3,False,False,0.8322346366379647,0.2,0.8322346366379647
+target,7,Original transition_4988928,isotropic,1.0,3,False,False,1.2208170426271128,0.28,0.6097284592614003
+target,7,DR update_0064 (not adopted),isotropic,0.28,10,False,False,0.5636178881056617,0.28,0.5636178881056617
+target,8,Original transition_4988928,isotropic,1.76,10,False,False,1.1549251291879497,1.76,1.1549251291879497
+target,8,DR update_0064 (not adopted),isotropic,1.94,8,False,False,1.0949715450325601,1.76,1.0923357425099762
+target,9,Original transition_4988928,isotropic,0.58,3,False,False,0.9735377154254672,0.58,0.9735377154254672
+target,9,DR update_0064 (not adopted),isotropic,1.92,8,False,False,1.030500667544371,0.58,0.9695315066635982
+target,10,Original transition_4988928,isotropic,2.42,3,True,False,1.1969657250443575,0.34,0.6399895119502655
+target,10,DR update_0064 (not adopted),isotropic,0.34,10,False,False,0.7150839058488685,0.34,0.7150839058488685
+target,11,Original transition_4988928,isotropic,2.56,3,True,False,1.2015582026132465,1.1,1.2710825669148305
+target,11,DR update_0064 (not adopted),isotropic,1.1,10,False,False,1.3909007541711504,1.1,1.3909007541711504
+target,12,Original transition_4988928,anisotropic,1.94,8,False,False,1.0364596807571542,1.94,1.0364596807571542
+target,12,DR update_0064 (not adopted),anisotropic,2.2600000000000002,8,False,False,1.0713600262197858,1.94,1.0831142172361694
+target,13,Original transition_4988928,isotropic,0.24,10,False,False,0.3464500676909378,0.24,0.3464500676909378
+target,13,DR update_0064 (not adopted),isotropic,1.82,8,False,False,1.0853150667710032,0.24,0.4508909405601179
+target,14,Original transition_4988928,anisotropic,0.28,3,False,False,1.2712856068800082,0.28,1.2712856068800082
+target,14,DR update_0064 (not adopted),anisotropic,2.1,10,True,False,0.9810323978317212,0.28,0.7683507841272037
+target,15,Original transition_4988928,identity,0.32,3,False,False,0.31669021037213857,0.32,0.31669021037213857
+target,15,DR update_0064 (not adopted),identity,0.38,10,False,False,0.7224192061053735,0.32,0.6713573130675098

@@ -1,0 +1,6 @@
+Read STTW AGENTS/PROJECT and live workspace status (existing untracked .planning and .vscode preserved). Hardware checked. No relevant memory facts used. Official documentation checked. Existing GPU processes will not be stopped.
+
+User requested sibling root /home/qy/ISAAC——SIM and approved remaining operations. Relocated cache and plans; recreated venv with new interpreter absolute path. Installation resumed. Old environment saved under setup/old_venv_before_relocation for now.
+Final runs completed and verified, each800steps/100frames. Fixed/free FK errors1.775e-7/1.541e-7m, render body position error0. Free case falls; abs roll exceeds45deg at1.25s. Original importer fatal path/ellipsoid conversion, explicit-servo oscillation, camera focal units and async frame issues preserved and resolved for final output. pip check passes. No trained controller transfer claim.
+
+Requested frozen transition4988928 exported and verified against original Brax (64 observations maxerror9.39e-7). Visual checker ground and rounded tire/rims added without collider changes. 8s PhysX trajectory/200frame video completed. Cross-engine failure retained: roll35deg at.81s, maxz.193596m. Native MuJoCo CPU reference maxz.592091m, jump-zone entry.54s; not original MJX evaluation. Artifacts and rerun launcher documented.

@@ -1,0 +1,58 @@
+{
+  "engine": "Isaac Sim / PhysX",
+  "isaacsim_version": "5.1.0.0",
+  "mode": "policy",
+  "terminal_status": {
+    "terminated": true,
+    "truncated": false,
+    "apex_seen": false,
+    "jump_zone_seen": false,
+    "end_code": 10,
+    "roll_limit": false,
+    "pitch_limit": false,
+    "yaw_limit": true,
+    "stuck": false
+  },
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "mass_audit_passed": true,
+  "physics_dt_s": 0.005,
+  "target_update_dt_s": 0.02,
+  "servo": "PhysX implicit force drive with source SI gains and force limits",
+  "effort_semantics": "PhysX projected measured joint effort; not isolated motor torque",
+  "jit_control_dt_s": 0.02,
+  "duration_s": 0.38,
+  "frames": 10,
+  "endpoint": "phase_u_end_10",
+  "wall_seconds": 0.46517491340637207,
+  "video_error": null,
+  "render_flushes_per_frame": 3,
+  "max_render_body_position_error_m": 0.0,
+  "max_fk_position_error_m": 1.6496696830792246e-07,
+  "max_fk_orientation_error_rad": 3.5964263214942257e-07,
+  "physics_backend": "PhysX CPU; RTX GPU rendering",
+  "physical_task_success": "not certified; frozen Phase U policy cross-engine diagnostic",
+  "root_displacement_m": [
+    0.5223122835159302,
+    -0.07805312424898148,
+    -0.007448911666870117
+  ],
+  "joint_range_observed_rad": [
+    4.515720844268799,
+    0.6925936937332153,
+    0.06589972972869873,
+    5.188228130340576,
+    0.09530520439147949
+  ],
+  "limitations": [
+    "explicit USD geometry, tessellated convex ellipsoid wheels; isotropic contact approximation not dynamically equivalent",
+    "implicit PhysX servo integration differs from MuJoCo RK4; source gains/target/force caps retained",
+    "fixed mode constrains root; free mode has no balance policy; policy mode uses frozen actor with finite-difference accelerometer adapter"
+  ]
+}

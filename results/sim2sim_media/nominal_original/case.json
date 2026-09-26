@@ -1,0 +1,8 @@
+{
+  "name": "nominal_original",
+  "mode": "policy",
+  "actor": "policy/actor.npz",
+  "source_actor": "policy/actor.npz",
+  "duration": 3.0,
+  "stop_on_source_failure": false
+}

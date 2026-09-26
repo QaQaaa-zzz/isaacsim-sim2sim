@@ -1,0 +1,20 @@
+{
+  "name": "hip_pulse",
+  "physics_steps": 24,
+  "duration_s": 0.12,
+  "wall_s": 0.3652377750258893,
+  "gyro_vs_end_body_max_abs_rad_s": 0.42865389585494995,
+  "gyro_vs_end_body_rmse_rad_s": [
+    0.00036034994991496205,
+    0.12020224332809448,
+    0.002253428567200899
+  ],
+  "native_world_vs_end_world_max_abs_rad_s": 0.4286537170410156,
+  "joint_interval_minus_end_qd_rmse_rad_s": [
+    0.08229852467775345,
+    0.001542246900498867,
+    0.08229861408472061,
+    0.11999484896659851,
+    0.03263715282082558
+  ]
+}

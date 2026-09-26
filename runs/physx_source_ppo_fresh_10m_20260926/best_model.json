@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/runs/physx_source_ppo_fresh_10m_20260926/checkpoints/transition_00221184",
+  "training_transitions": 221184,
+  "development_mean_return": 240.51429572184117,
+  "selection": "all completed source PPO blocks plus initialization; fixed eight-case development return; earlier wins tie",
+  "qualified": false
+}

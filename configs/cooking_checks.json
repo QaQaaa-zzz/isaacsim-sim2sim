@@ -1,0 +1,27 @@
+{
+  "role": "collision-cooking and integrator diagnosis",
+  "cases": [
+    {
+      "name": "normalized_hull_100",
+      "mode": "zero",
+      "duration": 0.1,
+      "hull_vertices": 255,
+      "mesh_normalization": 100
+    },
+    {
+      "name": "normalized_hull_replay",
+      "mode": "replay",
+      "duration": 2.0,
+      "hull_vertices": 255,
+      "mesh_normalization": 100
+    },
+    {
+      "name": "source_1ms_air",
+      "mode": "zero",
+      "no_contact": true,
+      "source_dt": 0.001,
+      "dt": 0.001,
+      "duration": 0.1
+    }
+  ]
+}

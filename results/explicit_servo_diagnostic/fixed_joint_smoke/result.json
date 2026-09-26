@@ -1,0 +1,40 @@
+{
+  "engine": "Isaac Sim / PhysX",
+  "isaacsim_version": "5.1.0.0",
+  "mode": "fixed",
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "mass_audit_passed": true,
+  "physics_dt_s": 0.005,
+  "servo_update_dt_s": 0.005,
+  "jit_control_dt_s": 0.02,
+  "duration_s": 4.0,
+  "frames": 100,
+  "endpoint": "horizon",
+  "wall_seconds": 1.578129768371582,
+  "video_error": null,
+  "physical_task_success": "not evaluated; no balance or learned policy",
+  "root_displacement_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "joint_range_observed_rad": [
+    0.08726772665977478,
+    0.17522242665290833,
+    0.41412538290023804,
+    0.0001761603489285335,
+    0.5378799438476562
+  ],
+  "limitations": [
+    "explicit USD geometry, tessellated convex ellipsoid wheels; isotropic contact approximation not dynamically equivalent",
+    "source servo evaluated explicitly once per5ms; not MuJoCo RK4 within-step integration",
+    "fixed mode constrains root for joint diagnostics; free mode has no balance policy"
+  ]
+}

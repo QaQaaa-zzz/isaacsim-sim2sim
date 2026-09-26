@@ -1,0 +1,13 @@
+{
+  "name": "fit_steer_0.5_0.25",
+  "model": "bike",
+  "mode": "servo",
+  "joint": "steering_joint",
+  "input": 0.1,
+  "dt": 0.005,
+  "duration": 0.05,
+  "target_drive_scales": {
+    "kp": 0.5,
+    "kd": 0.25
+  }
+}

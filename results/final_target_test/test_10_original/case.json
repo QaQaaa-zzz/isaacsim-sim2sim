@@ -1,0 +1,33 @@
+{
+  "name": "test_10_original",
+  "mode": "policy",
+  "actor": "policy/actor.npz",
+  "source_actor": "policy/actor.npz",
+  "domain": {
+    "contact_mode": "isotropic",
+    "density_scale": 0.9092970208902281,
+    "com_shift_m": [
+      0.0014219492674005362,
+      0.0012731407031325824,
+      0.0019031797563174328
+    ],
+    "kp_scale": 0.9206785327968174,
+    "kd_scale": 0.9822550049319314,
+    "force_scale": 0.9838164956948666,
+    "friction_scale": 0.8063440415888978,
+    "friction": 1.6829063019655384,
+    "joint_damping": 0.0003917996254172973,
+    "gyro_noise_std": 0.008102087129184827,
+    "acc_noise_std": 0.08124222862998902,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "integrator": "RK4",
+    "accelerometer_mode": "finite_difference",
+    "seed": 10,
+    "role": "test"
+  },
+  "dt": 0.001,
+  "source_dt": 0.001,
+  "duration": 3.0,
+  "stop_on_source_failure": false
+}

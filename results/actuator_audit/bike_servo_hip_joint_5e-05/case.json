@@ -1,0 +1,9 @@
+{
+  "name": "bike_servo_hip_joint_5e-05",
+  "model": "bike",
+  "mode": "servo",
+  "joint": "hip_joint",
+  "input": 0.1,
+  "dt": 5e-05,
+  "duration": 0.05
+}

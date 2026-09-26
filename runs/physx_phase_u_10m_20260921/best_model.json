@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/runs/physx_phase_u_10m_20260921/checkpoints/transition_05251072",
+  "training_transitions": 5251072,
+  "development_mean_return": 1355.4777459222373,
+  "selection": "fixed 4-ground/4-airborne development mean original episode return; earlier wins tie",
+  "qualified": false
+}

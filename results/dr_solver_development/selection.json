@@ -1,0 +1,8 @@
+{
+  "selected_actor": "update_0064",
+  "actor_path": "results/dr_solver_training/update_0064/actor.npz",
+  "eligible_count": 4,
+  "criterion": "nominal screen safe apex and speed RMSE <= original +0.2 m/s; then largest random-domain safe apex completion, tie lower speed RMSE",
+  "adopted": false,
+  "reason": "source-only engineering selection; PhysX and disjoint test pending"
+}

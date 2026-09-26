@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "physics_dt": 0.005,
+  "integrator": "RK4",
+  "gravity": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "contact_enabled": false,
+  "initial": {
+    "keyframe": 0,
+    "qpos": [
+      2.5,
+      0.0,
+      0.15,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.8,
+      1.0
+    ],
+    "qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "cases": [
+    {
+      "name": "steer_pulse",
+      "enabled_joints": [
+        "steering_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.1,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_pulse",
+      "enabled_joints": [
+        "rearwheel_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.0,
+            12.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hip_pulse",
+      "enabled_joints": [
+        "hip_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.7000000000000001,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "knee_pulse",
+      "enabled_joints": [
+        "knee_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.1
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

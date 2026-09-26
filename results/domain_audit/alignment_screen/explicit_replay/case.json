@@ -1,0 +1,6 @@
+{
+  "name": "explicit_replay",
+  "mode": "replay",
+  "drive": "explicit",
+  "hull_vertices": 256
+}

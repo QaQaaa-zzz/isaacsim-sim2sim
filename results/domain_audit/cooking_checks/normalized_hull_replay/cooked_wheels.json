@@ -1,0 +1,24 @@
+[
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9",
+    "vertices": 35,
+    "max_abs_support_error_m": 0.0061958054567439955,
+    "max_rel_support_error": 0.12855530124413983,
+    "bounds": [
+      0.14,
+      0.14,
+      0.05
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15",
+    "vertices": 35,
+    "max_abs_support_error_m": 0.0061958054567439955,
+    "max_rel_support_error": 0.12855530124413983,
+    "bounds": [
+      0.14,
+      0.14,
+      0.05
+    ]
+  }
+]

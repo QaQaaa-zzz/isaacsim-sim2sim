@@ -1,0 +1,234 @@
+{
+  "source_xml": "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml",
+  "model_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "frontwheel_joint",
+    "hip_joint",
+    "knee_joint"
+  ],
+  "qa": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "va": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "actuator_names": [
+    "cmd_steering_v",
+    "cmd_rearwheel_f",
+    "cmd_hip_f",
+    "cmd_knee_f"
+  ],
+  "actuator_joint_names": [
+    "steering_joint",
+    "rearwheel_joint",
+    "hip_joint",
+    "knee_joint"
+  ],
+  "sensor_names": [
+    "steering_joint_pos_sensor",
+    "steering_joint_vel_sensor",
+    "rearwheel_joint_vel_sensor",
+    "frontwheel_joint_vel_sensor",
+    "acc_local",
+    "gyro_local",
+    "ori_global",
+    "pos_global",
+    "vel_global",
+    "ang_global",
+    "hip_joint_pos_sensor",
+    "knee_joint_pos_sensor",
+    "hip_joint_vel_sensor",
+    "knee_joint_vel_sensor",
+    "cmd_steering_v",
+    "cmd_rearwheel_f",
+    "cmd_hip_f",
+    "cmd_knee_f"
+  ],
+  "sensor_adr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    10,
+    14,
+    17,
+    20,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "sensor_dim": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    4,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "ctrl_units": [
+    "rad",
+    "rad/s",
+    "rad",
+    "rad"
+  ],
+  "root_qpos_order": "x,y,z,qw,qx,qy,qz",
+  "root_qvel_order": "world linear xyz, body angular xyz",
+  "physics_dt": 0.005,
+  "integrator": "RK4",
+  "contact_enabled": false,
+  "gravity": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "enabled_joints": [
+    "steering_joint"
+  ],
+  "actuator_gainprm": [
+    [
+      10.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "actuator_biasprm": [
+    [
+      0.0,
+      -10.0,
+      -0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "actuator_forcerange": [
+    [
+      -5.0,
+      5.0
+    ],
+    [
+      -6.0,
+      6.0
+    ],
+    [
+      -30.0,
+      30.0
+    ],
+    [
+      -30.0,
+      30.0
+    ]
+  ]
+}

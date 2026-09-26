@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "num_envs": 384,
+  "steps": 8,
+  "transitions": 3072,
+  "initialization_s": 13.970455483999103,
+  "sampling_s": 18.94104584096931,
+  "transitions_per_s": 162.18745394487627,
+  "max_rss_mb": 7408.82421875,
+  "all_finite": true,
+  "critic_dimensions": 106
+}

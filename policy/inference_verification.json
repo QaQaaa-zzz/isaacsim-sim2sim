@@ -1,0 +1,6 @@
+{
+  "observations": 64,
+  "max_abs_action_error": 9.387731552124023e-07,
+  "reference": "original Brax deterministic inference",
+  "passed": true
+}

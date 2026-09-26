@@ -1,0 +1,45 @@
+{
+  "engine": "Isaac Sim / PhysX",
+  "isaacsim_version": "5.1.0.0",
+  "mode": "fixed",
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "mass_audit_passed": true,
+  "physics_dt_s": 0.005,
+  "target_update_dt_s": 0.02,
+  "servo": "PhysX implicit force drive with source SI gains and force limits",
+  "effort_semantics": "PhysX projected measured joint effort; not isolated motor torque",
+  "jit_control_dt_s": 0.02,
+  "duration_s": 4.0,
+  "frames": 100,
+  "endpoint": "horizon",
+  "wall_seconds": 2.2064855098724365,
+  "video_error": null,
+  "max_render_body_position_error_m": 0.0,
+  "max_fk_position_error_m": 1.775236815326764e-07,
+  "physics_backend": "PhysX CPU; RTX GPU rendering",
+  "physical_task_success": "not evaluated; no balance or learned policy",
+  "root_displacement_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "joint_range_observed_rad": [
+    12.54431438446045,
+    0.29991182684898376,
+    0.4146125316619873,
+    1.0310019433745765e-06,
+    0.5381969213485718
+  ],
+  "limitations": [
+    "explicit USD geometry, tessellated convex ellipsoid wheels; isotropic contact approximation not dynamically equivalent",
+    "implicit PhysX servo integration differs from MuJoCo RK4; source gains/target/force caps retained",
+    "fixed mode constrains root for joint diagnostics; free mode has no balance policy"
+  ]
+}

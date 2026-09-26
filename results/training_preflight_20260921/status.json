@@ -1,0 +1,8 @@
+{
+  "status": "preflight_condition_not_met",
+  "training_started": false,
+  "training_transitions": 0,
+  "requested_training_transitions": 10000000,
+  "reason": "anisotropic source contact differs from isotropic target contact",
+  "best_model": null
+}

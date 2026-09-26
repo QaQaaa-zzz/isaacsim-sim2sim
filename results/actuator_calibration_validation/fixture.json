@@ -1,0 +1,6 @@
+{
+  "axial_inertia_kg_m2": 0.00041650000000000015,
+  "damping_Nm_s_rad": 5.0,
+  "limit_Nm": 6.0,
+  "support": "fixed world; no free-base recoil"
+}

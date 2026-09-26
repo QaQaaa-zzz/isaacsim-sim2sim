@@ -1,0 +1,1838 @@
+[
+  {
+    "case": "nominal_original",
+    "duration": 0.32,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.32,
+    "source_max_x_z": [
+      2.115917969452224,
+      0.14841673489395882
+    ],
+    "target_max_x_z": [
+      2.0963997840881348,
+      0.14959673583507538
+    ],
+    "position_rmse_m": [
+      0.019120800984970397,
+      0.07134403820581418,
+      0.015184514311937472
+    ],
+    "joint_velocity_rmse": [
+      23.35484633193503,
+      13.032693627136737,
+      1.556906110685989,
+      22.07041805711536,
+      2.5222034024078823
+    ],
+    "wall_s": 0.060057640075683594,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.31669021037213857,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "isotropic_mid_original",
+    "duration": 1.52,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.52,
+    "source_max_x_z": [
+      4.127794906953101,
+      0.5920908703845709
+    ],
+    "target_max_x_z": [
+      2.811414957046509,
+      0.26877689361572266
+    ],
+    "position_rmse_m": [
+      0.7448348207924873,
+      0.13294953299609763,
+      0.23239996297801982
+    ],
+    "joint_velocity_rmse": [
+      14.721299962241783,
+      5.083969504112917,
+      3.1048257253848237,
+      20.514290535613867,
+      8.863609043417382
+    ],
+    "wall_s": 0.28107571601867676,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.236941488583807,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_00_original",
+    "duration": 0.62,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.62,
+    "source_max_x_z": [
+      2.5299176645227943,
+      0.1484661496161645
+    ],
+    "target_max_x_z": [
+      2.305687189102173,
+      0.1482458859682083
+    ],
+    "position_rmse_m": [
+      0.11618903455959124,
+      0.01721987505190757,
+      0.006749213644397204
+    ],
+    "joint_velocity_rmse": [
+      12.002724553484061,
+      5.887608165856703,
+      0.8905066835728749,
+      13.203553339626842,
+      0.193418773515173
+    ],
+    "wall_s": 0.25598764419555664,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.9417522366134338,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_01_original",
+    "duration": 0.32,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.32,
+    "source_max_x_z": [
+      2.115917969452224,
+      0.14841673489395882
+    ],
+    "target_max_x_z": [
+      2.0963997840881348,
+      0.14959673583507538
+    ],
+    "position_rmse_m": [
+      0.019120800984970397,
+      0.07134403820581418,
+      0.015184514311937472
+    ],
+    "joint_velocity_rmse": [
+      23.35484633193503,
+      13.032693627136737,
+      1.556906110685989,
+      22.07041805711536,
+      2.5222034024078823
+    ],
+    "wall_s": 0.06456184387207031,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.31669021037213857,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_02_original",
+    "duration": 2.46,
+    "source_first_failure_s": 1.44,
+    "target_first_failure_s": 2.46,
+    "source_max_x_z": [
+      3.6275314681981845,
+      0.4911642671627753
+    ],
+    "target_max_x_z": [
+      3.8845815658569336,
+      0.5362328886985779
+    ],
+    "position_rmse_m": [
+      0.47875385051664343,
+      0.08853951068449775,
+      0.18055415609111483
+    ],
+    "joint_velocity_rmse": [
+      5.6094220829391555,
+      9.585330997556763,
+      5.04543985422933,
+      12.185927720120176,
+      8.271254698987144
+    ],
+    "wall_s": 0.4559788703918457,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.1156085151688888,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_03_original",
+    "duration": 2.02,
+    "source_first_failure_s": 1.6,
+    "target_first_failure_s": 2.02,
+    "source_max_x_z": [
+      3.5320206065810136,
+      0.49390702498171185
+    ],
+    "target_max_x_z": [
+      3.526939868927002,
+      0.49388158321380615
+    ],
+    "position_rmse_m": [
+      0.265788404325122,
+      0.026295889592046897,
+      0.1734987735875823
+    ],
+    "joint_velocity_rmse": [
+      7.588994717572019,
+      4.7089534789580725,
+      3.7561189229079086,
+      8.005094143533693,
+      9.996406884701955
+    ],
+    "wall_s": 0.8048110008239746,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.1002669542497898,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_04_original",
+    "duration": 0.32,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.32,
+    "source_max_x_z": [
+      2.115917969452224,
+      0.14841673489395882
+    ],
+    "target_max_x_z": [
+      2.0963997840881348,
+      0.14959673583507538
+    ],
+    "position_rmse_m": [
+      0.019120800984970397,
+      0.07134403820581418,
+      0.015184514311937472
+    ],
+    "joint_velocity_rmse": [
+      23.35484633193503,
+      13.032693627136737,
+      1.556906110685989,
+      22.07041805711536,
+      2.5222034024078823
+    ],
+    "wall_s": 0.06633400917053223,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.31669021037213857,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_05_original",
+    "duration": 0.32,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.32,
+    "source_max_x_z": [
+      2.115917969452224,
+      0.14841673489395882
+    ],
+    "target_max_x_z": [
+      2.0963997840881348,
+      0.14959673583507538
+    ],
+    "position_rmse_m": [
+      0.019120800984970397,
+      0.07134403820581418,
+      0.015184514311937472
+    ],
+    "joint_velocity_rmse": [
+      23.35484633193503,
+      13.032693627136737,
+      1.556906110685989,
+      22.07041805711536,
+      2.5222034024078823
+    ],
+    "wall_s": 0.06526708602905273,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.31669021037213857,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_06_original",
+    "duration": 0.34,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.34,
+    "source_max_x_z": [
+      2.147338531334872,
+      0.14838911346557304
+    ],
+    "target_max_x_z": [
+      1.9470640420913696,
+      0.14751899242401123
+    ],
+    "position_rmse_m": [
+      0.08990723643139503,
+      0.040383487417623494,
+      0.002565767278349282
+    ],
+    "joint_velocity_rmse": [
+      20.363751042897036,
+      13.432632333866867,
+      1.0167888201308075,
+      18.377490757236917,
+      2.0890199689119346
+    ],
+    "wall_s": 0.07471108436584473,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.9307654396660279,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_07_original",
+    "duration": 1.0,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.0,
+    "source_max_x_z": [
+      2.3857489938300267,
+      0.14825235389500016
+    ],
+    "target_max_x_z": [
+      2.394256114959717,
+      0.1482415795326233
+    ],
+    "position_rmse_m": [
+      0.013984078537929663,
+      0.12086906817371001,
+      0.009408224830807312
+    ],
+    "joint_velocity_rmse": [
+      12.810339749662335,
+      9.835854957508971,
+      1.777121160932126,
+      5.88066278688126,
+      0.8752451612551316
+    ],
+    "wall_s": 0.420654296875,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.2208170426271128,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_08_original",
+    "duration": 1.76,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.76,
+    "source_max_x_z": [
+      3.5215468709746287,
+      0.3886096211254509
+    ],
+    "target_max_x_z": [
+      3.126504421234131,
+      0.14762723445892334
+    ],
+    "position_rmse_m": [
+      0.23650808437938742,
+      0.08603161036920812,
+      0.1048194911800909
+    ],
+    "joint_velocity_rmse": [
+      7.734387195840818,
+      5.4349586452337135,
+      2.620784585228155,
+      8.826828126182175,
+      7.793281741089575
+    ],
+    "wall_s": 0.37174510955810547,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.1549251291879497,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_09_original",
+    "duration": 0.58,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.58,
+    "source_max_x_z": [
+      2.1915508095593443,
+      0.14847271847769233
+    ],
+    "target_max_x_z": [
+      2.179219961166382,
+      0.14793986082077026
+    ],
+    "position_rmse_m": [
+      0.01077048158776427,
+      0.02171059066791396,
+      0.007197676255651735
+    ],
+    "joint_velocity_rmse": [
+      5.923095347908211,
+      4.6143028647210675,
+      0.6871906748175791,
+      26.97960504326782,
+      2.7825005766753166
+    ],
+    "wall_s": 0.49987173080444336,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.9735377154254672,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_10_original",
+    "duration": 2.42,
+    "source_first_failure_s": 2.36,
+    "target_first_failure_s": 2.42,
+    "source_max_x_z": [
+      3.536916229902268,
+      0.5735478530398083
+    ],
+    "target_max_x_z": [
+      3.7122695446014404,
+      0.5032112002372742
+    ],
+    "position_rmse_m": [
+      0.33518338220051014,
+      0.1355668919900671,
+      0.19490315336570596
+    ],
+    "joint_velocity_rmse": [
+      7.460665140010534,
+      2.540677397403411,
+      3.4799020018377047,
+      10.294606457613087,
+      8.670751938249136
+    ],
+    "wall_s": 1.965174913406372,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 4,
+      "roll_limit": false,
+      "pitch_limit": true,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.1969657250443575,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_11_original",
+    "duration": 2.56,
+    "source_first_failure_s": 1.7,
+    "target_first_failure_s": 2.56,
+    "source_max_x_z": [
+      3.6706895695692214,
+      0.45167839154086936
+    ],
+    "target_max_x_z": [
+      3.750016927719116,
+      0.5204602479934692
+    ],
+    "position_rmse_m": [
+      0.32645038835708357,
+      0.2853205663320711,
+      0.13106904030573527
+    ],
+    "joint_velocity_rmse": [
+      5.974244140055339,
+      4.423674927707546,
+      2.6523535027737095,
+      8.702381841971482,
+      7.740308964720786
+    ],
+    "wall_s": 0.5257360935211182,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.2015582026132465,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_12_original",
+    "duration": 1.94,
+    "source_first_failure_s": 1.48,
+    "target_first_failure_s": 1.94,
+    "source_max_x_z": [
+      3.373423582781487,
+      0.45451282620931316
+    ],
+    "target_max_x_z": [
+      3.512115955352783,
+      0.4587301015853882
+    ],
+    "position_rmse_m": [
+      0.21680482429395717,
+      0.20379164466772093,
+      0.1557207301185851
+    ],
+    "joint_velocity_rmse": [
+      7.116276242234535,
+      8.480771445124404,
+      3.2907158062372983,
+      11.613555172932626,
+      9.412095568047459
+    ],
+    "wall_s": 1.5301439762115479,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.0364596807571542,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_13_original",
+    "duration": 0.24,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.24,
+    "source_max_x_z": [
+      1.9222967584070545,
+      0.1482768448666461
+    ],
+    "target_max_x_z": [
+      1.922508716583252,
+      0.1478414237499237
+    ],
+    "position_rmse_m": [
+      0.009355997230005166,
+      0.02643372679553077,
+      0.006463017720038141
+    ],
+    "joint_velocity_rmse": [
+      3.2072605733386426,
+      7.463312290316643,
+      0.6048455504540259,
+      23.59976156419711,
+      0.3709080407492999
+    ],
+    "wall_s": 0.09772229194641113,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.3464500676909378,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_14_original",
+    "duration": 0.28,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.28,
+    "source_max_x_z": [
+      2.001309643927067,
+      0.14828567868405404
+    ],
+    "target_max_x_z": [
+      1.8930392265319824,
+      0.199382483959198
+    ],
+    "position_rmse_m": [
+      0.0448770445285609,
+      0.06122151151203011,
+      0.024640514265779217
+    ],
+    "joint_velocity_rmse": [
+      10.008013924835073,
+      10.149789768609335,
+      0.5501650550549001,
+      23.863503918433803,
+      3.4050623070052097
+    ],
+    "wall_s": 0.11609935760498047,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.2712856068800082,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_15_original",
+    "duration": 0.32,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.32,
+    "source_max_x_z": [
+      2.115917969452224,
+      0.14841673489395882
+    ],
+    "target_max_x_z": [
+      2.0963997840881348,
+      0.14959673583507538
+    ],
+    "position_rmse_m": [
+      0.019120800984970397,
+      0.07134403820581418,
+      0.015184514311937472
+    ],
+    "joint_velocity_rmse": [
+      23.35484633193503,
+      13.032693627136737,
+      1.556906110685989,
+      22.07041805711536,
+      2.5222034024078823
+    ],
+    "wall_s": 0.06627416610717773,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.31669021037213857,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "nominal_dr",
+    "duration": 0.38,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.38,
+    "source_max_x_z": [
+      2.240707063026146,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      2.0323100090026855,
+      0.14791645109653473
+    ],
+    "position_rmse_m": [
+      0.09801654586534901,
+      0.028001559354911398,
+      0.010346995229643323
+    ],
+    "joint_velocity_rmse": [
+      13.632693383112619,
+      9.24101321844059,
+      1.2382944821685535,
+      17.982746416252947,
+      1.107840735514509
+    ],
+    "wall_s": 0.0728912353515625,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7224192061053735,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "isotropic_mid_dr",
+    "duration": 0.54,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.54,
+    "source_max_x_z": [
+      2.5523606914361894,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      1.9115686416625977,
+      0.2383178472518921
+    ],
+    "position_rmse_m": [
+      0.3113996226939453,
+      0.005793248943137773,
+      0.06524168911358691
+    ],
+    "joint_velocity_rmse": [
+      11.299787873731672,
+      5.860793805401789,
+      2.872857274657816,
+      24.608372970384487,
+      1.0301624263702198
+    ],
+    "wall_s": 0.10103273391723633,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.5071344900559134,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_00_dr",
+    "duration": 1.62,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.62,
+    "source_max_x_z": [
+      4.055163637334187,
+      0.5562654573887066
+    ],
+    "target_max_x_z": [
+      3.3577322959899902,
+      0.2533244490623474
+    ],
+    "position_rmse_m": [
+      0.514828101415974,
+      0.12136738366580906,
+      0.193359715611965
+    ],
+    "joint_velocity_rmse": [
+      8.917743136044365,
+      4.476194918137437,
+      3.734200776847227,
+      11.904885990461073,
+      9.19728952088427
+    ],
+    "wall_s": 0.7834634780883789,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.9991039384385899,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_01_dr",
+    "duration": 0.38,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.38,
+    "source_max_x_z": [
+      2.240707063026146,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      2.0323100090026855,
+      0.14791645109653473
+    ],
+    "position_rmse_m": [
+      0.09801654586534901,
+      0.028001559354911398,
+      0.010346995229643323
+    ],
+    "joint_velocity_rmse": [
+      13.632693383112619,
+      9.24101321844059,
+      1.2382944821685535,
+      17.982746416252947,
+      1.107840735514509
+    ],
+    "wall_s": 0.08432412147521973,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7224192061053735,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_02_dr",
+    "duration": 0.52,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.52,
+    "source_max_x_z": [
+      2.359038357899058,
+      0.14798125495226383
+    ],
+    "target_max_x_z": [
+      1.8681882619857788,
+      0.23754993081092834
+    ],
+    "position_rmse_m": [
+      0.2624070710152036,
+      0.005607101355693376,
+      0.06574608782106574
+    ],
+    "joint_velocity_rmse": [
+      5.466475734048868,
+      9.802539502233959,
+      2.741464957504527,
+      22.536955507396907,
+      1.1416511109020184
+    ],
+    "wall_s": 0.1083834171295166,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.6002469631805123,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_03_dr",
+    "duration": 2.14,
+    "source_first_failure_s": 1.5,
+    "target_first_failure_s": 2.14,
+    "source_max_x_z": [
+      3.5402236258231174,
+      0.4882897560347448
+    ],
+    "target_max_x_z": [
+      3.462146520614624,
+      0.5141935348510742
+    ],
+    "position_rmse_m": [
+      0.20372612294197454,
+      0.035317767699248735,
+      0.12911490810675635
+    ],
+    "joint_velocity_rmse": [
+      5.343281732397117,
+      3.9550170010464885,
+      3.961167841173813,
+      19.480151078352343,
+      9.756527100469699
+    ],
+    "wall_s": 0.8284294605255127,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.2284919448217781,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_04_dr",
+    "duration": 0.38,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.38,
+    "source_max_x_z": [
+      2.240707063026146,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      2.0323100090026855,
+      0.14791645109653473
+    ],
+    "position_rmse_m": [
+      0.09801654586534901,
+      0.028001559354911398,
+      0.010346995229643323
+    ],
+    "joint_velocity_rmse": [
+      13.632693383112619,
+      9.24101321844059,
+      1.2382944821685535,
+      17.982746416252947,
+      1.107840735514509
+    ],
+    "wall_s": 0.07958102226257324,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7224192061053735,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_05_dr",
+    "duration": 0.38,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.38,
+    "source_max_x_z": [
+      2.240707063026146,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      2.0323100090026855,
+      0.14791645109653473
+    ],
+    "position_rmse_m": [
+      0.09801654586534901,
+      0.028001559354911398,
+      0.010346995229643323
+    ],
+    "joint_velocity_rmse": [
+      13.632693383112619,
+      9.24101321844059,
+      1.2382944821685535,
+      17.982746416252947,
+      1.107840735514509
+    ],
+    "wall_s": 0.09362912178039551,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7224192061053735,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_06_dr",
+    "duration": 0.2,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.2,
+    "source_max_x_z": [
+      1.888149201732988,
+      0.14835616767241042
+    ],
+    "target_max_x_z": [
+      1.8056296110153198,
+      0.14751899242401123
+    ],
+    "position_rmse_m": [
+      0.033706212706944204,
+      0.08303864589036103,
+      0.005744744749131527
+    ],
+    "joint_velocity_rmse": [
+      12.132717836822064,
+      10.403598903252622,
+      2.038930164236004,
+      26.454577808909534,
+      4.79226104503734
+    ],
+    "wall_s": 0.04276275634765625,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 3,
+      "roll_limit": true,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.8322346366379647,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_07_dr",
+    "duration": 0.28,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.28,
+    "source_max_x_z": [
+      1.974811328119378,
+      0.14822050018294122
+    ],
+    "target_max_x_z": [
+      1.946029782295227,
+      0.14821194112300873
+    ],
+    "position_rmse_m": [
+      0.021380363537185792,
+      0.031228728910356655,
+      0.00807636749501038
+    ],
+    "joint_velocity_rmse": [
+      16.788102654798596,
+      4.680940151714297,
+      0.9505810470715125,
+      8.44599327199865,
+      0.7176635522609986
+    ],
+    "wall_s": 0.1149137020111084,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.5636178881056617,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_08_dr",
+    "duration": 1.94,
+    "source_first_failure_s": 1.56,
+    "target_first_failure_s": 1.94,
+    "source_max_x_z": [
+      3.562548110364546,
+      0.39422960944839053
+    ],
+    "target_max_x_z": [
+      3.3927128314971924,
+      0.14753417670726776
+    ],
+    "position_rmse_m": [
+      0.2709583607103989,
+      0.05111116940040846,
+      0.10890300317477664
+    ],
+    "joint_velocity_rmse": [
+      9.635253741986068,
+      6.598519204812759,
+      3.1709254712850035,
+      17.016439896941502,
+      6.998793104072088
+    ],
+    "wall_s": 0.36284446716308594,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.0949715450325601,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_09_dr",
+    "duration": 1.92,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.92,
+    "source_max_x_z": [
+      3.546910796479668,
+      0.5227521769505341
+    ],
+    "target_max_x_z": [
+      3.596421003341675,
+      0.4242573082447052
+    ],
+    "position_rmse_m": [
+      0.024337711800462288,
+      0.02093177819723951,
+      0.11265178815847404
+    ],
+    "joint_velocity_rmse": [
+      6.837290247847424,
+      2.5662592045987265,
+      3.901821095851697,
+      7.889231009009254,
+      8.863487774139795
+    ],
+    "wall_s": 1.6191234588623047,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.030500667544371,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_10_dr",
+    "duration": 0.34,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.34,
+    "source_max_x_z": [
+      2.0409728328518764,
+      0.14844028459810546
+    ],
+    "target_max_x_z": [
+      1.9809061288833618,
+      0.21526110172271729
+    ],
+    "position_rmse_m": [
+      0.04466549296195677,
+      0.04420641679152213,
+      0.05634546623053341
+    ],
+    "joint_velocity_rmse": [
+      8.594233356114758,
+      7.101741084611425,
+      1.1602291428244242,
+      31.81613412792458,
+      3.285061802041756
+    ],
+    "wall_s": 0.2655010223388672,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7150839058488685,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_11_dr",
+    "duration": 1.1,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.1,
+    "source_max_x_z": [
+      2.801076557451593,
+      0.15392805099740786
+    ],
+    "target_max_x_z": [
+      2.318380832672119,
+      0.14792490005493164
+    ],
+    "position_rmse_m": [
+      0.18845509535723048,
+      0.08956261869526592,
+      0.010170356764608975
+    ],
+    "joint_velocity_rmse": [
+      9.49377981104216,
+      3.6493630070587453,
+      0.5749168875021028,
+      7.142656049366273,
+      2.7853582972953044
+    ],
+    "wall_s": 0.20601463317871094,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 1.3909007541711504,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_12_dr",
+    "duration": 2.2600000000000002,
+    "source_first_failure_s": 1.5,
+    "target_first_failure_s": 2.2600000000000002,
+    "source_max_x_z": [
+      3.3702531958892346,
+      0.46836916749610247
+    ],
+    "target_max_x_z": [
+      3.794125556945801,
+      0.4644002616405487
+    ],
+    "position_rmse_m": [
+      0.3169765696371716,
+      0.02341456314427512,
+      0.1656551183446577
+    ],
+    "joint_velocity_rmse": [
+      7.525049885733054,
+      3.939491816494417,
+      3.4876018183347592,
+      14.82402845255064,
+      10.634822403516912
+    ],
+    "wall_s": 1.8701927661895752,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.0713600262197858,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_13_dr",
+    "duration": 1.82,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 1.82,
+    "source_max_x_z": [
+      3.3248597679185745,
+      0.49531054979808614
+    ],
+    "target_max_x_z": [
+      3.2918779850006104,
+      0.22795872390270233
+    ],
+    "position_rmse_m": [
+      0.030894482097783733,
+      0.28175773316246305,
+      0.12946600363787755
+    ],
+    "joint_velocity_rmse": [
+      5.634074697530823,
+      4.806618178436019,
+      3.004384337326785,
+      10.783022717876802,
+      6.90058272725773
+    ],
+    "wall_s": 0.7886066436767578,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_speed_rmse": 1.0853150667710032,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_14_dr",
+    "duration": 2.1,
+    "source_first_failure_s": 1.42,
+    "target_first_failure_s": 2.1,
+    "source_max_x_z": [
+      3.379508747105359,
+      0.4945335016745523
+    ],
+    "target_max_x_z": [
+      3.765982151031494,
+      0.5101250410079956
+    ],
+    "position_rmse_m": [
+      0.2262888453570289,
+      0.18339507420166365,
+      0.1719447082468067
+    ],
+    "joint_velocity_rmse": [
+      9.0183179394899,
+      2.8673952321059346,
+      3.745275669522354,
+      11.328094987744588,
+      11.157925188354774
+    ],
+    "wall_s": 0.9065263271331787,
+    "source_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": true,
+      "end_code": 8,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": true
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": true,
+      "jump_zone_seen": true,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.9810323978317212,
+    "target_screen_qualified": false
+  },
+  {
+    "case": "test_15_dr",
+    "duration": 0.38,
+    "source_first_failure_s": false,
+    "target_first_failure_s": 0.38,
+    "source_max_x_z": [
+      2.240707063026146,
+      0.14838213227635308
+    ],
+    "target_max_x_z": [
+      2.0323100090026855,
+      0.14791645109653473
+    ],
+    "position_rmse_m": [
+      0.09801654586534901,
+      0.028001559354911398,
+      0.010346995229643323
+    ],
+    "joint_velocity_rmse": [
+      13.632693383112619,
+      9.24101321844059,
+      1.2382944821685535,
+      17.982746416252947,
+      1.107840735514509
+    ],
+    "wall_s": 0.10031461715698242,
+    "source_endpoint": {
+      "terminated": false,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 0,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": false,
+      "stuck": false
+    },
+    "target_endpoint": {
+      "terminated": true,
+      "truncated": false,
+      "apex_seen": false,
+      "jump_zone_seen": false,
+      "end_code": 10,
+      "roll_limit": false,
+      "pitch_limit": false,
+      "yaw_limit": true,
+      "stuck": false
+    },
+    "target_speed_rmse": 0.7224192061053735,
+    "target_screen_qualified": false
+  }
+]

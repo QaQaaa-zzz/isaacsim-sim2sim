@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "samples": 1600,
+  "frames": 200,
+  "video_frame_std": 51.856952805371385,
+  "video_first_last_mean_abs_difference": 14.574086371527779,
+  "physical_task_success": "not certified; frozen Phase U policy cross-engine diagnostic"
+}

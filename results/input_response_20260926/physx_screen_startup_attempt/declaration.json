@@ -1,0 +1,415 @@
+{
+  "backend": "Isaac Sim real PhysX CPU articulation",
+  "versions": {
+    "isaacsim": "5.1.0.0",
+    "mujoco": "3.3.7",
+    "numpy": "1.26.0",
+    "scipy": "1.15.3"
+  },
+  "python": "/home/qy/ISAAC\u2014\u2014SIM/.venv/bin/python",
+  "config_path": "/home/qy/ISAAC\u2014\u2014SIM/results/input_response_20260926/fit_protocol.json",
+  "config_sha256": "8acf905c87abf6ab5e6aa028aa2cf0333e59b647ce2009e82f5cb081a977c879",
+  "candidates_path": "/home/qy/ISAAC\u2014\u2014SIM/results/input_response_20260926/initial_candidates.json",
+  "candidates_sha256": "cfdb3b852e38a1053430a3e9a8c8ad9c012a540a16b0aaec0bb4b27598fd3830",
+  "source_hashes": {
+    "/home/qy/ISAAC\u2014\u2014SIM/probe_physx_response.py": "bbf9bc25fdde64fb65c79227bf7597fe0cc72fc9ea0780bdae7fd064ebefce1a",
+    "/home/qy/ISAAC\u2014\u2014SIM/response_protocol.py": "3df71ed0dde9815a38cd057c2bcf0580613457b10417c96d115a02f0e512bc2c",
+    "/home/qy/ISAAC\u2014\u2014SIM/usd_model.py": "e90a9038c8fb9a923520bc45cbdf3c7090c31a15a3344c9b832a3d283929cb33",
+    "/home/qy/ISAAC\u2014\u2014SIM/drive_calibration.py": "af6f771a198e3850031ac41efa627ba9862afee2bea486a5e5fa79a5bac11c0b",
+    "/home/qy/ISAAC\u2014\u2014SIM/collision_geometry.py": "2f38628e323822b0e0aaa1df79334cb7459dc8d104928501ff5552442f537cb8",
+    "/home/qy/ISAAC\u2014\u2014SIM/physx_training_math.py": "432edbacf713258c299f67a40d1c6f8e96f7f69823a2646ef7ba5e1665e287ec",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a"
+  },
+  "protocol": {
+    "schema_version": 1,
+    "physics_dt": 0.005,
+    "integrator": "RK4",
+    "gravity": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "contact_enabled": false,
+    "initial": {
+      "keyframe": 0,
+      "qpos": [
+        2.5,
+        0.0,
+        0.15,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      "qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "cases": [
+      {
+        "name": "steer_pulse",
+        "enabled_joints": [
+          "steering_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.1,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rear_pulse",
+        "enabled_joints": [
+          "rearwheel_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              12.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "hip_pulse",
+        "enabled_joints": [
+          "hip_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.7000000000000001,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "knee_pulse",
+        "enabled_joints": [
+          "knee_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.1
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "name": "current_hybrid_1ms",
+      "physics_dt": 0.001,
+      "drive_mode": "hybrid",
+      "target_drive_gains": {
+        "rearwheel_joint": {
+          "kp": 0.0,
+          "kd": 0.005
+        },
+        "steering_joint": {
+          "kp": 2.5,
+          "kd": 0.4
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_hybrid_1ms",
+      "physics_dt": 0.001,
+      "drive_mode": "hybrid",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_hybrid_2ms",
+      "physics_dt": 0.002,
+      "drive_mode": "hybrid",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_hybrid_5ms",
+      "physics_dt": 0.005,
+      "drive_mode": "hybrid",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_implicit_1ms",
+      "physics_dt": 0.001,
+      "drive_mode": "implicit",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_implicit_2ms",
+      "physics_dt": 0.002,
+      "drive_mode": "implicit",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    },
+    {
+      "name": "source_implicit_5ms",
+      "physics_dt": 0.005,
+      "drive_mode": "implicit",
+      "target_drive_gains": {
+        "steering_joint": {
+          "kp": 10.0,
+          "kd": 0.1
+        },
+        "rearwheel_joint": {
+          "kp": -0.0,
+          "kd": 5.0
+        },
+        "hip_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        },
+        "knee_joint": {
+          "kp": 100.0,
+          "kd": 6.0
+        }
+      },
+      "case_names": [
+        "steer_pulse",
+        "rear_pulse",
+        "hip_pulse",
+        "knee_pulse"
+      ]
+    }
+  ],
+  "rollout_steps_requested": 2112,
+  "initialization_reserve": 448,
+  "max_physics_steps": 30000,
+  "training_transitions": 0
+}

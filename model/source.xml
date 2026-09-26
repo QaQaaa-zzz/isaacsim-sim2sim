@@ -1,0 +1,156 @@
+<mujoco model="orange_bike">
+  <option timestep="0.001" iterations="50" solver="Newton" tolerance="1e-10" integrator="RK4" cone="elliptic" sdf_iterations="10" sdf_initpoints="40"/>
+  <compiler angle="radian" meshdir="meshes" inertiafromgeom="auto" eulerseq="XYZ"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="-90" elevation="-20" realtime="1" offwidth="1920" offheight="1080"/>
+  </visual>
+
+
+  <asset>
+    <texture type="skybox" name="sky" builtin="flat" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+    <texture type="2d" name="rampplane" builtin="checker" mark="edge" rgb1="0.4 0.3 0.2" rgb2="0.3 0.2 0.1" markrgb="0.8 0.8 0.8" width="512" height="512"/>
+    <material name="rampplane" texture="rampplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="frontwheel" file="frontwheel.STL"/>
+    <mesh name="rearwheel" file="rearwheel.STL"/>
+    <mesh name="steer" file="steer.STL"/>
+    <mesh name="downarm" file="downarm.STL"/>
+    <mesh name="uparm" file="uparm.STL"/>
+
+  </asset>
+
+  <default class="main">
+    <default class="collision"> 
+      <geom group="1" density="0.0" rgba="1.0 0.3 0.3 0.5"/>
+      <default class="collision_wheel">
+        <geom type="ellipsoid" size="0.07 0.07 0.025"
+          friction="1.0 0.005 0.0001" priority="1" margin="0.0" gap="0" solimp="0.0 0.95 0.001 0.5 2" solref="0.02 0.5"/>  
+      </default>
+    </default>
+    <default class="visual"> 
+      <geom group="2" density="0.0" contype="0" conaffinity="0"/>
+    </default>
+    <default class="inertial"> 
+      <geom group="2" contype="0" conaffinity="0" rgba="0.3 1.0 0.3 0.0"/>
+      <default class="inertial_wheel">
+        <geom type="cylinder" size="0.07 0.005"/> 
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <light pos="1 0 2.5" dir="0 0 -1" directional="true"/>
+    
+    <geom name="floor" pos="0 0 0" size="0 0 .25" type="plane" material="groundplane" condim="3" contype="1" conaffinity="15"/>
+    <geom name="step" type="box" group="0" size="2 1 0.16" material="rampplane" pos="5.6 0 0" contype="1" conaffinity="15"/>
+    
+    <body name="base_link" pos="0.0 0.0 0.15">
+      <joint name="floating_base_joint" type="free"/>
+      <camera name="chasis_camera" mode="track" pos="0 -1.5 0.3" euler="1.57 0 0"/>
+      <site name="imu_site" pos="0 0 0" euler="0 0 0" rgba="0.5 0.5 0.5 0"/>
+
+      <geom class="visual" type="mesh" rgba="0.3 0.3 0.3 1" mesh="base_link"/>
+      <geom name="base_collision" class="collision" type="box" size="0.03 0.065 0.09" pos="0.025 0.0 0.015" contype="2" conaffinity="3"/>
+      <geom class="inertial" name="chasis" mass="0.81" type="box" size="0.05 0.045 0.09" pos="0.025 0.0 0.015"/>
+      <geom class="inertial" name="steer_motor" mass="0.23" type="cylinder" size="0.027 0.022" pos="0.16455 -0.00020771 0.111216"/>
+      <geom class="inertial" name="rear_motor" mass="0.26" type="cylinder" size="0.024 0.028" pos="-0.11448 -0.0050771 -0.049045" zaxis="0 1 0"/>
+      <geom class="inertial" name="hip_motor" mass="0.46" type="cylinder" size="0.029 0.028" pos="0.044499 0.000292 0.13903" zaxis="0 1 0" rgba="0.3 0.3 0.3 1"/>
+
+      <body name="rearwheel" pos="-0.11448 -0.00020771 -0.049045" quat="0.7071 -0.707102 -0.00285946 -0.00285947">
+        <joint name="rearwheel_joint" pos="0 0 0" axis="0 0 1"/>
+        <geom class="visual" type="cylinder" size="0.070 0.005" rgba="0.1 0.1 0.1 1" friction="1.0 0.005 0.0001" priority="1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 0.5"/>
+        <geom name="rearwheel_collision" class="collision_wheel" contype="2" conaffinity="1"/>
+        <geom class="inertial_wheel" mass="0.17"/>
+      </body>
+      
+      <body name="steer" pos="0.16455 -0.00020771 0.071216" quat="1 0 0 0">
+        <joint name="steering_joint" pos="0 0 0" axis="0 0 1" range="-0.8 0.8" limited="true"/>
+        <geom class="visual" type="mesh" rgba="0.3 1 0.3 1" mesh="steer"/>
+        <geom name="steer_collision" class="collision" type="box" size="0.015 0.025 0.09" pos="0.0 0.0 -0.05" contype="2" conaffinity="3"/>
+        <geom class="inertial" mass="0.001" type="box" size="0.015 0.025 0.09" pos="0.0 0.0 -0.03"/>
+        
+        <body name="frontwheel" pos="0 0 -0.120" quat="0.706534 -0.706536 -0.0284268 -0.0284269">
+          <joint name="frontwheel_joint" pos="0 0 0" axis="0 0 1"/>
+          <geom class="visual" type="cylinder" size="0.070 0.005" rgba="0.1 0.1 0.1 1" friction="1.0 0.005 0.0001" priority="1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 0.5"/>
+          <geom name="frontwheel_collision" class="collision_wheel" contype="2" conaffinity="1"/>
+          <geom class="inertial_wheel" mass="0.13"/>
+        </body>
+      </body>
+      
+      <body name="downarm" pos="0.044499 0.025292 0.13903" quat="1 0 0 0">
+        <joint name="hip_joint" pos="0 0 0" axis="0 1 0" range="-1.3 0.5" limited="true"/>
+        <geom class="visual" type="mesh" rgba="0.0392157 0.490196 0.709804 1" mesh="downarm"/>
+        <geom name="downarm_collision" class="collision" type="box" size="0.025 0.015 0.15" pos="0.0 0.02 0.15" contype="4" conaffinity="7"/>
+        <geom name="knee_motor_collision" class="collision" type="cylinder" size="0.029 0.028" pos="0 -0.028 0.3" zaxis="0 1 0" contype="4" conaffinity="7"/>
+        <geom class="inertial" name="downarm_inertial" mass="0.26" type="mesh" mesh="downarm"/>
+        <geom class="inertial" name="knee_motor" mass="0.46" type="cylinder" size="0.029 0.028" pos="0 -0.028 0.3" zaxis="0 1 0" rgba="0.3 0.3 0.3 1"/>
+        
+        <body name="uparm" pos="0 -0.05955 0.41" quat="0 0 1 0">
+          <joint name="knee_joint" pos="0 0 0.11" axis="0 1 0" range="-1.5 2.5" limited="true"/>
+          <geom class="visual" type="mesh" rgba="0.647059 0.619608 0.588235 1" mesh="uparm"/>
+          <geom name="uparm_collision" class="collision" type="box" size="0.025 0.03 0.125" pos="0.0 0.03 -0.125" contype="4" conaffinity="7"/>
+          <geom class="inertial" name="uparm_inertial" mass="0.31" type="mesh" mesh="uparm"/>
+          <geom class="inertial" name="load" mass="2.0" type="box" size="0.04 0.0205 0.06" pos="0.0 0.035 -0.19" rgba="1.0 0.3 0.3 1"/>
+        </body>
+      </body> 
+    </body>
+  </worldbody>
+
+  <keyframe>
+    <key name="initial_state" qpos="1.5 0 0.15 1 0 0 0 0 0 0 -1.2 2.5" qvel="0 0 0 0 0 0 0 0 0 0 0 "/>
+  </keyframe>
+
+  <sensor>
+    <jointpos name="steering_joint_pos_sensor" joint="steering_joint"/> 
+    <jointvel name="steering_joint_vel_sensor" joint="steering_joint"/>
+    <jointvel name="rearwheel_joint_vel_sensor" joint="rearwheel_joint"/>
+    <jointvel name="frontwheel_joint_vel_sensor" joint="frontwheel_joint"/>
+    <accelerometer name="acc_local" site="imu_site"/>
+    <gyro name="gyro_local" site="imu_site"/>
+    <framequat name="ori_global" objtype="site" objname="imu_site"/>
+    <framepos name="pos_global" objtype="site" objname="imu_site"/>
+    <framelinvel name="vel_global" objtype="site" objname="imu_site"/> 
+    <frameangvel name="ang_global" objtype="site" objname="imu_site"/> 
+    <jointpos name="hip_joint_pos_sensor" joint="hip_joint"/> 
+    <jointpos name="knee_joint_pos_sensor" joint="knee_joint"/> 
+    <jointvel name="hip_joint_vel_sensor" joint="hip_joint"/> 
+    <jointvel name="knee_joint_vel_sensor" joint="knee_joint"/> 
+    <actuatorfrc name="cmd_steering_v" actuator="cmd_steering_v"/>  
+    <actuatorfrc name="cmd_rearwheel_f" actuator="cmd_rearwheel_f"/> 
+    <actuatorfrc name="cmd_hip_f" actuator="cmd_hip_f"/> 
+    <actuatorfrc name="cmd_knee_f" actuator="cmd_knee_f"/> 
+  </sensor>
+
+  <actuator>
+    <position name="cmd_steering_v" joint="steering_joint" group="0" kp="10" kv="0.1" ctrllimited="true" ctrlrange="-0.8 0.8" forcerange="-5 5"/>
+    <velocity name="cmd_rearwheel_f" joint="rearwheel_joint" group="0" kv="5" ctrllimited="true" ctrlrange="-5 40" forcerange="-6 6"/>
+    <position name="cmd_hip_f" joint="hip_joint" group="2" ctrllimited="true" kp="100" kv="6" ctrlrange="-1.3 0.5" forcerange="-30 30"/>
+    <position name="cmd_knee_f" joint="knee_joint" group="2" ctrllimited="true" kp="100" kv="6" ctrlrange="-1.5 2.5" forcerange="-30 30"/>
+  </actuator>
+
+  <contact>
+    <pair geom1="floor" geom2="frontwheel_collision" condim="6" friction="5.0 0.5 0.0001" solimp="0.99 0.99 0.001 0.5 2" solref="0.008 1"/>
+    <pair geom1="floor" geom2="rearwheel_collision" condim="6" friction="5.0 0.5 0.0001" solimp="0.99 0.99 0.001 0.5 2" solref="0.008 1"/>
+    <pair geom1="floor" geom2="base_collision" condim="6" friction="1.0 0.005 0.0001" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    
+    <pair geom1="step" geom2="frontwheel_collision" condim="6" friction="5.0 0.5 0.0001" solimp="0.99 0.99 0.001 0.5 2" solref="0.008 1"/>
+    <pair geom1="step" geom2="rearwheel_collision" condim="6" friction="5.0 0.5 0.0001" solimp="0.99 0.99 0.001 0.5 2" solref="0.008 1"/>
+    <pair geom1="step" geom2="base_collision" condim="6" friction="1.0 0.005 0.0001" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    <pair geom1="step" geom2="downarm_collision" condim="6" friction="0.8 0.1 0.1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    <pair geom1="step" geom2="uparm_collision" condim="6" friction="0.8 0.1 0.1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+
+    <pair geom1="base_collision" geom2="downarm_collision" condim="6" friction="0.5 0.1 0.1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    <pair geom1="base_collision" geom2="uparm_collision" condim="6" friction="0.5 0.1 0.1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    <pair geom1="steer_collision" geom2="base_collision" condim="6" friction="0.5 0.1 0.1" solimp="0.9 0.95 0.001 0.5 2" solref="0.02 1"/>
+    
+    <exclude body1="downarm" body2="uparm"/>
+    <exclude body1="base_link" body2="steer"/>
+  </contact>
+
+</mujoco>

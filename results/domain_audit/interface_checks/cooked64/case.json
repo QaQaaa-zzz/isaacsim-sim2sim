@@ -1,0 +1,6 @@
+{
+  "name": "cooked64",
+  "mode": "zero",
+  "duration": 0.1,
+  "hull_vertices": 64
+}

@@ -1,0 +1,107 @@
+{
+  "case": {
+    "name": "validation_3_baseline",
+    "model": "bike",
+    "mode": "servo",
+    "joint": "steering_joint",
+    "input": -0.08,
+    "dt": 0.005,
+    "duration": 0.05,
+    "target_drive_scales": {
+      "kp": 1.0,
+      "kd": 1.0
+    },
+    "initial_joint_velocities": {
+      "steering_joint": 0.0
+    },
+    "validation_index": 3,
+    "candidate_role": "baseline"
+  },
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "runtime_gains": [
+    [
+      [
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.10000000149011612,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "runtime_max_forces": [
+    [
+      6.0,
+      5.0,
+      30.0,
+      0.0,
+      30.0
+    ]
+  ],
+  "drive_force_note": "Only isolated rotor: I*delta(v)/dt is actual net step-average joint torque. Full-body target drive force not separately measured.",
+  "RK4": {
+    "qd_rmse_rad_s": [
+      0.0002573735465621896,
+      3.1908997555026675,
+      0.00029141294924140223,
+      0.003944009502496702,
+      0.00010322558454814664
+    ],
+    "qd_relative_l2": 3.0332920289934546,
+    "source_final_qd": [
+      1.833421121060689e-05,
+      0.1602353285027275,
+      1.0536803911706907e-05,
+      0.004356166937831749,
+      2.2579071352704312e-05
+    ],
+    "physx_final_qd": [
+      -3.89378510590177e-06,
+      -0.029032915830612183,
+      -5.527023404283682e-06,
+      -3.7986717416060856e-06,
+      8.513577540725237e-07
+    ]
+  },
+  "IMPLICITFAST": {
+    "qd_rmse_rad_s": [
+      4.342784141597339e-05,
+      0.5462025322258781,
+      5.009831396696732e-05,
+      2.5711021306711507e-05,
+      1.6007790231963776e-05
+    ],
+    "qd_relative_l2": 0.2084619271147172,
+    "source_final_qd": [
+      -5.18696939108622e-07,
+      0.020432037400188004,
+      -2.0068561572880284e-06,
+      -1.8914564077817815e-06,
+      2.91084036078493e-06
+    ],
+    "physx_final_qd": [
+      -3.89378510590177e-06,
+      -0.029032915830612183,
+      -5.527023404283682e-06,
+      -3.7986717416060856e-06,
+      8.513577540725237e-07
+    ]
+  },
+  "wall_s": 1.4039890070271213
+}

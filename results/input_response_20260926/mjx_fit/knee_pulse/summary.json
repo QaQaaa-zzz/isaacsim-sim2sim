@@ -1,0 +1,20 @@
+{
+  "name": "knee_pulse",
+  "physics_steps": 24,
+  "duration_s": 0.12,
+  "wall_s": 0.3670085889752954,
+  "gyro_vs_end_body_max_abs_rad_s": 0.015876442193984985,
+  "gyro_vs_end_body_rmse_rad_s": [
+    2.504534313629847e-05,
+    0.00471519073471427,
+    0.00025024733622558415
+  ],
+  "native_world_vs_end_world_max_abs_rad_s": 0.015876442193984985,
+  "joint_interval_minus_end_qd_rmse_rad_s": [
+    0.014684107154607773,
+    0.0007638886454515159,
+    0.014684117399156094,
+    0.04955416917800903,
+    0.1311129778623581
+  ]
+}

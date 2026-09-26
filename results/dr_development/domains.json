@@ -1,0 +1,357 @@
+[
+  {
+    "contact_mode": "identity",
+    "density_scale": 1.0,
+    "com_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "force_scale": 1.0,
+    "friction_scale": 1.0,
+    "friction": null,
+    "joint_damping": 0.0,
+    "gyro_noise_std": 0.0,
+    "acc_noise_std": 0.0,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005
+  },
+  {
+    "contact_mode": "anisotropic",
+    "density_scale": 1.073983214791995,
+    "com_shift_m": [
+      0.0005987363029942455,
+      0.0011293129354528922,
+      0.00029602369879916943
+    ],
+    "kp_scale": 1.0999356430547347,
+    "kd_scale": 0.9162435926354499,
+    "force_scale": 0.9855462707636589,
+    "friction_scale": 0.9283685853488794,
+    "friction": null,
+    "joint_damping": 0.004872683383052957,
+    "gyro_noise_std": 0.008068680436312056,
+    "acc_noise_std": 0.004803533902968726,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.002,
+    "seed": 0,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.0439637756114277,
+    "com_shift_m": [
+      -4.9041647669123946e-05,
+      -0.0017526311555237308,
+      -0.0015040824000870443
+    ],
+    "kp_scale": 0.9056713928188295,
+    "kd_scale": 1.0309169365496997,
+    "force_scale": 0.9044461301626263,
+    "friction_scale": 1.0916538887221325,
+    "friction": 1.053025571223692,
+    "joint_damping": 0.0023370110924512723,
+    "gyro_noise_std": 0.009207721741424809,
+    "acc_noise_std": 0.023848924172057886,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.005,
+    "seed": 1,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 0.9517464609236594,
+    "com_shift_m": [
+      0.0004887064430814337,
+      -0.0018513207062960909,
+      0.0007119463482278326
+    ],
+    "kp_scale": 1.0361409692513779,
+    "kd_scale": 0.963067958684519,
+    "force_scale": 0.9052067322912629,
+    "friction_scale": 1.0322940647235292,
+    "friction": 0.6093370145910503,
+    "joint_damping": 0.0020158789782027133,
+    "gyro_noise_std": 0.0045434401385272835,
+    "acc_noise_std": 0.05323480227349208,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "seed": 2,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "identity",
+    "density_scale": 1.0,
+    "com_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "force_scale": 1.0,
+    "friction_scale": 1.0,
+    "friction": null,
+    "joint_damping": 0.0,
+    "gyro_noise_std": 0.0,
+    "acc_noise_std": 0.0,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005,
+    "seed": 3,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.088285868220798,
+    "com_shift_m": [
+      -0.001776609800389338,
+      -0.001723694594229261,
+      -0.0008827790923850972
+    ],
+    "kp_scale": 0.9261713411873802,
+    "kd_scale": 1.0806789711338562,
+    "force_scale": 0.9194397947479841,
+    "friction_scale": 0.9748336855605566,
+    "friction": 2.696521029958591,
+    "joint_damping": 0.004344176675149348,
+    "gyro_noise_std": 0.002710680378407396,
+    "acc_noise_std": 0.08454995998480411,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.005,
+    "seed": 4,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 0.9317543325217077,
+    "com_shift_m": [
+      0.000690956672027912,
+      0.0012302120413551954,
+      0.0018328228848210125
+    ],
+    "kp_scale": 1.0416653632146815,
+    "kd_scale": 1.036420470589857,
+    "force_scale": 0.9343946833001143,
+    "friction_scale": 1.135797333197477,
+    "friction": 3.8923818876545435,
+    "joint_damping": 0.0010203741659380882,
+    "gyro_noise_std": 0.004652115879799627,
+    "acc_noise_std": 0.0979009277270567,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005,
+    "seed": 5,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "identity",
+    "density_scale": 1.0,
+    "com_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "force_scale": 1.0,
+    "friction_scale": 1.0,
+    "friction": null,
+    "joint_damping": 0.0,
+    "gyro_noise_std": 0.0,
+    "acc_noise_std": 0.0,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005,
+    "seed": 6,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.0676931622724173,
+    "com_shift_m": [
+      -6.831600173570112e-05,
+      0.0019181328295483488,
+      0.0002560029240990542
+    ],
+    "kp_scale": 1.0861946592980725,
+    "kd_scale": 0.9588814425157222,
+    "force_scale": 0.9885092159076386,
+    "friction_scale": 1.0678858640144409,
+    "friction": 4.505123912669962,
+    "joint_damping": 0.0020267371759712573,
+    "gyro_noise_std": 0.009342733449218822,
+    "acc_noise_std": 0.04391515433215148,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.002,
+    "seed": 7,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.0260506919962356,
+    "com_shift_m": [
+      -0.0018167789506273256,
+      -0.0018706495656335895,
+      0.0009178447182836874
+    ],
+    "kp_scale": 1.0586865200929196,
+    "kd_scale": 0.988384220778292,
+    "force_scale": 0.9565295491398649,
+    "friction_scale": 0.9105578296596846,
+    "friction": 1.6054408844832155,
+    "joint_damping": 0.003982734353721392,
+    "gyro_noise_std": 0.007062322880977014,
+    "acc_noise_std": 0.007998806175194896,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "seed": 8,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.0673435115939505,
+    "com_shift_m": [
+      0.001401222558602875,
+      0.0014751557720695126,
+      0.0009705491406613053
+    ],
+    "kp_scale": 0.9125980397565021,
+    "kd_scale": 1.0016611765641708,
+    "force_scale": 0.9884900791158255,
+    "friction_scale": 1.086055154837159,
+    "friction": 0.8349212043614033,
+    "joint_damping": 0.004729186986502084,
+    "gyro_noise_std": 0.0024294869389054896,
+    "acc_noise_std": 0.029426344673534468,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.002,
+    "seed": 9,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.0702963235611906,
+    "com_shift_m": [
+      -0.0015039001048792247,
+      0.0011965557721005603,
+      -0.0015111878820894913
+    ],
+    "kp_scale": 0.9708753264001423,
+    "kd_scale": 0.906477933688696,
+    "force_scale": 0.95230176975471,
+    "friction_scale": 1.0850351171834562,
+    "friction": 2.790799912574973,
+    "joint_damping": 0.0021492829819533842,
+    "gyro_noise_std": 0.006781444350658692,
+    "acc_noise_std": 0.07379152831991335,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "seed": 10,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "identity",
+    "density_scale": 1.0,
+    "com_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "force_scale": 1.0,
+    "friction_scale": 1.0,
+    "friction": null,
+    "joint_damping": 0.0,
+    "gyro_noise_std": 0.0,
+    "acc_noise_std": 0.0,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005,
+    "seed": 11,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 1.072769932867757,
+    "com_shift_m": [
+      0.0011906653690757448,
+      0.0004888841454966136,
+      -0.0006159955972958122
+    ],
+    "kp_scale": 0.9872596373420341,
+    "kd_scale": 1.0766251383912984,
+    "force_scale": 0.9398070801118932,
+    "friction_scale": 1.0979541354578606,
+    "friction": 1.0439188554842112,
+    "joint_damping": 0.002741305493513575,
+    "gyro_noise_std": 0.004191835377218178,
+    "acc_noise_std": 0.004928324534319817,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "seed": 12,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "isotropic",
+    "density_scale": 0.9275441274490857,
+    "com_shift_m": [
+      8.43339324079883e-06,
+      -0.0008176690312457677,
+      -0.0002412323503460461
+    ],
+    "kp_scale": 1.0150819974384555,
+    "kd_scale": 0.9049424939938389,
+    "force_scale": 0.9246455569639949,
+    "friction_scale": 1.0451992486315227,
+    "friction": 1.3757145260548942,
+    "joint_damping": 3.0223087279052097e-05,
+    "gyro_noise_std": 0.009652629089050633,
+    "acc_noise_std": 0.04676864562380332,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.001,
+    "seed": 13,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "identity",
+    "density_scale": 1.0,
+    "com_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "force_scale": 1.0,
+    "friction_scale": 1.0,
+    "friction": null,
+    "joint_damping": 0.0,
+    "gyro_noise_std": 0.0,
+    "acc_noise_std": 0.0,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.005,
+    "seed": 14,
+    "role": "dev"
+  },
+  {
+    "contact_mode": "anisotropic",
+    "density_scale": 0.936925878782741,
+    "com_shift_m": [
+      0.0013632658311132913,
+      -0.0011184469991023303,
+      0.00023027392916805806
+    ],
+    "kp_scale": 0.92806888451077,
+    "kd_scale": 1.0872411407479499,
+    "force_scale": 0.9139207310199592,
+    "friction_scale": 1.0339542128199464,
+    "friction": null,
+    "joint_damping": 0.002476229207211221,
+    "gyro_noise_std": 0.004872801717628697,
+    "acc_noise_std": 0.059228125840907045,
+    "delay_control_steps": 1,
+    "simulation_dt": 0.001,
+    "seed": 15,
+    "role": "dev"
+  }
+]

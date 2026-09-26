@@ -1,0 +1,8 @@
+{
+  "status": "stopped_during_initialization",
+  "cases_completed": 4,
+  "total_physics_steps": 488,
+  "training_transitions": 0,
+  "reason": "SimulationApp constructor did not return for over 2 minutes; three tasking workers busy; no case started",
+  "physics_steps_completed": 0
+}

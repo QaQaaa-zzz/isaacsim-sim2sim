@@ -1,0 +1,6 @@
+{
+  "original_jax_reward_components_checked": 200,
+  "max_absolute_difference": 6.602067287531099e-06,
+  "passed": true,
+  "torque_source": "actual applied capped hip/knee PD effort, tensor readback checked in environment"
+}

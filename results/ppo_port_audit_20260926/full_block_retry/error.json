@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/home/qy/ISAAC\u2014\u2014SIM/train_physx_brax.py\", line 37, in main\n    wait_for(queue/'ready.json')\n  File \"/home/qy/ISAAC\u2014\u2014SIM/train_physx_brax.py\", line 33, in wait_for\n    if worker.poll() is not None:raise RuntimeError('Evaluation worker exited; see evaluation_worker.log')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Evaluation worker exited; see evaluation_worker.log\n",
+  "pid": 96177
+}

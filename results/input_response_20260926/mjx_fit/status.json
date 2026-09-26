@@ -1,0 +1,92 @@
+{
+  "completed": true,
+  "engine": "MJX-Warp",
+  "planned_physics_steps": 96,
+  "attempted_physics_steps": 96,
+  "completed_physics_steps": 96,
+  "initialization_physics_steps": 0,
+  "training_interactions": 0,
+  "cases": [
+    {
+      "name": "steer_pulse",
+      "physics_steps": 24,
+      "duration_s": 0.12,
+      "wall_s": 20.90287921798881,
+      "gyro_vs_end_body_max_abs_rad_s": 0.2468704879283905,
+      "gyro_vs_end_body_rmse_rad_s": [
+        0.018349433317780495,
+        0.0014474029885604978,
+        0.09194108843803406
+      ],
+      "native_world_vs_end_world_max_abs_rad_s": 0.2468704879283905,
+      "joint_interval_minus_end_qd_rmse_rad_s": [
+        0.00035231781657785177,
+        4.408557415008545,
+        0.001291021122597158,
+        0.0004076474579051137,
+        0.00012677229824475944
+      ]
+    },
+    {
+      "name": "rear_pulse",
+      "physics_steps": 24,
+      "duration_s": 0.12,
+      "wall_s": 0.3663234190316871,
+      "gyro_vs_end_body_max_abs_rad_s": 0.8639936447143555,
+      "gyro_vs_end_body_rmse_rad_s": [
+        0.0021491162478923798,
+        0.767270028591156,
+        0.013381280936300755
+      ],
+      "native_world_vs_end_world_max_abs_rad_s": 0.8639940619468689,
+      "joint_interval_minus_end_qd_rmse_rad_s": [
+        10.811216354370117,
+        0.0022136070765554905,
+        0.12789380550384521,
+        0.14008156955242157,
+        0.015117879956960678
+      ]
+    },
+    {
+      "name": "hip_pulse",
+      "physics_steps": 24,
+      "duration_s": 0.12,
+      "wall_s": 0.3652377750258893,
+      "gyro_vs_end_body_max_abs_rad_s": 0.42865389585494995,
+      "gyro_vs_end_body_rmse_rad_s": [
+        0.00036034994991496205,
+        0.12020224332809448,
+        0.002253428567200899
+      ],
+      "native_world_vs_end_world_max_abs_rad_s": 0.4286537170410156,
+      "joint_interval_minus_end_qd_rmse_rad_s": [
+        0.08229852467775345,
+        0.001542246900498867,
+        0.08229861408472061,
+        0.11999484896659851,
+        0.03263715282082558
+      ]
+    },
+    {
+      "name": "knee_pulse",
+      "physics_steps": 24,
+      "duration_s": 0.12,
+      "wall_s": 0.3670085889752954,
+      "gyro_vs_end_body_max_abs_rad_s": 0.015876442193984985,
+      "gyro_vs_end_body_rmse_rad_s": [
+        2.504534313629847e-05,
+        0.00471519073471427,
+        0.00025024733622558415
+      ],
+      "native_world_vs_end_world_max_abs_rad_s": 0.015876442193984985,
+      "joint_interval_minus_end_qd_rmse_rad_s": [
+        0.014684107154607773,
+        0.0007638886454515159,
+        0.014684117399156094,
+        0.04955416917800903,
+        0.1311129778623581
+      ]
+    }
+  ],
+  "wall_s": 22.322086747037247
+}

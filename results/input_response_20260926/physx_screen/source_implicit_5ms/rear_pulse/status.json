@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "candidate": "source_implicit_5ms",
+  "case": "rear_pulse",
+  "training_transitions": 0,
+  "endpoint": "declared_duration",
+  "recorded_samples": 25,
+  "recorded_transition_rows": 24,
+  "physics_steps_completed": 24,
+  "physics_steps_attempted": 24,
+  "initialization_physics_steps": 2,
+  "rollout_physics_events": 24,
+  "total_physics_steps": 26,
+  "duration_s": 0.12,
+  "wall_s": 0.9101054430939257
+}

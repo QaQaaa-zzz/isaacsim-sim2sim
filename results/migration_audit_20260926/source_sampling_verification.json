@@ -1,0 +1,56 @@
+{
+  "schema": "source-angular-sampling-verification-v1",
+  "scope": "Explicit opt-in end_state angular sampling in source_task.py; no training or task-performance qualification",
+  "record_type": "agent-observed execution record",
+  "evidence_limit": "The implementation agent observed the command outputs directly in the tool transcript. Those original stdout streams were not saved as files. This JSON records the observed results and does not reconstruct or claim to be a raw test log.",
+  "working_directory": "/home/qy/ISAAC——SIM",
+  "test_file": "tests/test_source_angular_sampling.py",
+  "frozen_before": {
+    "path": "results/migration_audit_20260926/implementation_before/source_task.py",
+    "sha256": "a90ffcad3f5cb34afbf38d3c45c01014878186f376c7ab2080f4a30ff322c0a6",
+    "verification": "Before editing source_task.py, its bytes were written to the backup using exclusive creation; byte equality was asserted and this SHA-256 was printed."
+  },
+  "implementation_agent_runs": [
+    {
+      "phase": "red_before_implementation",
+      "command": ".venv/bin/python -m pytest -q -s tests/test_source_angular_sampling.py",
+      "exit_code": 1,
+      "observed_result": "4 failed, 1 passed in 0.78s",
+      "observed_physics_counter": "CPU_PHYSICS_STEPS=44",
+      "cpu_physics_substeps": 44,
+      "interpretation": "The frozen/default/explicit-native three-step regression passed. The end_state test failed because the gyro was still the native sensor sample, and all three unknown-mode rejection cases failed because reset did not raise ValueError."
+    },
+    {
+      "phase": "green_after_implementation",
+      "command": ".venv/bin/python -m pytest -q -s tests/test_source_angular_sampling.py && .venv/bin/python -m py_compile source_task.py tests/test_source_angular_sampling.py && diff -u results/migration_audit_20260926/implementation_before/source_task.py source_task.py",
+      "shell_exit_code": 1,
+      "shell_exit_explanation": "pytest and py_compile passed. The final diff command returned 1 because the intended source changes differed from the frozen backup; this was not a test failure.",
+      "observed_result": "5 passed in 0.63s",
+      "observed_physics_counter": "CPU_PHYSICS_STEPS=44",
+      "cpu_physics_substeps": 44,
+      "compile_check": "passed",
+      "behavior_verified": [
+        "Default and explicit native_sensor matched the complete frozen CPU implementation over three control steps: observations, rewards, done, info, qpos and qvel were exactly equal.",
+        "With a compound non-identity orientation and nonzero steering, end_state final-frame gyro matched final free-joint body qvel[3:6] within observation float32 tolerance.",
+        "The pitch_rate reward component matched the unchanged original reward function evaluated using world Y angular velocity independently rotated with mujoco.mju_rotVecQuat.",
+        "Physical qpos/qvel, done and non-angular observation fields were unchanged between native_sensor and end_state for the tested transition.",
+        "The fixture distinguishes body angular velocity from Euler angle derivatives and from world angular velocity.",
+        "Unknown angular_velocity_mode values 'world', empty string and None raised ValueError."
+      ]
+    }
+  ],
+  "implementation_agent_cpu_physics_substeps": 88,
+  "independent_parent_verification": {
+    "provenance": "Reported by the parent agent after its independent regression run; not re-executed while writing this record.",
+    "raw_log": "results/migration_audit_20260926/final_tests.log",
+    "reported_result": "33 passed, 1 deselected",
+    "deselected": "The three-step default/native/frozen compatibility test, already executed in both implementation-agent runs, was excluded to avoid exceeding the physical-step budget.",
+    "additional_cpu_physics_substeps": 8
+  },
+  "total_patch_cpu_physics_substeps": 96,
+  "declared_patch_cpu_physics_substep_limit": 100,
+  "further_tests_or_simulation_run_for_this_record": false,
+  "gpu_or_isaac_runs_for_this_patch": 0,
+  "training_transitions": 0,
+  "interpretation_limit": "CPU native_sensor sampling is not interchangeable with MJX-Warp native_sensor sampling. This opt-in adaptation provides a common final-state angular sampling contract for future paired work; it does not validate migration of the frozen Actor or adopt new training settings."
+}

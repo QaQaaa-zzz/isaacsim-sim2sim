@@ -1,0 +1,59 @@
+{
+  "role": "same input system identification; no policy training",
+  "source_reference": "actual MJX-Warp RK4 5 ms",
+  "source_steps_budget": 2000,
+  "physx_rollout_steps_budget": 40000,
+  "fit_cases": [
+    "steer_pulse",
+    "rear_pulse",
+    "hip_pulse",
+    "knee_pulse"
+  ],
+  "validation_cases": [
+    "validation_steering_joint_neg0p08",
+    "validation_steering_joint_0p2",
+    "validation_rearwheel_joint_6p0",
+    "validation_rearwheel_joint_24p0",
+    "validation_hip_joint_neg0p08",
+    "validation_knee_joint_neg0p1",
+    "validation_combined",
+    "validation_rear_initial_6",
+    "validation_steer_initial_0p5"
+  ],
+  "selection": {
+    "joint_q_scales_rad": [
+      0.72,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "joint_qd_scales_rad_s": [
+      12,
+      2,
+      2,
+      2,
+      2
+    ],
+    "omega_scale_rad_s": 1.0,
+    "loss": "mean all normalized squared q/qd errors plus body omega squared error at matching 10ms samples across all candidates (no interpolation); per case equal weight; report all channel RMSE; no candidate adopted if a q/qd/omega group worsens by >10% relative current (numerical floors q1e-4,qd1e-3,omega1e-3) on fitting cases",
+    "validation": "Freeze selection before reading validation outputs; development validation is not task success"
+  },
+  "stop": [
+    "nonfinite state",
+    "budget exceeded",
+    "interface assertion"
+  ],
+  "phase_extension": {
+    "reason": "First screen rejected all original-gain variants under joint angle/velocity/body omega guardrails",
+    "method": "two real capped torque phases per 5ms macro step, matching local scalar RK4 actuator endpoint prediction; no source trajectory replay or physical state overwrite",
+    "validation_extra": "nonzero rear/steer initial velocities; 15ms input start; every 5ms macro endpoint compared in addition to original 10ms ranking",
+    "claim_boundary": "numerical actuator response adapter, not physical equivalence or frozen policy success",
+    "original_force_limits_Nm": [
+      5,
+      6,
+      30,
+      30
+    ]
+  }
+}

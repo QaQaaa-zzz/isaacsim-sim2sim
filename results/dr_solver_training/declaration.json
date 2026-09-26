@@ -1,0 +1,39 @@
+{
+  "role": "bounded engineering adaptation, no formal performance claim",
+  "source_checkpoint": "transition_4988928",
+  "domain_config": "configs/domain_randomization.json",
+  "transitions": 262144,
+  "num_envs": 16,
+  "unroll": 128,
+  "seed": 420732,
+  "cpu_threads": 2,
+  "actor_lr": 1e-05,
+  "critic_lr": 0.0003,
+  "epochs": 4,
+  "minibatch": 256,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip": 0.2,
+  "reward_scale": 0.1,
+  "value_coeff": 0.5,
+  "entropy_coeff": 0.001,
+  "anchor_kl": 0.1,
+  "max_grad_norm": 0.5,
+  "max_kl": 0.03,
+  "save_every": 32,
+  "frozen_contracts": [
+    "source reward and terminal functions invoked read-only",
+    "76D observation, 4D tanh actions, fixed normalizer",
+    "8 second original episode horizon",
+    "source joint limits and maximum actuator capability"
+  ],
+  "engineering_changes": [
+    "CPU MuJoCo training backend",
+    "new 128x128 observable critic and Adam state",
+    "20% identity / 40% anisotropic / 40% isotropic domain mixture",
+    "hypothesis ranges, not system-identified distributions",
+    "Numerical integrator and accelerometer averaging mixture added after same-input diagnosis"
+  ],
+  "selection": "Compare all 4 saved actors on same nominal plus16 development domains. Select by apex with no later safety failure and speed error, not training return. Evaluate selected actor and original in PhysX plus disjoint test domains. Never replace original automatically.",
+  "stop": "finite262144 interactions, or nonfinite loss/state; no automatic further stage"
+}

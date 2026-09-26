@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/results/ppo_port_audit_20260926/fresh_block/checkpoints/transition_00024576",
+  "training_transitions": 24576,
+  "development_mean_return": 119.70442952274288,
+  "selection": "all completed source PPO blocks plus initialization; fixed eight-case development return; earlier wins tie",
+  "qualified": false
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "failed",
+  "completed": false,
+  "pid": 96177,
+  "training_transitions": 0,
+  "budget": 24576,
+  "update": 0,
+  "error": "See error.json"
+}

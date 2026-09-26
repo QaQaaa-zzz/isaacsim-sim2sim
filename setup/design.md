@@ -1,0 +1,7 @@
+# Independent DVGC Isaac Sim validation
+Purpose: establish a second-engine asset and execution environment for future MuJoCo Playground to PhysX policy transfer.
+Selected stack: Isaac Sim5.1.0/Python3.11 on unchanged Ubuntu22.04/NVIDIA580.159.03. Isaac Gym is deprecated. Latest6.1 lists driver595; do not change active machine driver. 5.1 is an unsupported pinned compatibility baseline, not latest-supported stack.
+Environment and downloads: /home/qy/ISAAC——SIM, separate venv and caches. Original DVGC assets read only. Existing GPU jobs preserved.
+Pipeline: compile original MJCF using isolated MuJoCo; save explicit body inertia audit and source hashes. Use Isaac MJCF importer; inspect actual stage joint/mass/collision mapping. Correct only derived USD mapping when importer differs. Short articulated joint exercise and free-base gravity/contact smoke, at most10s per case. Record CSV/NPZ and actual rendered MP4. Fixed-base diagnostic must be labeled; not balance evidence. Free-base failure must be kept.
+Acceptance: environment dependency check, Isaac startup/PhysX/render success; all five revolute joints and6 robot rigid bodies; mass/inertia audit; finite state trajectory and nonempty changing rendered frames. Model smoke is not learned policy transfer, jump success or dynamic equivalence.
+Future: port exact observation/action/reset/servo/time contracts before comparing frozen policy. Contact condim6 anisotropy/solref and solimp are not directly equivalent to PhysX.

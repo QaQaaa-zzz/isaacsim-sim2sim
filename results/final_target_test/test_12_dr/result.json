@@ -1,0 +1,51 @@
+{
+  "case": "test_12_dr",
+  "duration": 2.2600000000000002,
+  "source_first_failure_s": 1.5,
+  "target_first_failure_s": 2.2600000000000002,
+  "source_max_x_z": [
+    3.3702531958892346,
+    0.46836916749610247
+  ],
+  "target_max_x_z": [
+    3.794125556945801,
+    0.4644002616405487
+  ],
+  "position_rmse_m": [
+    0.3169765696371716,
+    0.02341456314427512,
+    0.1656551183446577
+  ],
+  "joint_velocity_rmse": [
+    7.525049885733054,
+    3.939491816494417,
+    3.4876018183347592,
+    14.82402845255064,
+    10.634822403516912
+  ],
+  "wall_s": 1.8701927661895752,
+  "source_endpoint": {
+    "terminated": true,
+    "truncated": false,
+    "apex_seen": false,
+    "jump_zone_seen": true,
+    "end_code": 8,
+    "roll_limit": false,
+    "pitch_limit": false,
+    "yaw_limit": false,
+    "stuck": true
+  },
+  "target_endpoint": {
+    "terminated": true,
+    "truncated": false,
+    "apex_seen": false,
+    "jump_zone_seen": true,
+    "end_code": 8,
+    "roll_limit": false,
+    "pitch_limit": false,
+    "yaw_limit": false,
+    "stuck": true
+  },
+  "target_speed_rmse": 1.0713600262197858,
+  "target_screen_qualified": false
+}

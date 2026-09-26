@@ -1,0 +1,696 @@
+{
+  "rearwheel_joint": {
+    "best": {
+      "case": {
+        "name": "fit_rear_0.001",
+        "model": "bike",
+        "mode": "servo",
+        "joint": "rearwheel_joint",
+        "input": 12.0,
+        "dt": 0.005,
+        "duration": 0.05,
+        "target_drive_scales": {
+          "kp": 1.0,
+          "kd": 0.001
+        }
+      },
+      "loss": 0.34255723306718266,
+      "q_rmse_rad": 0.30141208296927985,
+      "qd_rmse_rad_s": 3.6039622719615543
+    },
+    "baseline": {
+      "case": {
+        "name": "fit_rear_1",
+        "model": "bike",
+        "mode": "servo",
+        "joint": "rearwheel_joint",
+        "input": 12.0,
+        "dt": 0.005,
+        "duration": 0.05,
+        "target_drive_scales": {
+          "kp": 1.0,
+          "kd": 1.0
+        }
+      },
+      "loss": 0.9998615828068083,
+      "q_rmse_rad": 0.005532344998739503,
+      "qd_rmse_rad_s": 11.99865930792713
+    },
+    "candidates": [
+      {
+        "case": {
+          "name": "fit_rear_0",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.0
+          }
+        },
+        "loss": 0.39465299858055386,
+        "q_rmse_rad": 0.37692847301507826,
+        "qd_rmse_rad_s": 0.0015125502665279842
+      },
+      {
+        "case": {
+          "name": "fit_rear_1e-06",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 1e-06
+          }
+        },
+        "loss": 0.3944655847636831,
+        "q_rmse_rad": 0.3768389415619654,
+        "qd_rmse_rad_s": 0.003009144966731437
+      },
+      {
+        "case": {
+          "name": "fit_rear_1e-05",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 1e-05
+          }
+        },
+        "loss": 0.3927966053285554,
+        "q_rmse_rad": 0.37603460487566837,
+        "qd_rmse_rad_s": 0.043606670498456276
+      },
+      {
+        "case": {
+          "name": "fit_rear_0.0001",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.0001
+          }
+        },
+        "loss": 0.3777933693508653,
+        "q_rmse_rad": 0.368132364015217,
+        "qd_rmse_rad_s": 0.4400797795306094
+      },
+      {
+        "case": {
+          "name": "fit_rear_0.001",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.001
+          }
+        },
+        "loss": 0.34255723306718266,
+        "q_rmse_rad": 0.30141208296927985,
+        "qd_rmse_rad_s": 3.6039622719615543
+      },
+      {
+        "case": {
+          "name": "fit_rear_0.01",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.01
+          }
+        },
+        "loss": 0.8225045203087079,
+        "q_rmse_rad": 0.09267105695757845,
+        "qd_rmse_rad_s": 10.724060844913181
+      },
+      {
+        "case": {
+          "name": "fit_rear_0.1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.1
+          }
+        },
+        "loss": 0.9991682402291971,
+        "q_rmse_rad": 0.014146502795354668,
+        "qd_rmse_rad_s": 11.991671158619587
+      },
+      {
+        "case": {
+          "name": "fit_rear_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.5
+          }
+        },
+        "loss": 0.9998921781889442,
+        "q_rmse_rad": 0.006453664394390507,
+        "qd_rmse_rad_s": 11.998658831117826
+      },
+      {
+        "case": {
+          "name": "fit_rear_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "rearwheel_joint",
+          "input": 12.0,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 1.0
+          }
+        },
+        "loss": 0.9998615828068083,
+        "q_rmse_rad": 0.005532344998739503,
+        "qd_rmse_rad_s": 11.99865930792713
+      }
+    ],
+    "adopted": false
+  },
+  "steering_joint": {
+    "best": {
+      "case": {
+        "name": "fit_steer_0.25_4",
+        "model": "bike",
+        "mode": "servo",
+        "joint": "steering_joint",
+        "input": 0.1,
+        "dt": 0.005,
+        "duration": 0.05,
+        "target_drive_scales": {
+          "kp": 0.25,
+          "kd": 4.0
+        }
+      },
+      "loss": 1.4531283317884927,
+      "q_rmse_rad": 0.07622125402839225,
+      "qd_rmse_rad_s": 1.8677905398865497
+    },
+    "baseline": {
+      "case": {
+        "name": "fit_steer_1_1",
+        "model": "bike",
+        "mode": "servo",
+        "joint": "steering_joint",
+        "input": 0.1,
+        "dt": 0.005,
+        "duration": 0.05,
+        "target_drive_scales": {
+          "kp": 1.0,
+          "kd": 1.0
+        }
+      },
+      "loss": 4.382552846276647,
+      "q_rmse_rad": 0.008684393252871642,
+      "qd_rmse_rad_s": 4.183305380992209
+    },
+    "candidates": [
+      {
+        "case": {
+          "name": "fit_steer_0.25_0.25",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.25,
+            "kd": 0.25
+          }
+        },
+        "loss": 4.931544354983824,
+        "q_rmse_rad": 0.016536244448386125,
+        "qd_rmse_rad_s": 4.429085511451837
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.25_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.25,
+            "kd": 0.5
+          }
+        },
+        "loss": 3.2773124746793827,
+        "q_rmse_rad": 0.027879080299149796,
+        "qd_rmse_rad_s": 3.5774785326241934
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.25_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.25,
+            "kd": 1.0
+          }
+        },
+        "loss": 2.250518070299578,
+        "q_rmse_rad": 0.04669671623959687,
+        "qd_rmse_rad_s": 2.8512872458196385
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.25_2",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.25,
+            "kd": 2.0
+          }
+        },
+        "loss": 1.6928297096429155,
+        "q_rmse_rad": 0.0639863496640967,
+        "qd_rmse_rad_s": 2.2657488080626327
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.25_4",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.25,
+            "kd": 4.0
+          }
+        },
+        "loss": 1.4531283317884927,
+        "q_rmse_rad": 0.07622125402839225,
+        "qd_rmse_rad_s": 1.8677905398865497
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.5_0.25",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.5,
+            "kd": 0.25
+          }
+        },
+        "loss": 7.31222112872462,
+        "q_rmse_rad": 0.01335416482180131,
+        "qd_rmse_rad_s": 5.401624850696626
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.5_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.5,
+            "kd": 0.5
+          }
+        },
+        "loss": 4.734189731036732,
+        "q_rmse_rad": 0.011077243023466396,
+        "qd_rmse_rad_s": 4.3459954899823074
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.5_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.5,
+            "kd": 1.0
+          }
+        },
+        "loss": 3.1646420400834,
+        "q_rmse_rad": 0.026347885569413025,
+        "qd_rmse_rad_s": 3.5186479975612857
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.5_2",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.5,
+            "kd": 2.0
+          }
+        },
+        "loss": 2.2051681792222984,
+        "q_rmse_rad": 0.04606678868639637,
+        "qd_rmse_rad_s": 2.8234399425060124
+      },
+      {
+        "case": {
+          "name": "fit_steer_0.5_4",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 0.5,
+            "kd": 4.0
+          }
+        },
+        "loss": 1.6813607457396604,
+        "q_rmse_rad": 0.06372900081953017,
+        "qd_rmse_rad_s": 2.258514725384001
+      },
+      {
+        "case": {
+          "name": "fit_steer_1_0.25",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.25
+          }
+        },
+        "loss": 11.054774313745078,
+        "q_rmse_rad": 0.019293466865039882,
+        "qd_rmse_rad_s": 6.638539154777304
+      },
+      {
+        "case": {
+          "name": "fit_steer_1_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 0.5
+          }
+        },
+        "loss": 6.784481753800492,
+        "q_rmse_rad": 0.008184932463444329,
+        "qd_rmse_rad_s": 5.206834908793394
+      },
+      {
+        "case": {
+          "name": "fit_steer_1_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 1.0
+          }
+        },
+        "loss": 4.382552846276647,
+        "q_rmse_rad": 0.008684393252871642,
+        "qd_rmse_rad_s": 4.183305380992209
+      },
+      {
+        "case": {
+          "name": "fit_steer_1_2",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 2.0
+          }
+        },
+        "loss": 3.020878772283703,
+        "q_rmse_rad": 0.02573411101471625,
+        "qd_rmse_rad_s": 3.4378215924110602
+      },
+      {
+        "case": {
+          "name": "fit_steer_1_4",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 1.0,
+            "kd": 4.0
+          }
+        },
+        "loss": 2.1713709650945967,
+        "q_rmse_rad": 0.04577627786366956,
+        "qd_rmse_rad_s": 2.801302699523497
+      },
+      {
+        "case": {
+          "name": "fit_steer_2_0.25",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 2.0,
+            "kd": 0.25
+          }
+        },
+        "loss": 16.75199613620955,
+        "q_rmse_rad": 0.024734309845011584,
+        "qd_rmse_rad_s": 8.17087939645633
+      },
+      {
+        "case": {
+          "name": "fit_steer_2_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 2.0,
+            "kd": 0.5
+          }
+        },
+        "loss": 9.525115790250572,
+        "q_rmse_rad": 0.016378009831859275,
+        "qd_rmse_rad_s": 6.1638597873881995
+      },
+      {
+        "case": {
+          "name": "fit_steer_2_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 2.0,
+            "kd": 1.0
+          }
+        },
+        "loss": 5.693006835608492,
+        "q_rmse_rad": 0.006144411950416049,
+        "qd_rmse_rad_s": 4.770421975375701
+      },
+      {
+        "case": {
+          "name": "fit_steer_2_2",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 2.0,
+            "kd": 2.0
+          }
+        },
+        "loss": 3.9465454322744202,
+        "q_rmse_rad": 0.00793574520403451,
+        "qd_rmse_rad_s": 3.9700114997717995
+      },
+      {
+        "case": {
+          "name": "fit_steer_2_4",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 2.0,
+            "kd": 4.0
+          }
+        },
+        "loss": 2.9206907097067676,
+        "q_rmse_rad": 0.025490377152948045,
+        "qd_rmse_rad_s": 3.3797720496902235
+      },
+      {
+        "case": {
+          "name": "fit_steer_4_0.25",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 4.0,
+            "kd": 0.25
+          }
+        },
+        "loss": 18.879989162779726,
+        "q_rmse_rad": 0.028709977996515458,
+        "qd_rmse_rad_s": 8.67123125723762
+      },
+      {
+        "case": {
+          "name": "fit_steer_4_0.5",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 4.0,
+            "kd": 0.5
+          }
+        },
+        "loss": 9.700417192696552,
+        "q_rmse_rad": 0.02302318487793311,
+        "qd_rmse_rad_s": 6.212056177628853
+      },
+      {
+        "case": {
+          "name": "fit_steer_4_1",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 4.0,
+            "kd": 1.0
+          }
+        },
+        "loss": 5.71254990298682,
+        "q_rmse_rad": 0.015622976533093587,
+        "qd_rmse_rad_s": 4.769965267551311
+      },
+      {
+        "case": {
+          "name": "fit_steer_4_2",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 4.0,
+            "kd": 2.0
+          }
+        },
+        "loss": 4.409594910919867,
+        "q_rmse_rad": 0.005726478928269533,
+        "qd_rmse_rad_s": 4.1982451833251835
+      },
+      {
+        "case": {
+          "name": "fit_steer_4_4",
+          "model": "bike",
+          "mode": "servo",
+          "joint": "steering_joint",
+          "input": 0.1,
+          "dt": 0.005,
+          "duration": 0.05,
+          "target_drive_scales": {
+            "kp": 4.0,
+            "kd": 4.0
+          }
+        },
+        "loss": 3.6687531248409195,
+        "q_rmse_rad": 0.007772545431561729,
+        "qd_rmse_rad_s": 3.8276425531088196
+      }
+    ],
+    "adopted": false
+  }
+}

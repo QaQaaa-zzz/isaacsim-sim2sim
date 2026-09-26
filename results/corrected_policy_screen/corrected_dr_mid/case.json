@@ -1,0 +1,7 @@
+{
+  "name": "corrected_dr_mid",
+  "mode": "policy",
+  "duration": 3,
+  "friction": 1.58113883,
+  "actor": "results/dr_training/update_0016/actor.npz"
+}

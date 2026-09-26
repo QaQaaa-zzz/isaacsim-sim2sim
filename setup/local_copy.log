@@ -1,0 +1,22 @@
+0 46922 0.0 GB
+5000 46922 0.33 GB
+10000 46922 0.92 GB
+15000 46922 2.71 GB
+20000 46922 3.72 GB
+25000 46922 4.18 GB
+30000 46922 5.33 GB
+35000 46922 6.21 GB
+40000 46922 9.82 GB
+45000 46922 10.3 GB
+{
+  "source": "/home/qy/miniconda3/envs/env_isaaclab/lib/python3.11/site-packages",
+  "destination": "/home/qy/ISAAC\u2014\u2014SIM/.venv/lib/python3.11/site-packages",
+  "files": 46922,
+  "bytes": 10409469366,
+  "seconds": 20.59571886062622,
+  "mismatches": [],
+  "skipped_external_scripts": [
+    "../../../bin/isaacsim"
+  ],
+  "copy_semantics": "independent regular files; wheel RECORD hashes verified; no source writes"
+}

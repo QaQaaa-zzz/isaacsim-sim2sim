@@ -1,0 +1,23 @@
+{
+  "seed": 2820701,
+  "request_id": "5",
+  "recorded_engine": "PhysX",
+  "contact_label": "Wheel friction 0.5/min; calibrated PD; actual endpoint",
+  "friction": 0.5,
+  "source_anisotropic_contact_preserved": false,
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/results/ppo_port_audit_20260926/fresh_block/checkpoints/transition_00000000",
+  "actor_path": "/home/qy/ISAAC\u2014\u2014SIM/results/ppo_port_audit_20260926/fresh_block/checkpoints/transition_00000000/actor.npz",
+  "checkpoint_label": "transition_00000000",
+  "actor_sha256": "3cc00b6632ef9d9ffeb239a0d67b0df62132e53a4e6d389efcd62b3ad5384b6f",
+  "deterministic_policy": true,
+  "normalizer": "frozen exported mean and std",
+  "reset_sampling": "original NumPy seeded reset; source training stream not used",
+  "airborne_reset": false,
+  "duration": 0.64,
+  "physics_dt": 0.001,
+  "control_dt": 0.02,
+  "num_evaluation_envs": 8,
+  "full_solver_reset_before_panel": true,
+  "recorded_steps": 32,
+  "endpoint_reason": "environment_done"
+}

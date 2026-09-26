@@ -1,0 +1,44 @@
+[
+  {
+    "case": "rotor_servo_0.005",
+    "engine": "RK4",
+    "time_s": 0.02,
+    "q_rad": 0.24009603841536603,
+    "qd_rad_s": 0.0
+  },
+  {
+    "case": "rotor_servo_0.005",
+    "engine": "physx",
+    "time_s": 0.019999999552965164,
+    "q_rad": 0.23900023102760315,
+    "qd_rad_s": 11.99999713897705
+  },
+  {
+    "case": "rotor_servo_0.005",
+    "engine": "analytic",
+    "time_s": 0.019999999552965164,
+    "q_rad": 0.23495201463558196,
+    "qd_rad_s": 12.0
+  },
+  {
+    "case": "rotor_servo_0.0001",
+    "engine": "RK4",
+    "time_s": 0.019999999999999934,
+    "q_rad": 0.23495787899159756,
+    "qd_rad_s": 12.0
+  },
+  {
+    "case": "rotor_servo_0.0001",
+    "engine": "physx",
+    "time_s": 0.019999999552965164,
+    "q_rad": 0.23539072275161743,
+    "qd_rad_s": 11.999995231628418
+  },
+  {
+    "case": "rotor_servo_0.0001",
+    "engine": "analytic",
+    "time_s": 0.019999999552965164,
+    "q_rad": 0.23495201463558196,
+    "qd_rad_s": 12.0
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "candidate": "current_hybrid_1ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "current_hybrid_1ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "current_hybrid_1ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "current_hybrid_1ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_1ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_1ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_1ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_1ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_2ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_2ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_2ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_2ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_5ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_5ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_5ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_hybrid_5ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_1ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_1ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_1ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_1ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 120,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_2ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_2ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_2ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_2ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 60,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_5ms",
+    "case": "steer_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_5ms",
+    "case": "rear_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_5ms",
+    "case": "hip_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  },
+  {
+    "candidate": "source_implicit_5ms",
+    "case": "knee_pulse",
+    "passed": true,
+    "rollout_steps": 24,
+    "initialization_steps": 2
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "mid_friction_replay",
+  "mode": "replay",
+  "friction": 1.58113883,
+  "hull_vertices": 256
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "local_report_links_valid": true,
+  "physics_cases": 5,
+  "control_transitions": 416,
+  "rollout_physics_steps": 8320,
+  "initialization_physics_steps": 20,
+  "total_physx_physics_steps": 8340,
+  "all_cases_stop_at_first_done": true,
+  "all_cases_failed": true,
+  "baseline_repeat_numerical_arrays_identical": true,
+  "csv_cumulative_reward_equals_actual_emitted_float32_rewards": true,
+  "png_pdf_present": true,
+  "opt_in_independent_test_log": "final_tests.log",
+  "source_identity_verification": "source_after_verification.json"
+}

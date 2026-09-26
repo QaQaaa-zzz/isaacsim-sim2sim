@@ -1,0 +1,9 @@
+{
+  "engine": "original JIT MJX-Warp",
+  "actor": "/home/qy/ISAAC\u2014\u2014SIM/results/dr_solver_training/update_0064/actor.npz",
+  "steps": 150,
+  "max_x": 7.235282897949219,
+  "max_z": 0.6128201484680176,
+  "apex_seen": true,
+  "end_code": 0
+}

@@ -1,0 +1,6 @@
+{
+  "name": "tensor_sensor_policy",
+  "mode": "policy",
+  "sensor": "tensor",
+  "hull_vertices": 256
+}

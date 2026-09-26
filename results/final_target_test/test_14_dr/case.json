@@ -1,0 +1,33 @@
+{
+  "name": "test_14_dr",
+  "mode": "policy",
+  "actor": "results/dr_solver_training/update_0064/actor.npz",
+  "source_actor": "results/dr_solver_training/update_0064/actor.npz",
+  "domain": {
+    "contact_mode": "anisotropic",
+    "density_scale": 0.969037101958822,
+    "com_shift_m": [
+      0.001213992233722829,
+      -0.0016420754896422345,
+      0.00019444838035072689
+    ],
+    "kp_scale": 1.0243663605963687,
+    "kd_scale": 0.9904752362188723,
+    "force_scale": 0.9110698097784813,
+    "friction_scale": 0.9006046554385209,
+    "friction": null,
+    "joint_damping": 0.004781645249548003,
+    "gyro_noise_std": 0.008783699435397876,
+    "acc_noise_std": 0.08134231894332489,
+    "delay_control_steps": 0,
+    "simulation_dt": 0.002,
+    "integrator": "implicitfast",
+    "accelerometer_mode": "native",
+    "seed": 14,
+    "role": "test"
+  },
+  "dt": 0.002,
+  "source_dt": 0.002,
+  "duration": 3.0,
+  "stop_on_source_failure": false
+}

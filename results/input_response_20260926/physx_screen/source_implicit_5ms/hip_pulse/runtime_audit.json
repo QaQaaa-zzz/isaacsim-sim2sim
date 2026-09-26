@@ -1,0 +1,572 @@
+{
+  "joint_names_physx": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "joint_names_source": [
+    "rearwheel_joint",
+    "steering_joint",
+    "frontwheel_joint",
+    "hip_joint",
+    "knee_joint"
+  ],
+  "gains_native": [
+    [
+      [
+        0.0,
+        0.0,
+        100.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        6.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "explicit_joint_mask": [
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "max_efforts": [
+    [
+      6.0,
+      5.0,
+      30.0,
+      0.0,
+      30.0
+    ]
+  ],
+  "gravity_direction": [
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "gravity_magnitude": 0.0,
+  "colliders": [
+    {
+      "path": "/World/Bike/base_link/base_collision_g3",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector1",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector2",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector3",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector4",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector5",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector6",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector7",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector8",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector9",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector10",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector11",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector12",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector13",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector14",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/rearwheel/rearwheel_collision_g9_sector15",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/steer/steer_collision_g12",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector1",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector2",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector3",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector4",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector5",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector6",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector7",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector8",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector9",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector10",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector11",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector12",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector13",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector14",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/frontwheel/frontwheel_collision_g15_sector15",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/downarm/downarm_collision_g18",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/downarm/knee_motor_collision_g19",
+      "enabled": false
+    },
+    {
+      "path": "/World/Bike/uparm/uparm_collision_g23",
+      "enabled": false
+    },
+    {
+      "path": "/World/floor_g0",
+      "enabled": false
+    },
+    {
+      "path": "/World/step_g1",
+      "enabled": false
+    }
+  ],
+  "materials": [
+    {
+      "path": "/World/Materials/material_0",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_1",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_3",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_9",
+      "static_friction": 0.5,
+      "dynamic_friction": 0.5,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_12",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_15",
+      "static_friction": 0.5,
+      "dynamic_friction": 0.5,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_18",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_19",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    },
+    {
+      "path": "/World/Materials/material_23",
+      "static_friction": 1.0,
+      "dynamic_friction": 1.0,
+      "combine": "min"
+    }
+  ],
+  "conversion_before_contact_override": {
+    "converter": "explicit compiled MuJoCo model to USD",
+    "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "bodies": [
+      {
+        "body": "base_link",
+        "source_mass": 1.76,
+        "usd_mass": 1.7599999904632568,
+        "source_inertia": [
+          0.020962292039510787,
+          0.017614920913719988,
+          0.004905748867161521
+        ],
+        "usd_inertia": [
+          0.020962292328476906,
+          0.017614921554923058,
+          0.004905748646706343
+        ],
+        "source_com": [
+          0.02772797727272728,
+          -0.000700851875,
+          0.05052942045454545
+        ],
+        "usd_com": [
+          0.027727976441383362,
+          -0.0007008519023656845,
+          0.050529420375823975
+        ]
+      },
+      {
+        "body": "rearwheel",
+        "source_mass": 0.17,
+        "usd_mass": 0.17000000178813934,
+        "source_inertia": [
+          0.0002096666666666667,
+          0.0002096666666666667,
+          0.00041650000000000015
+        ],
+        "usd_inertia": [
+          0.00020966667216271162,
+          0.00020966667216271162,
+          0.00041649999911896884
+        ],
+        "source_com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "usd_com": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "body": "steer",
+        "source_mass": 0.001,
+        "usd_mass": 0.0010000000474974513,
+        "source_inertia": [
+          2.9083333333333336e-06,
+          2.7749999999999997e-06,
+          2.8333333333333336e-07
+        ],
+        "usd_inertia": [
+          2.9083332719892496e-06,
+          2.7749999844672857e-06,
+          2.8333332124930166e-07
+        ],
+        "source_com": [
+          0.0,
+          0.0,
+          -0.03
+        ],
+        "usd_com": [
+          0.0,
+          0.0,
+          -0.029999999329447746
+        ]
+      },
+      {
+        "body": "frontwheel",
+        "source_mass": 0.13,
+        "usd_mass": 0.12999999523162842,
+        "source_inertia": [
+          0.00016033333333333337,
+          0.00016033333333333337,
+          0.00031850000000000004
+        ],
+        "usd_inertia": [
+          0.00016033333668019623,
+          0.00016033333668019623,
+          0.00031850000959821045
+        ],
+        "source_com": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "usd_com": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "body": "downarm",
+        "source_mass": 0.72,
+        "usd_mass": 0.7200000286102295,
+        "source_inertia": [
+          0.005291960270325852,
+          0.005170558880589957,
+          0.0003556770723592142
+        ],
+        "usd_inertia": [
+          0.005291960202157497,
+          0.005170559044927359,
+          0.00035567706800065935
+        ],
+        "source_com": [
+          7.80614761153499e-08,
+          -0.015104719905965866,
+          0.2552109481267508
+        ],
+        "usd_com": [
+          7.806147550581954e-08,
+          -0.015104720368981361,
+          0.2552109360694885
+        ]
+      },
+      {
+        "body": "uparm",
+        "source_mass": 2.31,
+        "usd_mass": 2.309999942779541,
+        "source_inertia": [
+          0.005954945528869052,
+          0.005248398141832493,
+          0.0015768076081977623
+        ],
+        "usd_inertia": [
+          0.005954945459961891,
+          0.005248398054391146,
+          0.0015768075827509165
+        ],
+        "source_com": [
+          7.580342478103272e-08,
+          0.03347395427226586,
+          -0.18173979637357773
+        ],
+        "usd_com": [
+          7.58034275349928e-08,
+          0.03347395360469818,
+          -0.18173979222774506
+        ]
+      }
+    ],
+    "filtered_geom_pairs": 8,
+    "allowed_geom_pairs": [
+      [
+        "floor",
+        "base_collision"
+      ],
+      [
+        "floor",
+        "rearwheel_collision"
+      ],
+      [
+        "floor",
+        "steer_collision"
+      ],
+      [
+        "floor",
+        "frontwheel_collision"
+      ],
+      [
+        "floor",
+        "downarm_collision"
+      ],
+      [
+        "floor",
+        "knee_motor_collision"
+      ],
+      [
+        "floor",
+        "uparm_collision"
+      ],
+      [
+        "step",
+        "base_collision"
+      ],
+      [
+        "step",
+        "rearwheel_collision"
+      ],
+      [
+        "step",
+        "steer_collision"
+      ],
+      [
+        "step",
+        "frontwheel_collision"
+      ],
+      [
+        "step",
+        "downarm_collision"
+      ],
+      [
+        "step",
+        "knee_motor_collision"
+      ],
+      [
+        "step",
+        "uparm_collision"
+      ],
+      [
+        "base_collision",
+        "steer_collision"
+      ],
+      [
+        "base_collision",
+        "frontwheel_collision"
+      ],
+      [
+        "base_collision",
+        "downarm_collision"
+      ],
+      [
+        "base_collision",
+        "uparm_collision"
+      ],
+      [
+        "rearwheel_collision",
+        "steer_collision"
+      ],
+      [
+        "rearwheel_collision",
+        "downarm_collision"
+      ],
+      [
+        "rearwheel_collision",
+        "knee_motor_collision"
+      ],
+      [
+        "rearwheel_collision",
+        "uparm_collision"
+      ],
+      [
+        "steer_collision",
+        "downarm_collision"
+      ],
+      [
+        "steer_collision",
+        "knee_motor_collision"
+      ],
+      [
+        "steer_collision",
+        "uparm_collision"
+      ],
+      [
+        "frontwheel_collision",
+        "downarm_collision"
+      ],
+      [
+        "frontwheel_collision",
+        "knee_motor_collision"
+      ],
+      [
+        "frontwheel_collision",
+        "uparm_collision"
+      ]
+    ],
+    "ellipsoid_convex_sectors": 16,
+    "ellipsoid_tessellation_per_sector": [
+      4,
+      32
+    ],
+    "domain": null,
+    "contact_approximation": "PhysX scalar Coulomb with max combine. Original wheel floor pair is ANISOTROPIC [5,0.5,0.0001,0.0001,0.0001]; scalar5 does NOT match. No exact torsion/rolling/solref/solimp mapping. Adjacent articulation link contact filtering is not equivalent.",
+    "fixed_diagnostic": false,
+    "target_drive_gains_si": {
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      },
+      "rearwheel_joint": {
+        "kp": -0.0,
+        "kd": 5.0
+      },
+      "hip_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      },
+      "knee_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      }
+    }
+  },
+  "initialization_physics_steps": 2,
+  "physics_dt": 0.005,
+  "reset": "new stage, new World, hard reset, full initial pose and velocity assignment; no subsequent state injection"
+}

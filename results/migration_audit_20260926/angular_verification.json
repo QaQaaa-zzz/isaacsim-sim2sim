@@ -1,0 +1,85 @@
+{
+  "simulated_steps_new": 12,
+  "warp_steps": 4,
+  "training_transitions": 0,
+  "sensor_sync_failures_expected": true,
+  "source_model_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "warp_device": [
+    "cuda:0"
+  ],
+  "tests": "5 passed in 0.42s; ISAAC .venv; tests/test_angular_contract.py + tests/test_source_observation.py; no cacheprovider",
+  "frozen_3_3_7_warp_sensor_timing_verified": false,
+  "rows": [
+    {
+      "step": 1,
+      "time_s": 0.005,
+      "cpu_gyro_y": 0.0,
+      "warp_gyro_y": -1.5822815895080566,
+      "cpu_final_local_omega_y": 0.24042821448337826,
+      "warp_final_local_omega_y": 0.24042865633964539,
+      "cpu_gyro_end_max_abs_error": 0.24042821448337826,
+      "warp_gyro_end_max_abs_error": 1.822710245847702,
+      "warp_world_end_max_abs_error": 1.8227102458441624,
+      "cpu_warp_qpos_max_abs_difference": 1.9934275078542507e-07,
+      "cpu_warp_qvel_max_abs_difference": 6.444524406334917e-05,
+      "cpu_sensor_vs_pre_step_qvel_max_abs_error": 0.0,
+      "warp_final_state_refreshed_copy_gyro_max_abs_error": 1.3877787807814457e-16,
+      "cpu_3_3_7_vs_3_6_0_qvel_max_abs_difference": 0.0
+    },
+    {
+      "step": 2,
+      "time_s": 0.01,
+      "cpu_gyro_y": 0.2404282144833783,
+      "warp_gyro_y": -1.6331921815872192,
+      "cpu_final_local_omega_y": 0.3122635210234903,
+      "warp_final_local_omega_y": 0.31226471066474915,
+      "cpu_gyro_end_max_abs_error": 0.071835306540112,
+      "warp_gyro_end_max_abs_error": 1.9454568922519684,
+      "warp_world_end_max_abs_error": 1.9454567716941953,
+      "cpu_warp_qpos_max_abs_difference": 4.746319275245048e-07,
+      "cpu_warp_qvel_max_abs_difference": 8.212786232891789e-05,
+      "cpu_sensor_vs_pre_step_qvel_max_abs_error": 5.551115123125783e-17,
+      "warp_final_state_refreshed_copy_gyro_max_abs_error": 5.551115123125783e-17,
+      "cpu_3_3_7_vs_3_6_0_qvel_max_abs_difference": 0.0
+    },
+    {
+      "step": 3,
+      "time_s": 0.015,
+      "cpu_gyro_y": 0.3122635210234903,
+      "warp_gyro_y": -1.6421228647232056,
+      "cpu_final_local_omega_y": 0.3347896721804243,
+      "warp_final_local_omega_y": 0.33479127287864685,
+      "cpu_gyro_end_max_abs_error": 0.022526151156934016,
+      "warp_gyro_end_max_abs_error": 1.9769141376018524,
+      "warp_world_end_max_abs_error": 1.9769138967070452,
+      "cpu_warp_qpos_max_abs_difference": 8.509539034251556e-07,
+      "cpu_warp_qvel_max_abs_difference": 0.00011804506470530773,
+      "cpu_sensor_vs_pre_step_qvel_max_abs_error": 4.336808689942018e-19,
+      "warp_final_state_refreshed_copy_gyro_max_abs_error": 2.220446049250313e-16,
+      "cpu_3_3_7_vs_3_6_0_qvel_max_abs_difference": 0.0
+    },
+    {
+      "step": 4,
+      "time_s": 0.02,
+      "cpu_gyro_y": 0.33478967218042444,
+      "warp_gyro_y": -1.6514726877212524,
+      "cpu_final_local_omega_y": 0.3392756876983395,
+      "warp_final_local_omega_y": 0.33927643299102783,
+      "cpu_gyro_end_max_abs_error": 0.004486015517915054,
+      "warp_gyro_end_max_abs_error": 1.9907491207122803,
+      "warp_world_end_max_abs_error": 1.9907491179679528,
+      "cpu_warp_qpos_max_abs_difference": 1.5425317441142283e-06,
+      "cpu_warp_qvel_max_abs_difference": 0.00015826913262806386,
+      "cpu_sensor_vs_pre_step_qvel_max_abs_error": 1.1102230246251565e-16,
+      "warp_final_state_refreshed_copy_gyro_max_abs_error": 4.336808689942018e-19,
+      "cpu_3_3_7_vs_3_6_0_qvel_max_abs_difference": 0.0
+    }
+  ],
+  "source_files": {
+    "/home/qy/ISAAC\u2014\u2014SIM/results/migration_audit_20260926/angular_probe.py": "0e85030948bdd6d5bdf9407243e8de08b081f2a992fa93be1558ba8abe914663",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/ISAAC\u2014\u2014SIM/policy_runtime.py": "715f315a5e61629917ae6cc17e044a9cb1e5af3b5fcd8652b19cc50075253ce1",
+    "/home/qy/mujoco_playground/.venv/lib/python3.12/site-packages/mujoco/mjx/third_party/mujoco_warp/_src/forward.py": "1c60e34da7d03f0a84983233968f3abb7e871697e1a5556e318f51d78621969c",
+    "/home/qy/ISAAC\u2014\u2014SIM/.venv/lib/python3.11/site-packages/mujoco/mjx/third_party/mujoco_warp/_src/forward.py": "c28a9ba27943381d267187602234640b21051cccda19c3a023de00ac51004aca"
+  }
+}

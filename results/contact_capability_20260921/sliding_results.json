@@ -1,0 +1,68 @@
+[
+  {
+    "name": "mujoco_direction_0",
+    "engine": "MuJoCo CPU contact fixture",
+    "axis": 0,
+    "mean_deceleration_m_s2": 4.9853440475358335,
+    "source_contact_frame": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "mujoco_direction_1",
+    "engine": "MuJoCo CPU contact fixture",
+    "axis": 1,
+    "mean_deceleration_m_s2": 42.95819568249385,
+    "source_contact_frame": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "physx_static_5_dynamic_5_direction_0",
+    "engine": "PhysX native rigid contact",
+    "axis": 0,
+    "static": 5.0,
+    "dynamic": 5.0,
+    "mean_deceleration_m_s2": 49.05010461807251
+  },
+  {
+    "name": "physx_static_5_dynamic_5_direction_1",
+    "engine": "PhysX native rigid contact",
+    "axis": 1,
+    "static": 5.0,
+    "dynamic": 5.0,
+    "mean_deceleration_m_s2": 49.050092697143555
+  },
+  {
+    "name": "physx_static_5_dynamic_0.5_direction_0",
+    "engine": "PhysX native rigid contact",
+    "axis": 0,
+    "static": 5.0,
+    "dynamic": 0.5,
+    "mean_deceleration_m_s2": 4.905068874359131
+  },
+  {
+    "name": "physx_static_5_dynamic_0.5_direction_1",
+    "engine": "PhysX native rigid contact",
+    "axis": 1,
+    "static": 5.0,
+    "dynamic": 0.5,
+    "mean_deceleration_m_s2": 4.904985427856445
+  }
+]

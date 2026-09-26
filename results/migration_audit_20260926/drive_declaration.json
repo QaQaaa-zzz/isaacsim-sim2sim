@@ -1,0 +1,57 @@
+{
+  "purpose": "Separate the earlier coarse-step velocity fit from physical source-gain behavior at the current 1ms PhysX timestep",
+  "actor": "policy/actor.npz",
+  "checkpoint": "transition_4988928 frozen MJX Actor, not current fresh learner",
+  "reset": "keyframe ground, forward 2m/s, all joints zero velocity; seed 1820701",
+  "variants": {
+    "calibrated": {},
+    "source_rear": {
+      "rearwheel_joint": {
+        "kp": 0.0,
+        "kd": 5.0
+      }
+    },
+    "source_steer": {
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      }
+    },
+    "source_both": {
+      "rearwheel_joint": {
+        "kp": 0.0,
+        "kd": 5.0
+      },
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      }
+    }
+  },
+  "repeats": {
+    "calibrated": 2,
+    "source_rear": 1,
+    "source_steer": 1,
+    "source_both": 1
+  },
+  "max_control_steps_per_case": 100,
+  "control_dt_s": 0.02,
+  "physics_dt_s": 0.001,
+  "physics_substep_budget": 10000,
+  "additional_angular_probe_allowance": 1000,
+  "stop": "first true environment done or 2-second engineering cap, never extend failed trace",
+  "training_transitions": 0,
+  "physics_unchanged": [
+    "mass",
+    "inertia",
+    "friction .5/min",
+    "geometry",
+    "limits",
+    "hip/knee explicit capped PD",
+    "reward",
+    "Actor normalization"
+  ],
+  "selection_limit": "development diagnostic only; no performance qualification or automatic adoption/restart",
+  "physics_budget_scope": "recorded policy rollouts; actual initialization physics separately counted with a 1000-step reserve; all within PROJECT 20000-step total cap",
+  "initialization_physics_substep_reserve": 1000
+}

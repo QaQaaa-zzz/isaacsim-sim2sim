@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "original_model_and_checkpoint_preserved": true,
+    "all_91_paired_cases_finite_time_and_initial_state_checked": true,
+    "target_parameter_search_did_not_change_source_trajectories": true,
+    "frozen_selection_recomputed": true,
+    "four_native_mjx_probes_match_cpu_within_0_0005_rad_s": true,
+    "video_75_nonempty_frames_and_changes": true,
+    "policy_failures_and_replay_not_misrepresented": true,
+    "all_checks_passed": true
+  },
+  "sha256": {
+    "/home/qy/DVGC/assets/orange_bike_4kg_horizontal.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/DVGC/JIT/runs/phase_u/phase_u_v4_speed2_roll400_missed200_9977856_seed820701_20260826/checkpoints/transition_4988928/payload.pkl": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+    "actuator_audit.py": "fbb56232a3b805ddf3e0c79aa8d1979758090c61e96d92ccec1a3a859b931a24",
+    "actuator_reference.py": "35c4eec107ede5501820f3e2daf85baaac70dfb0a78e75909f8d1b9e529df158",
+    "actuator_mjx_check.py": "03a75194a0d2a1ce71a68fd5dcc8d249eb1a3382ababd0290d0d0db9eb94a562",
+    "drive_calibration.py": "e52358983c036cb5a01fb504588731c0c1c1af929dfdf7eab633daa094819a2e",
+    "select_actuator_calibration.py": "6e2ce17e063d461fd42a3cc91eb8f12044c6d5337df94e6749e6a4b12a786812",
+    "diagnose_domains.py": "1b86603ef4f67d52fb698bae299cf7c3204a5444092e1719804bf16a4b0c2718",
+    "report_actuator_audit.py": "6bb5271e2d7f1760dc3c12060d49c73876e6ac7ab9c4069537ca1081e5444d2a"
+  },
+  "sim2sim_accepted": false
+}

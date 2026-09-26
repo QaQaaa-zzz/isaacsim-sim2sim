@@ -1,0 +1,6 @@
+{
+  "name": "corrected_dr",
+  "mode": "policy",
+  "duration": 3,
+  "actor": "results/dr_training/update_0016/actor.npz"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "airborne_zero",
+  "mode": "zero",
+  "no_contact": true,
+  "duration": 0.1
+}

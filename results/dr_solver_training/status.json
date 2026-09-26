@@ -1,0 +1,14 @@
+{
+  "update": 128,
+  "transitions": 262144,
+  "sampling_s": 1.7884228229522705,
+  "optimize_s": 0.08577823638916016,
+  "wall_s": 239.20461988449097,
+  "mean_step_reward": 4.302061557769775,
+  "loss": 110.51042318344116,
+  "approx_kl": 0.0015280043517122976,
+  "anchor_kl": 0.09505293262191117,
+  "kl_stop": false,
+  "episodes": 2028,
+  "completed": true
+}

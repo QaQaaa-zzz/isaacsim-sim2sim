@@ -1,0 +1,19 @@
+{
+  "artifact_checks_passed": true,
+  "sim2sim_accepted": false,
+  "target_qualified": {
+    "original": 0,
+    "dr": 0
+  },
+  "target_cases": 36,
+  "source_xml_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "source_checkpoint_sha256": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+  "original_actor_max_abs_error": 9.387731552124023e-07,
+  "videos": {
+    "results/sim2sim_media/comparison.mp4": {
+      "frames": 75,
+      "first_last_mean_pixel_difference": 10.288736979166666
+    }
+  },
+  "training_transitions": 327680
+}

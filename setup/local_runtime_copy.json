@@ -1,0 +1,12 @@
+{
+  "source": "/home/qy/miniconda3/envs/env_isaaclab/lib/python3.11/site-packages",
+  "destination": "/home/qy/ISAAC\u2014\u2014SIM/.venv/lib/python3.11/site-packages",
+  "files": 46922,
+  "bytes": 10409469366,
+  "seconds": 20.59571886062622,
+  "mismatches": [],
+  "skipped_external_scripts": [
+    "../../../bin/isaacsim"
+  ],
+  "copy_semantics": "independent regular files; wheel RECORD hashes verified; no source writes"
+}

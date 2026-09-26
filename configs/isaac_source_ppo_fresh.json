@@ -1,0 +1,208 @@
+{
+  "schema": "isaac-source-ppo-fresh-v1",
+  "backend_required": "PhysX",
+  "requested_training_transitions": 9977856,
+  "initial_actor": null,
+  "reward": {
+    "action_coeff": 1.5,
+    "action_magnitude_scale": 0.1,
+    "action_smoothness_scale": 0.0001,
+    "apex_success_bonus": 50.0,
+    "desired_velocity": 2.0,
+    "failed_episode_return": -100.0,
+    "height_coeff": 40.0,
+    "illegal_contact_penalty": 0.0,
+    "joint_energy_penalty_coeff": 2.0,
+    "jump_reward_min_height": 0.35,
+    "jump_zone_missed_penalty": 200.0,
+    "low_height_penalty": 5.0,
+    "low_height_penalty_full_at": 0.15,
+    "max_beneficial_height": 0.8,
+    "peak_reward_height": 0.5,
+    "physical_failure_penalty": 30.0,
+    "pitch_angular_velocity_coeff": 0.15,
+    "pitch_coeff": 1.0,
+    "rear_wheel_action_diff_penalty": 2.0,
+    "roll_coeff": 3.0,
+    "roll_pitch_failure_penalty": 400.0,
+    "speed_coeff": 1.0,
+    "speed_sigma": 0.5,
+    "steering_action_diff_penalty": 1.0,
+    "steering_magnitude_penalty": 0.25,
+    "stuck_penalty": 100.0,
+    "survival_reward": 1.5,
+    "timeout_penalty": 10.0,
+    "total_max": 50.0,
+    "total_min": -400.0,
+    "yaw_coeff": 0.3,
+    "yaw_limit_penalty": 100.0
+  },
+  "reset": {
+    "airborne_rsi_probability": 0.08,
+    "airborne_rsi_vx_max": 2.2,
+    "airborne_rsi_vx_min": 1.8,
+    "airborne_rsi_vz_max": 3.6,
+    "airborne_rsi_vz_min": 3.0,
+    "airborne_rsi_x_max": 2.9,
+    "airborne_rsi_x_min": 2.7,
+    "airborne_rsi_z_max": 0.45,
+    "airborne_rsi_z_min": 0.38,
+    "initial_forward_velocity": 2.0,
+    "keyframe": "initial_state"
+  },
+  "target_drive_gains": {
+    "rearwheel_joint": {
+      "kp": 0.0,
+      "kd": 0.005
+    },
+    "steering_joint": {
+      "kp": 2.5,
+      "kd": 0.4
+    },
+    "hip_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    },
+    "knee_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    }
+  },
+  "contact_required": {
+    "mode": "forward_axis_matched_isotropic",
+    "static_friction": 0.5,
+    "dynamic_friction": 0.5,
+    "combine": "min",
+    "source_initial_forward_coefficient": 0.5,
+    "source_lateral_coefficient_not_preserved": 5.0
+  },
+  "physics_dt": 0.001,
+  "control_dt": 0.02,
+  "episode_horizon": 400,
+  "best_selection": {
+    "metric": "mean undiscounted episode return on fixed development resets",
+    "seeds": [
+      1820701,
+      1820702,
+      1820703,
+      1820704,
+      1820717,
+      1820735,
+      1820740,
+      1820756
+    ],
+    "eval_interval_training_transitions": 24576,
+    "tie_break": "earlier checkpoint",
+    "test_seeds": [
+      2820701,
+      2820702,
+      2820703,
+      2820704,
+      2820723,
+      2820731,
+      2820733,
+      2820760
+    ],
+    "panel": "4 original ground resets + 4 original airborne resets, seeds selected by reset type only before policy scoring; not training distribution weighting",
+    "physics_reset": "independent eight-environment persistent PhysX process; world reset before scoring; exact repeatability not established"
+  },
+  "launch_ready": true,
+  "actuator_mode": {
+    "rearwheel_joint": "native_implicit",
+    "steering_joint": "native_implicit",
+    "hip_joint": "explicit_PD_capped",
+    "knee_joint": "explicit_PD_capped"
+  },
+  "ppo": {
+    "batch_size": 16,
+    "clipping_epsilon": 0.2,
+    "discounting": 0.99,
+    "entropy_cost": 0.01,
+    "episode_horizon": 400,
+    "gae_lambda": 0.95,
+    "held_out_seeds": [
+      980001,
+      980002,
+      980003,
+      980004,
+      980005,
+      980006,
+      980007,
+      980008
+    ],
+    "learning_rate": 0.0001,
+    "max_grad_norm": 0.5,
+    "num_eval_envs": 8,
+    "num_evals": 407,
+    "num_minibatches": 24,
+    "num_parallel_envs": 384,
+    "num_updates_per_batch": 8,
+    "requested_transitions": 9977856,
+    "reward_scaling": 0.1,
+    "seed": 820701,
+    "unroll_length": 64
+  },
+  "implementation_notes": [
+    "Fresh training: no pretrained Actor, critic, observation statistics or optimizer loaded.",
+    "Original Brax network initialization using global PRNG split from seed820701; zero Welford count, zero means/unit initial standard deviations, fresh Adam.",
+    "Original PPO/network/reward/reset parameters preserved;384 environments x64 steps,24 minibatches x8 epochs.",
+    "PhysX CPU physics1ms/control20ms; calibrated PD and wheel0.5/min preserved; source lateral5 and exact solver/sensor equivalence not preserved.",
+    "406 complete blocks=9977856 new training transitions; earlier erroneous continuation run and engineering interactions are excluded.",
+    "Independent fixed eight-case development panel selects best each block; evaluation protocol is an addition, not copied from source sparse evaluation.",
+    "Complete logical lane resets; per-lane contact-cache equivalence unproven. Previous repeatability6/8 exact; new policy repeatability recorded separately."
+  ],
+  "verification": {
+    "previous_physics_and_ppo_gate": "results/ppo_port_audit_20260926/launch_gate.json",
+    "fresh_initializer_tests": "results/ppo_port_audit_20260926/fresh_tests.log",
+    "fresh_engineering_gate": "results/ppo_port_audit_20260926/fresh_block/status.json",
+    "fresh_initializer_evidence": "results/ppo_port_audit_20260926/fresh_initialization_verification.json",
+    "fresh_engineering_training_transitions": 24576
+  },
+  "evaluation_seed_role": "development and test namespaces fixed, 4 identical deterministic ground resets + 4 sampled airborne resets",
+  "source_ppo_port": true,
+  "initial_checkpoint": null,
+  "initialization": "fresh",
+  "configuration_reference_checkpoint": "/home/qy/DVGC/JIT/runs/phase_u/phase_u_v4_speed2_roll400_missed200_9977856_seed820701_20260826/checkpoints/transition_4988928",
+  "configuration_reference_identity": {
+    "action_order": [
+      "steer",
+      "rear_wheel_drive",
+      "hip",
+      "knee"
+    ],
+    "actor_frame_fields": [
+      "gravity_x",
+      "gravity_y",
+      "gravity_z",
+      "angular_velocity_x",
+      "angular_velocity_y",
+      "angular_velocity_z",
+      "acceleration_x",
+      "acceleration_y",
+      "acceleration_z",
+      "steering_position",
+      "hip_position",
+      "knee_position",
+      "steering_velocity",
+      "hip_velocity",
+      "knee_velocity",
+      "front_wheel_velocity",
+      "rear_wheel_velocity",
+      "last_action_steer",
+      "last_action_rear_wheel_drive",
+      "last_action_hip",
+      "last_action_knee",
+      "estimated_forward_velocity",
+      "obstacle_relative_x",
+      "root_height",
+      "history_valid"
+    ],
+    "actor_task_fields": [
+      "jump_signal"
+    ],
+    "config_sha256": "baae0efb9be3d35daad6ecfd0a6e36afdbf3aecc9d2f45f4699e0eca6997284d",
+    "payload_sha256": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+    "training_transitions": 4988928,
+    "xml_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a"
+  }
+}

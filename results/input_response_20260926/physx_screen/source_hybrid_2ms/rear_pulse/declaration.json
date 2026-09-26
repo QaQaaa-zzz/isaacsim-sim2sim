@@ -1,0 +1,883 @@
+{
+  "protocol": {
+    "schema_version": 1,
+    "physics_dt": 0.005,
+    "integrator": "RK4",
+    "gravity": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "contact_enabled": false,
+    "initial": {
+      "keyframe": 0,
+      "qpos": [
+        2.5,
+        0.0,
+        0.15,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      "qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "cases": [
+      {
+        "name": "steer_pulse",
+        "enabled_joints": [
+          "steering_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.1,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rear_pulse",
+        "enabled_joints": [
+          "rearwheel_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              12.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "hip_pulse",
+        "enabled_joints": [
+          "hip_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.7000000000000001,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "knee_pulse",
+        "enabled_joints": [
+          "knee_joint"
+        ],
+        "segments": [
+          {
+            "duration_s": 0.02,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          },
+          {
+            "duration_s": 0.06,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.1
+            ]
+          },
+          {
+            "duration_s": 0.04,
+            "ctrl": [
+              0.0,
+              0.0,
+              -0.8,
+              1.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "case": {
+    "name": "rear_pulse",
+    "enabled_joints": [
+      "rearwheel_joint"
+    ],
+    "segments": [
+      {
+        "duration_s": 0.02,
+        "ctrl": [
+          0.0,
+          0.0,
+          -0.8,
+          1.0
+        ]
+      },
+      {
+        "duration_s": 0.06,
+        "ctrl": [
+          0.0,
+          12.0,
+          -0.8,
+          1.0
+        ]
+      },
+      {
+        "duration_s": 0.04,
+        "ctrl": [
+          0.0,
+          0.0,
+          -0.8,
+          1.0
+        ]
+      }
+    ],
+    "initial": {
+      "keyframe": 0,
+      "qpos": [
+        2.5,
+        0.0,
+        0.15,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      "qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "physics_dt": 0.002,
+    "steps": 60,
+    "controls": [
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        12.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.8,
+        1.0
+      ]
+    ]
+  },
+  "candidate": {
+    "name": "source_hybrid_2ms",
+    "physics_dt": 0.002,
+    "drive_mode": "hybrid",
+    "target_drive_gains": {
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      },
+      "rearwheel_joint": {
+        "kp": -0.0,
+        "kd": 5.0
+      },
+      "hip_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      },
+      "knee_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      }
+    },
+    "case_names": [
+      "steer_pulse",
+      "rear_pulse",
+      "hip_pulse",
+      "knee_pulse"
+    ]
+  },
+  "source_model": {
+    "source_xml": "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml",
+    "model_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "joint_names": [
+      "rearwheel_joint",
+      "steering_joint",
+      "frontwheel_joint",
+      "hip_joint",
+      "knee_joint"
+    ],
+    "qa": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "va": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "actuator_names": [
+      "cmd_steering_v",
+      "cmd_rearwheel_f",
+      "cmd_hip_f",
+      "cmd_knee_f"
+    ],
+    "actuator_joint_names": [
+      "steering_joint",
+      "rearwheel_joint",
+      "hip_joint",
+      "knee_joint"
+    ],
+    "sensor_names": [
+      "steering_joint_pos_sensor",
+      "steering_joint_vel_sensor",
+      "rearwheel_joint_vel_sensor",
+      "frontwheel_joint_vel_sensor",
+      "acc_local",
+      "gyro_local",
+      "ori_global",
+      "pos_global",
+      "vel_global",
+      "ang_global",
+      "hip_joint_pos_sensor",
+      "knee_joint_pos_sensor",
+      "hip_joint_vel_sensor",
+      "knee_joint_vel_sensor",
+      "cmd_steering_v",
+      "cmd_rearwheel_f",
+      "cmd_hip_f",
+      "cmd_knee_f"
+    ],
+    "sensor_adr": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7,
+      10,
+      14,
+      17,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "sensor_dim": [
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "ctrl_units": [
+      "rad",
+      "rad/s",
+      "rad",
+      "rad"
+    ],
+    "root_qpos_order": "x,y,z,qw,qx,qy,qz",
+    "root_qvel_order": "world linear xyz, body angular xyz",
+    "physics_dt": 0.002,
+    "integrator": "RK4",
+    "contact_enabled": false,
+    "gravity": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "enabled_joints": [
+      "rearwheel_joint"
+    ],
+    "actuator_gainprm": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "actuator_biasprm": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -5.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "actuator_forcerange": [
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -30.0,
+        30.0
+      ],
+      [
+        -30.0,
+        30.0
+      ]
+    ]
+  },
+  "training_transitions": 0,
+  "state_semantics": "qpos/qvel in original source order; qvel root angular coordinates body-local; other vector channels explicitly named",
+  "control_semantics": "t0 contains first input; row k>0 contains input applied over the just completed physical step",
+  "force_semantics": "explicit_effort_applied is prescribed motor input; dof_actuation_force_readback and projected_joint_effort are native PhysX readbacks, not isolated native-drive motor torque",
+  "physics_steps_expected": 60,
+  "initialization_physics_step_reserve": 16
+}

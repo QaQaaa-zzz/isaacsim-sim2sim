@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/results/isaac_training_engineering/ppo_smoke/checkpoints/transition_00000000",
+  "training_transitions": 0,
+  "development_mean_return": 460.3612634150331,
+  "selection": "fixed 4-ground/4-airborne development mean original episode return; earlier wins tie",
+  "qualified": false
+}

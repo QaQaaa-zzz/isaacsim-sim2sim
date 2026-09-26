@@ -1,0 +1,7 @@
+{
+  "seed": 2820704,
+  "recorded_engine": "PhysX",
+  "contact_label": "Wheel friction 0.5; calibrated PD; actual endpoint",
+  "friction": 0.5,
+  "duration": 1.56
+}

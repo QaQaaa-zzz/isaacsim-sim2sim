@@ -1,0 +1,176 @@
+[
+  {
+    "case": {
+      "name": "rotor_servo_0.005",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.02
+    },
+    "joint_names": [
+      "rearwheel_joint"
+    ],
+    "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "runtime_gains": [
+      [
+        [
+          -0.0
+        ]
+      ],
+      [
+        [
+          5.0
+        ]
+      ]
+    ],
+    "runtime_max_forces": [
+      [
+        6.0
+      ]
+    ],
+    "drive_force_note": "Only isolated rotor: I*delta(v)/dt is actual net step-average joint torque. Full-body target drive force not separately measured.",
+    "RK4": {
+      "qd_rmse_rad_s": [
+        10.73312330652643
+      ],
+      "qd_relative_l2": 23999993324280.41,
+      "source_final_qd": [
+        0.0
+      ],
+      "physx_final_qd": [
+        11.99999713897705
+      ]
+    },
+    "IMPLICITFAST": {
+      "qd_rmse_rad_s": [
+        8.179425178350352
+      ],
+      "qd_relative_l2": 2.82905668630301,
+      "source_final_qd": [
+        4.721342435032361
+      ],
+      "physx_final_qd": [
+        11.99999713897705
+      ]
+    },
+    "physx_analytic": {
+      "velocity_rmse_rad_s": 3.862086626303975e-06,
+      "position_rmse_rad": 0.0036209097865275964,
+      "velocity_relative_l2": 3.598286763086882e-07,
+      "step_average_torque_peak_Nm": 0.9995999932289124
+    },
+    "RK4_analytic": {
+      "velocity_rmse_rad_s": 10.73312629199899,
+      "position_rmse_rad": 0.00456880377086362,
+      "velocity_relative_l2": 1.0,
+      "step_average_torque_peak_Nm": 0.0
+    },
+    "IMPLICITFAST_analytic": {
+      "velocity_rmse_rad_s": 8.179428077526305,
+      "position_rmse_rad": 0.11161368505457583,
+      "velocity_relative_l2": 0.7620732166008016,
+      "step_average_torque_peak_Nm": 0.09832195620954898
+    },
+    "wall_s": 0.36475048400461674
+  },
+  {
+    "case": {
+      "name": "bike_torque_steering_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    "joint_names": [
+      "rearwheel_joint",
+      "steering_joint",
+      "hip_joint",
+      "frontwheel_joint",
+      "knee_joint"
+    ],
+    "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "runtime_gains": [
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "runtime_max_forces": [
+      [
+        6.0,
+        5.0,
+        30.0,
+        0.0,
+        30.0
+      ]
+    ],
+    "drive_force_note": "Only isolated rotor: I*delta(v)/dt is actual net step-average joint torque. Full-body target drive force not separately measured.",
+    "RK4": {
+      "qd_rmse_rad_s": [
+        7.654073155640933e-09,
+        2.7581050306662085e-06,
+        4.441015820141063e-08,
+        9.16535634764385e-06,
+        5.7751200883178824e-08
+      ],
+      "qd_relative_l2": 2.6361249971192686e-06,
+      "source_final_qd": [
+        -0.0004978143794778032,
+        -6.257779113492882,
+        -0.0005768388899580142,
+        0.0004787943872497973,
+        -0.00017893150872993213
+      ],
+      "physx_final_qd": [
+        -0.0004977962234988809,
+        -6.2577738761901855,
+        -0.0005767393158748746,
+        0.0004586739814840257,
+        -0.00017905871209222823
+      ]
+    },
+    "IMPLICITFAST": {
+      "qd_rmse_rad_s": [
+        1.8982865070890712e-09,
+        2.7591489690421505e-06,
+        1.709986997858475e-09,
+        1.569354771711135e-07,
+        9.231180387767738e-10
+      ],
+      "qd_relative_l2": 7.611257755998501e-07,
+      "source_final_qd": [
+        -0.0004977922995262223,
+        -6.257779115352968,
+        -0.0005767359233199149,
+        0.0004589303198956267,
+        -0.0001790607577776772
+      ],
+      "physx_final_qd": [
+        -0.0004977962234988809,
+        -6.2577738761901855,
+        -0.0005767393158748746,
+        0.0004586739814840257,
+        -0.00017905871209222823
+      ]
+    },
+    "wall_s": 1.5862526340060867
+  }
+]

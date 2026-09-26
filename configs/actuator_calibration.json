@@ -1,0 +1,503 @@
+{
+  "purpose": "Target-only parameter calibration to frozen 5 ms source response; not transfer acceptance",
+  "source_integrators": [
+    "RK4",
+    "IMPLICITFAST"
+  ],
+  "contact": false,
+  "gravity": [
+    0,
+    0,
+    0
+  ],
+  "other_servos": "disabled",
+  "bike_initial_pose": "original keyframe except hip=-0.8 knee=1.0, zero velocities",
+  "cases": [
+    {
+      "name": "fit_rear_0",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.0
+      }
+    },
+    {
+      "name": "fit_rear_1e-06",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 1e-06
+      }
+    },
+    {
+      "name": "fit_rear_1e-05",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 1e-05
+      }
+    },
+    {
+      "name": "fit_rear_0.0001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.0001
+      }
+    },
+    {
+      "name": "fit_rear_0.001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.001
+      }
+    },
+    {
+      "name": "fit_rear_0.01",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.01
+      }
+    },
+    {
+      "name": "fit_rear_0.1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.1
+      }
+    },
+    {
+      "name": "fit_rear_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_rear_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_0.25_0.25",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.25,
+        "kd": 0.25
+      }
+    },
+    {
+      "name": "fit_steer_0.25_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.25,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_steer_0.25_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.25,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_0.25_2",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.25,
+        "kd": 2.0
+      }
+    },
+    {
+      "name": "fit_steer_0.25_4",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.25,
+        "kd": 4.0
+      }
+    },
+    {
+      "name": "fit_steer_0.5_0.25",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.5,
+        "kd": 0.25
+      }
+    },
+    {
+      "name": "fit_steer_0.5_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.5,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_steer_0.5_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.5,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_0.5_2",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.5,
+        "kd": 2.0
+      }
+    },
+    {
+      "name": "fit_steer_0.5_4",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 0.5,
+        "kd": 4.0
+      }
+    },
+    {
+      "name": "fit_steer_1_0.25",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.25
+      }
+    },
+    {
+      "name": "fit_steer_1_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_steer_1_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_1_2",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 2.0
+      }
+    },
+    {
+      "name": "fit_steer_1_4",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 1.0,
+        "kd": 4.0
+      }
+    },
+    {
+      "name": "fit_steer_2_0.25",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 2.0,
+        "kd": 0.25
+      }
+    },
+    {
+      "name": "fit_steer_2_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 2.0,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_steer_2_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 2.0,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_2_2",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 2.0,
+        "kd": 2.0
+      }
+    },
+    {
+      "name": "fit_steer_2_4",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 2.0,
+        "kd": 4.0
+      }
+    },
+    {
+      "name": "fit_steer_4_0.25",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 4.0,
+        "kd": 0.25
+      }
+    },
+    {
+      "name": "fit_steer_4_0.5",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 4.0,
+        "kd": 0.5
+      }
+    },
+    {
+      "name": "fit_steer_4_1",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 4.0,
+        "kd": 1.0
+      }
+    },
+    {
+      "name": "fit_steer_4_2",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 4.0,
+        "kd": 2.0
+      }
+    },
+    {
+      "name": "fit_steer_4_4",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05,
+      "target_drive_scales": {
+        "kp": 4.0,
+        "kd": 4.0
+      }
+    }
+  ],
+  "selection": {
+    "loss": "mean((q-q_ref)^2/q_scale^2 + (qd-qd_ref)^2/qd_scale^2), active joint, excludes t=0",
+    "rear_scales": [
+      0.6,
+      12.0
+    ],
+    "steering_scales": [
+      0.1,
+      2.0
+    ],
+    "source": "CPU RK4; representative native MJX-Warp parity separately required"
+  },
+  "validation": [
+    {
+      "joint": "rearwheel_joint",
+      "input": 6.0,
+      "initial_velocity": 0.0
+    },
+    {
+      "joint": "rearwheel_joint",
+      "input": 24.0,
+      "initial_velocity": 0.0
+    },
+    {
+      "joint": "rearwheel_joint",
+      "input": 0.0,
+      "initial_velocity": 6.0
+    },
+    {
+      "joint": "steering_joint",
+      "input": -0.08,
+      "initial_velocity": 0.0
+    },
+    {
+      "joint": "steering_joint",
+      "input": 0.2,
+      "initial_velocity": 0.0
+    },
+    {
+      "joint": "steering_joint",
+      "input": 0.0,
+      "initial_velocity": 0.5
+    }
+  ]
+}

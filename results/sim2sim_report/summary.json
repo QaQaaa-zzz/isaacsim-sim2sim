@@ -1,0 +1,21 @@
+{
+  "sim2sim_accepted": false,
+  "source_test_original_qualified": 4,
+  "source_test_dr_qualified": 5,
+  "source_identity_repeats": 4,
+  "source_nonidentity_original_qualified": 0,
+  "source_nonidentity_dr_qualified": 1,
+  "target_original_qualified": 0,
+  "target_dr_qualified": 0,
+  "test_draws_per_actor": 16,
+  "adaptation_transitions_total": 327680,
+  "policy_adopted": false,
+  "selection": "source development only, original parent unchanged",
+  "scope": "engineering; 3 second screen requires apex latch, no termination through window and x>4; not full-task certification",
+  "unresolved": [
+    "anisotropic friction vs scalar material",
+    "torsion/rolling and compliant contact",
+    "adjacent articulation self-contact behavior",
+    "stiff saturated servo integration and accelerometer sampling"
+  ]
+}

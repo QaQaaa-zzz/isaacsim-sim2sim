@@ -1,0 +1,9 @@
+{
+  "reset_mode": "ground_keyframe_only",
+  "source_training_airborne_rsi_probability": 0.08,
+  "adaptation_airborne_rsi_probability": 0.0,
+  "actor_normalizer": "frozen from parent checkpoint",
+  "critic": "new observable critic; no privileged inputs",
+  "optimizer": "new Adam, not original Brax resume",
+  "observation_noise": "independent history vector readout noise; not persistent sensor-sample noise"
+}

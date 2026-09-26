@@ -1,0 +1,63 @@
+{
+  "schema": "physx_original_brax_learner_v1",
+  "training_transitions": 0,
+  "parent": {
+    "action_order": [
+      "steer",
+      "rear_wheel_drive",
+      "hip",
+      "knee"
+    ],
+    "actor_frame_fields": [
+      "gravity_x",
+      "gravity_y",
+      "gravity_z",
+      "angular_velocity_x",
+      "angular_velocity_y",
+      "angular_velocity_z",
+      "acceleration_x",
+      "acceleration_y",
+      "acceleration_z",
+      "steering_position",
+      "hip_position",
+      "knee_position",
+      "steering_velocity",
+      "hip_velocity",
+      "knee_velocity",
+      "front_wheel_velocity",
+      "rear_wheel_velocity",
+      "last_action_steer",
+      "last_action_rear_wheel_drive",
+      "last_action_hip",
+      "last_action_knee",
+      "estimated_forward_velocity",
+      "obstacle_relative_x",
+      "root_height",
+      "history_valid"
+    ],
+    "actor_task_fields": [
+      "jump_signal"
+    ],
+    "config_sha256": "baae0efb9be3d35daad6ecfd0a6e36afdbf3aecc9d2f45f4699e0eca6997284d",
+    "payload_sha256": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+    "training_transitions": 4988928,
+    "xml_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a"
+  },
+  "source_checkpoint": "/home/qy/DVGC/JIT/runs/phase_u/phase_u_v4_speed2_roll400_missed200_9977856_seed820701_20260826/checkpoints/transition_4988928",
+  "optimizer_initialization": "fresh_optax_adam_source_checkpoint_has_no_optimizer",
+  "exact_environment_resume": false,
+  "learner_state_sha256": "5f6d0b495a3e66d095149620b566fd8fa079e0a84ac0cb1800c7a23abc2771ea",
+  "actor_sha256": "e106298988b24041e63a9abe9a4edc809e2d68c5925130bf803c7a45145744a2",
+  "versions": {
+    "jax": "0.6.2",
+    "jaxlib": "0.6.2",
+    "brax": "0.14.2",
+    "flax": "0.11.2",
+    "optax": "0.2.6"
+  },
+  "original_brax_sha256": {
+    "losses.py": "b6dfe0aefeb1e3d11252fc40c6ec4512757fc7fccc0b3e37ec9ccd349351007c",
+    "ppo_networks.py": "3cbab3dbb3c7240f1f36477c3f92444aaf1812c59dc99d6dcb6c37bac4b0bca4",
+    "running_statistics.py": "9591566ebcd151d35dd1a9167de3b1b00df92100892b5889bc9514252fb8c0c4"
+  }
+}

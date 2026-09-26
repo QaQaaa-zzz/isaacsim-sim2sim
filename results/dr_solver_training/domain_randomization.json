@@ -1,0 +1,94 @@
+{
+  "schema": "sim2sim_dr_1",
+  "role": "engineering uncertainty envelope; ranges are declared hypotheses, not calibrated confidence intervals",
+  "mixture": {
+    "identity": 0.2,
+    "anisotropic": 0.4,
+    "isotropic": 0.4
+  },
+  "ranges": {
+    "density_scale": [
+      0.9,
+      1.1
+    ],
+    "com_shift_m": [
+      -0.002,
+      0.002
+    ],
+    "kp_scale": [
+      0.9,
+      1.1
+    ],
+    "kd_scale": [
+      0.9,
+      1.1
+    ],
+    "force_scale": [
+      0.9,
+      1.0
+    ],
+    "friction_scale": [
+      0.8,
+      1.2
+    ],
+    "isotropic_friction": [
+      0.5,
+      5.0
+    ],
+    "joint_damping": [
+      0.0,
+      0.005
+    ],
+    "gyro_noise_std": [
+      0.0,
+      0.01
+    ],
+    "acc_noise_std": [
+      0.0,
+      0.1
+    ]
+  },
+  "delay_control_steps": [
+    0,
+    1
+  ],
+  "simulation_dt_choices": [
+    0.001,
+    0.002,
+    0.005
+  ],
+  "fixed": {
+    "control_dt": 0.02,
+    "wheel_axes_m": [
+      0.07,
+      0.07,
+      0.025
+    ],
+    "joint_ranges": "source unchanged",
+    "model": "source XML hash unchanged",
+    "actuator_force_upper_bound": "source original"
+  },
+  "seed_namespaces": {
+    "train": 110000,
+    "dev": 210000,
+    "test": 310000
+  },
+  "notes": [
+    "Density randomization scales mass and all principal inertias together.",
+    "COM shifts describe uncertain mass distribution with the same principal inertia about shifted COM.",
+    "Isotropic family covers stock PhysX friction mismatch; anisotropic family retains source pair directions.",
+    "Numerical timestep is a separate solver uncertainty, not a physical parameter.",
+    "No invented anisotropic PhysX coefficient; target scalar limitation remains explicit.",
+    "Noise only changes observable gyro/acceleration fields; history masks and task bits remain exact.",
+    "Second screen adds implicitfast as a measured drive integration uncertainty, not exact PhysX emulation.",
+    "Finite-difference accelerometer mode matches target last-physics-step averaging. History vector readout noise is sampled per observation."
+  ],
+  "integrator_choices": [
+    "RK4",
+    "implicitfast"
+  ],
+  "accelerometer_mode_choices": [
+    "native",
+    "finite_difference"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "normalized_hull_replay",
+  "mode": "replay",
+  "duration": 2.0,
+  "hull_vertices": 255,
+  "mesh_normalization": 100
+}

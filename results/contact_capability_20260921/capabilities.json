@@ -1,0 +1,73 @@
+{
+  "requested_gains": {
+    "rearwheel_joint": {
+      "kp": 0.0,
+      "kd": 0.005
+    },
+    "steering_joint": {
+      "kp": 2.5,
+      "kd": 0.4
+    },
+    "hip_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    },
+    "knee_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    }
+  },
+  "runtime_gains": {
+    "rearwheel_joint": {
+      "kp": 0.0,
+      "kd": 0.004999999888241291
+    },
+    "steering_joint": {
+      "kp": 2.5,
+      "kd": 0.4000000059604645
+    },
+    "hip_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    },
+    "frontwheel_joint": {
+      "kp": 0.0,
+      "kd": 0.0
+    },
+    "knee_joint": {
+      "kp": 100.0,
+      "kd": 6.0
+    }
+  },
+  "runtime_masses": {
+    "base_link": 1.7599999904632568,
+    "rearwheel": 0.17000000178813934,
+    "steer": 0.0010000000474974513,
+    "downarm": 0.7200000286102295,
+    "frontwheel": 0.12999999523162842,
+    "uparm": 2.309999942779541
+  },
+  "usd_material_attributes": [
+    "physics:dynamicFriction",
+    "physics:staticFriction",
+    "physics:restitution",
+    "physics:density"
+  ],
+  "physx_material_attributes": [
+    "physxMaterial:frictionCombineMode",
+    "physxMaterial:restitutionCombineMode",
+    "physxMaterial:dampingCombineMode",
+    "physxMaterial:compliantContactAccelerationSpring",
+    "physxMaterial:compliantContactStiffness",
+    "physxMaterial:compliantContactDamping"
+  ],
+  "contact_interface_methods": [
+    "get_contact_report",
+    "get_full_contact_report",
+    "subscribe_contact_report_events",
+    "subscribe_full_contact_report_events"
+  ],
+  "source_model_gains_unchanged": true,
+  "friction_matches_source": false,
+  "native_training_launched": false
+}

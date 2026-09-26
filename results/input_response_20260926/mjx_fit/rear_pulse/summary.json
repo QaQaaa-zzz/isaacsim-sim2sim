@@ -1,0 +1,20 @@
+{
+  "name": "rear_pulse",
+  "physics_steps": 24,
+  "duration_s": 0.12,
+  "wall_s": 0.3663234190316871,
+  "gyro_vs_end_body_max_abs_rad_s": 0.8639936447143555,
+  "gyro_vs_end_body_rmse_rad_s": [
+    0.0021491162478923798,
+    0.767270028591156,
+    0.013381280936300755
+  ],
+  "native_world_vs_end_world_max_abs_rad_s": 0.8639940619468689,
+  "joint_interval_minus_end_qd_rmse_rad_s": [
+    10.811216354370117,
+    0.0022136070765554905,
+    0.12789380550384521,
+    0.14008156955242157,
+    0.015117879956960678
+  ]
+}

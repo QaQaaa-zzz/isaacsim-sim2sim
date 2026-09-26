@@ -1,0 +1,5 @@
+{
+  "reason": "CPU-only sampling stalled during graphics scene population; disable training/eval viewport updates and retain diagnostics",
+  "recorded_training_transitions": 0,
+  "worker_pid": 96178
+}

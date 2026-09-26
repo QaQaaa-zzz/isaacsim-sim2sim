@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "physics_dt": 0.005,
+  "integrator": "RK4",
+  "gravity": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "contact_enabled": false,
+  "initial": {
+    "keyframe": 0,
+    "qpos": [
+      2.5,
+      0.0,
+      0.15,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.8,
+      1.0
+    ],
+    "qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "cases": [
+    {
+      "name": "validation_steering_joint_neg0p08",
+      "enabled_joints": [
+        "steering_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            -0.08,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            -0.08,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_steering_joint_0p2",
+      "enabled_joints": [
+        "steering_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.2,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.2,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_rearwheel_joint_6p0",
+      "enabled_joints": [
+        "rearwheel_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            6.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            6.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_rearwheel_joint_24p0",
+      "enabled_joints": [
+        "rearwheel_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            24.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            24.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_hip_joint_neg0p08",
+      "enabled_joints": [
+        "hip_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.88,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.88,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_knee_joint_neg0p1",
+      "enabled_joints": [
+        "knee_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            0.9
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            0.9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_combined",
+      "enabled_joints": [
+        "steering_joint",
+        "rearwheel_joint",
+        "hip_joint",
+        "knee_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            -0.07,
+            18.0,
+            -0.7,
+            0.9
+          ]
+        },
+        {
+          "duration_s": 0.02,
+          "ctrl": [
+            0.06,
+            6.0,
+            -0.85,
+            1.08
+          ]
+        },
+        {
+          "duration_s": 0.04,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_rear_initial_6",
+      "initial": {
+        "keyframe": 0,
+        "qpos": [
+          2.5,
+          0.0,
+          0.15,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.8,
+          1.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          6.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "enabled_joints": [
+        "rearwheel_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.015,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.045,
+          "ctrl": [
+            0.0,
+            18.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation_steer_initial_0p5",
+      "initial": {
+        "keyframe": 0,
+        "qpos": [
+          2.5,
+          0.0,
+          0.15,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.8,
+          1.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "enabled_joints": [
+        "steering_joint"
+      ],
+      "segments": [
+        {
+          "duration_s": 0.015,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.045,
+          "ctrl": [
+            -0.1,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        },
+        {
+          "duration_s": 0.06,
+          "ctrl": [
+            0.0,
+            0.0,
+            -0.8,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

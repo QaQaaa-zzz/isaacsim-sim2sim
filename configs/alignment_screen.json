@@ -1,0 +1,12 @@
+{"role":"engineering diagnosis, not evaluation or training","cases":[
+{"name":"original_replay","mode":"replay"},
+{"name":"fine_hull_replay","mode":"replay","hull_vertices":256},
+{"name":"low_friction_replay","mode":"replay","friction":0.5,"hull_vertices":256},
+{"name":"mid_friction_replay","mode":"replay","friction":1.58113883,"hull_vertices":256},
+{"name":"explicit_replay","mode":"replay","drive":"explicit","hull_vertices":256},
+{"name":"explicit_1ms_replay","mode":"replay","drive":"explicit","dt":0.001,"hull_vertices":256},
+{"name":"implicit_1ms_replay","mode":"replay","dt":0.001,"hull_vertices":256},
+{"name":"tensor_sensor_policy","mode":"policy","sensor":"tensor","hull_vertices":256},
+{"name":"finite_difference_policy","mode":"policy","hull_vertices":256},
+{"name":"airborne_zero","mode":"zero","no_contact":true,"duration":0.1}
+]}

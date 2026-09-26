@@ -1,0 +1,20 @@
+{
+  "name": "steer_pulse",
+  "physics_steps": 24,
+  "duration_s": 0.12,
+  "wall_s": 20.90287921798881,
+  "gyro_vs_end_body_max_abs_rad_s": 0.2468704879283905,
+  "gyro_vs_end_body_rmse_rad_s": [
+    0.018349433317780495,
+    0.0014474029885604978,
+    0.09194108843803406
+  ],
+  "native_world_vs_end_world_max_abs_rad_s": 0.2468704879283905,
+  "joint_interval_minus_end_qd_rmse_rad_s": [
+    0.00035231781657785177,
+    4.408557415008545,
+    0.001291021122597158,
+    0.0004076474579051137,
+    0.00012677229824475944
+  ]
+}

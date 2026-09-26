@@ -1,0 +1,106 @@
+{
+  "checked_at_local": "2026-09-26T14:33:34.155568+08:00",
+  "run": "/home/qy/ISAAC——SIM/runs/physx_source_ppo_fresh_10m_20260926",
+  "status_snapshot": {
+    "entropy_loss": -0.025725100189447403,
+    "grad_norm": 61.78559112548828,
+    "kl_mean": 0.0228678397834301,
+    "learning_rate": 9.999987378250808e-05,
+    "policy_dist_max_loc": 1.1062841415405273,
+    "policy_dist_max_std": 1.87979257106781,
+    "policy_dist_mean_loc": 0.0005920975818298757,
+    "policy_dist_mean_std": 0.7562587261199951,
+    "policy_dist_min_loc": -1.4955590963363647,
+    "policy_dist_min_std": 0.41252559423446655,
+    "policy_loss": -0.013251337222754955,
+    "total_loss": 59.10581970214844,
+    "v_loss": 59.14476776123047,
+    "update": 2,
+    "optimizer_steps_this_update": 192,
+    "optimizer_steps": 384,
+    "normalizer_count": 49152,
+    "stage": "sampling",
+    "completed": false,
+    "pid": 179266,
+    "training_transitions": 52608,
+    "budget": 9977856,
+    "mean_step_reward": -17.31578071783201,
+    "loss": 59.10581970214844,
+    "speed_rmse": 0.7711272214357142,
+    "sampling_s": 148.21621363889426,
+    "optimization_s": 0.9653951049549505,
+    "sampling_transitions_per_s": 165.8118190758509,
+    "wall_s": 357.2035664420109,
+    "max_rss_mb": 7068.69921875,
+    "evaluation_physics_transitions": 760,
+    "best": {
+      "checkpoint": "/home/qy/ISAAC——SIM/runs/physx_source_ppo_fresh_10m_20260926/checkpoints/transition_00024576",
+      "training_transitions": 24576,
+      "development_mean_return": 119.70442952274288,
+      "selection": "all completed source PPO blocks plus initialization; fixed eight-case development return; earlier wins tie",
+      "qualified": false
+    },
+    "sampling_tick": 9
+  },
+  "source_identity": {
+    "run_physx_pipeline.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "train_physx_brax.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "brax_physx_learner.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "physx_evaluation_worker.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "physx_task.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "policy_runtime.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "source_reset.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "usd_model.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "physx_training_math.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "collision_geometry.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "drive_calibration.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "render_traces.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "scene_visuals.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    },
+    "report_physx_training.py": {
+      "snapshot_matches_declared": true,
+      "root_matches_declared": true
+    }
+  },
+  "source_code_path_is_not_snapshot": true,
+  "training_and_final_physics_evaluation_use_already_running_processes": true,
+  "post_training_report_and_render_launch_root_scripts": true
+}

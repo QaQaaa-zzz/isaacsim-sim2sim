@@ -1,0 +1,7 @@
+{
+  "name": "explicit_1ms_replay",
+  "mode": "replay",
+  "drive": "explicit",
+  "dt": 0.001,
+  "hull_vertices": 256
+}

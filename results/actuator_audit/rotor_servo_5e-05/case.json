@@ -1,0 +1,9 @@
+{
+  "name": "rotor_servo_5e-05",
+  "model": "rotor",
+  "mode": "servo",
+  "joint": "rearwheel_joint",
+  "input": 12.0,
+  "dt": 5e-05,
+  "duration": 0.02
+}

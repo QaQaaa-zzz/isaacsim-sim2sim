@@ -1,0 +1,422 @@
+{
+  "purpose": "Matched actuator and integration audit; user approved; no training",
+  "source_integrators": [
+    "RK4",
+    "IMPLICITFAST"
+  ],
+  "contact": false,
+  "gravity": [
+    0,
+    0,
+    0
+  ],
+  "other_servos": "disabled",
+  "bike_initial_pose": "original keyframe except hip=-0.8 knee=1.0, zero velocities",
+  "cases": [
+    {
+      "name": "rotor_servo_0.005",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_servo_0.001",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.001,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_servo_0.0005",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.0005,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_servo_0.0001",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.0001,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_servo_5e-05",
+      "model": "rotor",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 5e-05,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_torque_-1_0.001",
+      "model": "rotor",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_torque_1_0.001",
+      "model": "rotor",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.02
+    },
+    {
+      "name": "bike_torque_rearwheel_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_rearwheel_joint_1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_steering_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_steering_joint_1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_frontwheel_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "frontwheel_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_frontwheel_joint_1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "frontwheel_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_hip_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "hip_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_hip_joint_1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "hip_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_knee_joint_-1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "knee_joint",
+      "input": -0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_knee_joint_1_0.001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "knee_joint",
+      "input": 0.02,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "rotor_torque_-1_0.0001",
+      "model": "rotor",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.02
+    },
+    {
+      "name": "rotor_torque_1_0.0001",
+      "model": "rotor",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.02
+    },
+    {
+      "name": "bike_torque_rearwheel_joint_-1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_rearwheel_joint_1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "rearwheel_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_steering_joint_-1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_steering_joint_1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "steering_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_frontwheel_joint_-1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "frontwheel_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_frontwheel_joint_1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "frontwheel_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_hip_joint_-1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "hip_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_hip_joint_1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "hip_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_knee_joint_-1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "knee_joint",
+      "input": -0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_torque_knee_joint_1_0.0001",
+      "model": "bike",
+      "mode": "torque",
+      "joint": "knee_joint",
+      "input": 0.02,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_rearwheel_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_steering_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_hip_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "hip_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_knee_joint_0.005",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "knee_joint",
+      "input": 0.1,
+      "dt": 0.005,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_rearwheel_joint_0.001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_steering_joint_0.001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_hip_joint_0.001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "hip_joint",
+      "input": 0.1,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_knee_joint_0.001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "knee_joint",
+      "input": 0.1,
+      "dt": 0.001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_rearwheel_joint_0.0001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_steering_joint_0.0001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_hip_joint_0.0001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "hip_joint",
+      "input": 0.1,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_knee_joint_0.0001",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "knee_joint",
+      "input": 0.1,
+      "dt": 0.0001,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_rearwheel_joint_5e-05",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "rearwheel_joint",
+      "input": 12.0,
+      "dt": 5e-05,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_steering_joint_5e-05",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "steering_joint",
+      "input": 0.1,
+      "dt": 5e-05,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_hip_joint_5e-05",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "hip_joint",
+      "input": 0.1,
+      "dt": 5e-05,
+      "duration": 0.05
+    },
+    {
+      "name": "bike_servo_knee_joint_5e-05",
+      "model": "bike",
+      "mode": "servo",
+      "joint": "knee_joint",
+      "input": 0.1,
+      "dt": 5e-05,
+      "duration": 0.05
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "bike_servo_steering_joint_0.005",
+  "model": "bike",
+  "mode": "servo",
+  "joint": "steering_joint",
+  "input": 0.1,
+  "dt": 0.005,
+  "duration": 0.05
+}

@@ -1,0 +1,32 @@
+# 大体量运行产物：本仓库只收录报告、图与小证据，不收数据块
+.venv/
+python/
+cache/
+**/cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 训练数据块
+runs/*/checkpoints/
+runs/*/development/
+runs/*/recovery/*/runtime/
+runs/*/tensorboard/
+runs/*/evaluation_queue/
+**/episodes.jsonl
+**/*.training.log
+**/tensorboard/*
+
+# 模型/数据二进制
+*.npz
+*.pt
+*.pth
+*.pkl
+*.usdz
+*.mp4
+*.gif
+
+# 例外：策略身份与推理对照是小文件，必须保留
+!policy/actor.npz
+!policy/reference_inference.npz
+!model/**/*.usda

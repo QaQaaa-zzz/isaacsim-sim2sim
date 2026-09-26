@@ -1,0 +1,5 @@
+{
+  "reason": "Initialization exceeded standalone probe time by over 10x with rising memory; stop before any training transitions, add stage and stack instrumentation",
+  "recorded_training_transitions": 0,
+  "pid": 84602
+}

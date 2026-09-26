@@ -1,0 +1,23 @@
+{
+  "role": "cooked wheel geometry repair validation",
+  "cases": [
+    {
+      "name": "sectors4",
+      "mode": "replay",
+      "duration": 0.1,
+      "wheel_sectors": 4
+    },
+    {
+      "name": "sectors8",
+      "mode": "replay",
+      "duration": 0.1,
+      "wheel_sectors": 8
+    },
+    {
+      "name": "sectors16",
+      "mode": "replay",
+      "duration": 0.1,
+      "wheel_sectors": 16
+    }
+  ]
+}

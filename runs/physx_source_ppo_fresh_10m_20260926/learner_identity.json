@@ -1,0 +1,17 @@
+{
+  "initialization": "fresh",
+  "initial_normalizer_count": 0,
+  "pretrained_weights_loaded": false,
+  "versions": {
+    "jax": "0.6.2",
+    "jaxlib": "0.6.2",
+    "brax": "0.14.2",
+    "flax": "0.11.2",
+    "optax": "0.2.6"
+  },
+  "original_brax_sha256": {
+    "losses.py": "b6dfe0aefeb1e3d11252fc40c6ec4512757fc7fccc0b3e37ec9ccd349351007c",
+    "ppo_networks.py": "3cbab3dbb3c7240f1f36477c3f92444aaf1812c59dc99d6dcb6c37bac4b0bca4",
+    "running_statistics.py": "9591566ebcd151d35dd1a9167de3b1b00df92100892b5889bc9514252fb8c0c4"
+  }
+}

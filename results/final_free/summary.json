@@ -1,0 +1,13 @@
+{
+  "mode": "free",
+  "steps": 800,
+  "duration_s": 4.0,
+  "frames": 100,
+  "mass_kg": 5.091,
+  "max_abs_roll_deg": 117.2030148947153,
+  "final_roll_deg": -98.6439373083004,
+  "first_abs_roll_over_45deg_s": 1.25,
+  "note": "45deg is a descriptive fall marker, not a predeclared task-success oracle",
+  "max_fk_position_error_m": 1.540507819086656e-07,
+  "max_render_body_position_error_m": 0.0
+}

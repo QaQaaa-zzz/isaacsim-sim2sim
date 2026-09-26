@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-26T14:41:26.249581+08:00",
+  "run": "/home/qy/ISAAC\u2014\u2014SIM/runs/physx_source_ppo_fresh_10m_20260926",
+  "recorded_stage": "sampling",
+  "recorded_update": 3,
+  "recorded_training_transitions": 74112,
+  "recorded_completed": false,
+  "process_alive": {
+    "pipeline_pid": false,
+    "training_pid": false,
+    "evaluation_worker_pid": false,
+    "tensorboard_pid": false
+  },
+  "exit_reason": "unknown: no successful completion or explicit exit diagnostic found in training log",
+  "action": "no restart during migration audit; historical status left unchanged"
+}

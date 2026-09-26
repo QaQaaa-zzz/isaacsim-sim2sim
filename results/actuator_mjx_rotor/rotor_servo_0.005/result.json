@@ -1,0 +1,19 @@
+{
+  "case": {
+    "name": "rotor_servo_0.005",
+    "model": "rotor",
+    "mode": "servo",
+    "joint": "rearwheel_joint",
+    "input": 12.0,
+    "dt": 0.005,
+    "duration": 0.02
+  },
+  "engine": "MJX-Warp in original training virtual environment",
+  "max_abs_qd_difference_from_cpu": 1.9531249563442543e-05,
+  "qd_rmse_from_cpu": [
+    1.1860309863260254e-05
+  ],
+  "mjx_final_qd": [
+    -4.882811936113285e-06
+  ]
+}

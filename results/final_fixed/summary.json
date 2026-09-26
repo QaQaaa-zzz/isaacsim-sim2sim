@@ -1,0 +1,13 @@
+{
+  "mode": "fixed",
+  "steps": 800,
+  "duration_s": 4.0,
+  "frames": 100,
+  "mass_kg": 5.091,
+  "max_abs_roll_deg": 0.0,
+  "final_roll_deg": 0.0,
+  "first_abs_roll_over_45deg_s": null,
+  "note": "45deg is a descriptive fall marker, not a predeclared task-success oracle",
+  "max_fk_position_error_m": 1.775236815326764e-07,
+  "max_render_body_position_error_m": 0.0
+}

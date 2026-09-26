@@ -1,0 +1,42 @@
+{
+  "stage": "complete",
+  "completed": true,
+  "pid": 1230435,
+  "training_transitions": 10000000,
+  "budget": 10000000,
+  "update": 4883,
+  "sampling_s": 7.234403731010389,
+  "optimization_s": 0.006184739002492279,
+  "wall_s": 45928.257614272006,
+  "sampling_transitions_per_s": 230.01204548029813,
+  "mean_step_reward": 0.29528552719932866,
+  "loss": 82.86601638793945,
+  "approx_kl": 0.007427503354847431,
+  "kl_stop": true,
+  "accepted_minibatches": 2,
+  "speed_rmse": 0.6546876586769438,
+  "evaluation_physics_transitions": 241696,
+  "evaluation_recorded_transitions": 42022,
+  "best": {
+    "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/runs/physx_phase_u_10m_20260921/checkpoints/transition_05251072",
+    "training_transitions": 5251072,
+    "development_mean_return": 1355.4777459222373,
+    "selection": "fixed 4-ground/4-airborne development mean original episode return; earlier wins tie",
+    "qualified": false
+  },
+  "media_pending": false,
+  "media_results": [
+    {
+      "role": "original_test",
+      "returncode": 0,
+      "verified_files_present": true
+    },
+    {
+      "role": "best_test",
+      "returncode": 0,
+      "verified_files_present": true
+    }
+  ],
+  "report_returncode": 0,
+  "pipeline_pid": 1230432
+}

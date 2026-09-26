@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "diagnostic_cases": 6,
+  "pd_applied_and_verified": true,
+  "source_friction_implemented": false,
+  "training_transitions": 0,
+  "best_model": null,
+  "status": "requires_contact_solver_extension",
+  "requested_training_transitions": 10000000,
+  "training_started": false
+}

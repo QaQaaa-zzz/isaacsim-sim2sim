@@ -1,0 +1,28 @@
+{
+  "stage": "training_and_evaluation_complete",
+  "completed": true,
+  "pid": 1210782,
+  "training_transitions": 4096,
+  "budget": 4096,
+  "update": 2,
+  "sampling_s": 9.409250454977155,
+  "optimization_s": 0.0040297399973496795,
+  "wall_s": 91.26429058104986,
+  "sampling_transitions_per_s": 217.65814501373822,
+  "mean_step_reward": 2.1621261455104723,
+  "loss": 344.40283203125,
+  "approx_kl": 8.731149137020111e-10,
+  "kl_stop": true,
+  "accepted_minibatches": 1,
+  "speed_rmse": 0.7883647983224641,
+  "evaluation_physics_transitions": 14944,
+  "evaluation_recorded_transitions": 2389,
+  "best": {
+    "checkpoint": "/home/qy/ISAAC\u2014\u2014SIM/results/isaac_training_engineering/ppo_vector32/checkpoints/transition_00004096",
+    "training_transitions": 4096,
+    "development_mean_return": 588.8777859759706,
+    "selection": "fixed 4-ground/4-airborne development mean original episode return; earlier wins tie",
+    "qualified": false
+  },
+  "media_pending": true
+}

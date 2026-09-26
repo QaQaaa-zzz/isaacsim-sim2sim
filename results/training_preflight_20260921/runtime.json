@@ -1,0 +1,289 @@
+{
+  "variant": "default converter, no calibrated gains, no DR",
+  "training_started": false,
+  "requested_training_transitions": 10000000,
+  "bodies": [
+    {
+      "name": "base_link",
+      "source_mass_kg": 1.76,
+      "physx_mass_kg": 1.7599999904632568,
+      "matches": true
+    },
+    {
+      "name": "rearwheel",
+      "source_mass_kg": 0.17,
+      "physx_mass_kg": 0.17000000178813934,
+      "matches": true
+    },
+    {
+      "name": "steer",
+      "source_mass_kg": 0.001,
+      "physx_mass_kg": 0.0010000000474974513,
+      "matches": true
+    },
+    {
+      "name": "downarm",
+      "source_mass_kg": 0.72,
+      "physx_mass_kg": 0.7200000286102295,
+      "matches": true
+    },
+    {
+      "name": "frontwheel",
+      "source_mass_kg": 0.13,
+      "physx_mass_kg": 0.12999999523162842,
+      "matches": true
+    },
+    {
+      "name": "uparm",
+      "source_mass_kg": 2.31,
+      "physx_mass_kg": 2.309999942779541,
+      "matches": true
+    }
+  ],
+  "joints": [
+    {
+      "name": "rearwheel_joint",
+      "source_kp": -0.0,
+      "source_kd": 5.0,
+      "physx_kp": -0.0,
+      "physx_kd": 5.0,
+      "matches": true
+    },
+    {
+      "name": "steering_joint",
+      "source_kp": 10.0,
+      "source_kd": 0.1,
+      "physx_kp": 10.0,
+      "physx_kd": 0.10000000149011612,
+      "matches": true
+    },
+    {
+      "name": "hip_joint",
+      "source_kp": 100.0,
+      "source_kd": 6.0,
+      "physx_kp": 100.0,
+      "physx_kd": 6.0,
+      "matches": true
+    },
+    {
+      "name": "frontwheel_joint",
+      "source_kp": 0.0,
+      "source_kd": 0.0,
+      "physx_kp": 0.0,
+      "physx_kd": 0.0,
+      "matches": true
+    },
+    {
+      "name": "knee_joint",
+      "source_kp": 100.0,
+      "source_kd": 6.0,
+      "physx_kp": 100.0,
+      "physx_kd": 6.0,
+      "matches": true
+    }
+  ],
+  "source_pairs": [
+    {
+      "geoms": [
+        "floor",
+        "base_collision"
+      ],
+      "friction": [
+        1.0,
+        0.005,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "step",
+        "base_collision"
+      ],
+      "friction": [
+        1.0,
+        0.005,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "floor",
+        "rearwheel_collision"
+      ],
+      "friction": [
+        5.0,
+        0.5,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "step",
+        "rearwheel_collision"
+      ],
+      "friction": [
+        5.0,
+        0.5,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "floor",
+        "frontwheel_collision"
+      ],
+      "friction": [
+        5.0,
+        0.5,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "step",
+        "frontwheel_collision"
+      ],
+      "friction": [
+        5.0,
+        0.5,
+        0.0001,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "step",
+        "downarm_collision"
+      ],
+      "friction": [
+        0.8,
+        0.1,
+        0.1,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "step",
+        "uparm_collision"
+      ],
+      "friction": [
+        0.8,
+        0.1,
+        0.1,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "base_collision",
+        "steer_collision"
+      ],
+      "friction": [
+        0.5,
+        0.1,
+        0.1,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "base_collision",
+        "downarm_collision"
+      ],
+      "friction": [
+        0.5,
+        0.1,
+        0.1,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "geoms": [
+        "base_collision",
+        "uparm_collision"
+      ],
+      "friction": [
+        0.5,
+        0.1,
+        0.1,
+        0.0001,
+        0.0001
+      ]
+    }
+  ],
+  "target_materials": [
+    {
+      "path": "/World/Materials/material_0",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_1",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_3",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_9",
+      "static": 5.0,
+      "dynamic": 5.0
+    },
+    {
+      "path": "/World/Materials/material_12",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_15",
+      "static": 5.0,
+      "dynamic": 5.0
+    },
+    {
+      "path": "/World/Materials/material_18",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_19",
+      "static": 1.0,
+      "dynamic": 1.0
+    },
+    {
+      "path": "/World/Materials/material_23",
+      "static": 1.0,
+      "dynamic": 1.0
+    }
+  ],
+  "mass_matches": true,
+  "default_pd_numeric_matches": true,
+  "friction_matches": false,
+  "friction_reason": "Source wheel-floor has two tangential coefficients [5,0.5]; target uses one isotropic static/dynamic coefficient 5. These are different dimensions of the contact model.",
+  "sha256": {
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/DVGC/assets/orange_bike_4kg_horizontal.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/DVGC/JIT/runs/phase_u/phase_u_v4_speed2_roll400_missed200_9977856_seed820701_20260826/checkpoints/transition_4988928/payload.pkl": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+    "/home/qy/ISAAC\u2014\u2014SIM/policy/resolved_config.json": "557e048980f90627b571f2bbbc554c5e66bfab2128ac8cbd799f36058eb7f7e3"
+  },
+  "config_canonical_sha256": "baae0efb9be3d35daad6ecfd0a6e36afdbf3aecc9d2f45f4699e0eca6997284d",
+  "conditional_launch_gate_passed": false
+}

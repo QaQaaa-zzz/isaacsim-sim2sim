@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "training_transitions": 0,
+  "cases_requested": 28,
+  "cases_completed": 28,
+  "rollout_physics_steps": 2112,
+  "initialization_physics_steps": 56,
+  "total_physics_steps": 2168
+}

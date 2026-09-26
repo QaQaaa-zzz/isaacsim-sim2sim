@@ -1,0 +1,7 @@
+{
+  "video_kind": "replay of actual logged PhysX states, not a new dynamics rollout",
+  "physics_steps_during_render": 0,
+  "frames": 75,
+  "max_root_pose_replay_error_m": 2.384185791015625e-07,
+  "final_state_hold_after_s": 1.74
+}

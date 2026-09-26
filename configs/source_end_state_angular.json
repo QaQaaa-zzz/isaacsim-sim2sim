@@ -1,0 +1,22 @@
+{
+  "contact_mode": "identity",
+  "density_scale": 1.0,
+  "com_shift_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "kp_scale": 1.0,
+  "kd_scale": 1.0,
+  "force_scale": 1.0,
+  "friction_scale": 1.0,
+  "friction": null,
+  "joint_damping": 0.0,
+  "gyro_noise_std": 0.0,
+  "acc_noise_std": 0.0,
+  "delay_control_steps": 0,
+  "simulation_dt": 0.005,
+  "integrator": "RK4",
+  "accelerometer_mode": "native",
+  "angular_velocity_mode": "end_state"
+}

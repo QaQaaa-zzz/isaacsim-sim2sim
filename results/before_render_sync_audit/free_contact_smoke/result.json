@@ -1,0 +1,42 @@
+{
+  "engine": "Isaac Sim / PhysX",
+  "isaacsim_version": "5.1.0.0",
+  "mode": "free",
+  "source_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+  "joint_names": [
+    "rearwheel_joint",
+    "steering_joint",
+    "hip_joint",
+    "frontwheel_joint",
+    "knee_joint"
+  ],
+  "mass_audit_passed": true,
+  "physics_dt_s": 0.005,
+  "target_update_dt_s": 0.02,
+  "servo": "PhysX implicit force drive with source SI gains and force limits",
+  "effort_semantics": "PhysX projected measured joint effort; not isolated motor torque",
+  "jit_control_dt_s": 0.02,
+  "duration_s": 4.0,
+  "frames": 100,
+  "endpoint": "horizon",
+  "wall_seconds": 1.576082468032837,
+  "video_error": null,
+  "physical_task_success": "not evaluated; no balance or learned policy",
+  "root_displacement_m": [
+    0.03530314564704895,
+    0.18645933270454407,
+    -0.06635549664497375
+  ],
+  "joint_range_observed_rad": [
+    0.14640845358371735,
+    0.014463639818131924,
+    0.04864799976348877,
+    4.741857528686523,
+    0.047514915466308594
+  ],
+  "limitations": [
+    "explicit USD geometry, tessellated convex ellipsoid wheels; isotropic contact approximation not dynamically equivalent",
+    "implicit PhysX servo integration differs from MuJoCo RK4; source gains/target/force caps retained",
+    "fixed mode constrains root for joint diagnostics; free mode has no balance policy"
+  ]
+}

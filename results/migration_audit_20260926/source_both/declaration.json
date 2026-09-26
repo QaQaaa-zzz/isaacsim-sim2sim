@@ -1,0 +1,314 @@
+{
+  "role": "bounded engineering migration diagnostic; no training or task qualification",
+  "config_path": "/home/qy/ISAAC\u2014\u2014SIM/results/migration_audit_20260926/configs/source_both.json",
+  "config_sha256": "e720099af4283b69db3ac8a2e7b579c7885c737be196dd171c8e4c53f4a4632c",
+  "actor_path": "/home/qy/ISAAC\u2014\u2014SIM/policy/actor.npz",
+  "actor_sha256": "c454c998b193c16f24ab0bb78834f852599eb56d2934dc4f2b0227bb5852e6fb",
+  "source_and_model_sha256": {
+    "/home/qy/ISAAC\u2014\u2014SIM/probe_physx_migration.py": "7a412b801a7cc6fe8708bd2b41df725edcd3e16abab38a75256d6b2cf250cb34",
+    "/home/qy/ISAAC\u2014\u2014SIM/physx_task.py": "54694e8a4b6da2a422effe74ee313d87b7c8531abc32d26c8487eefb2dd7b125",
+    "/home/qy/ISAAC\u2014\u2014SIM/policy_runtime.py": "715f315a5e61629917ae6cc17e044a9cb1e5af3b5fcd8652b19cc50075253ce1",
+    "/home/qy/ISAAC\u2014\u2014SIM/physx_training_math.py": "432edbacf713258c299f67a40d1c6f8e96f7f69823a2646ef7ba5e1665e287ec",
+    "/home/qy/ISAAC\u2014\u2014SIM/source_reset.py": "9864bc63d5fe6313e47f2276a69869a06386131f027bc86ee4a04cfd91aff98d",
+    "/home/qy/ISAAC\u2014\u2014SIM/usd_model.py": "e90a9038c8fb9a923520bc45cbdf3c7090c31a15a3344c9b832a3d283929cb33",
+    "/home/qy/ISAAC\u2014\u2014SIM/drive_calibration.py": "af6f771a198e3850031ac41efa627ba9862afee2bea486a5e5fa79a5bac11c0b",
+    "/home/qy/ISAAC\u2014\u2014SIM/collision_geometry.py": "2f38628e323822b0e0aaa1df79334cb7459dc8d104928501ff5552442f537cb8",
+    "/home/qy/ISAAC\u2014\u2014SIM/policy/resolved_config.json": "557e048980f90627b571f2bbbc554c5e66bfab2128ac8cbd799f36058eb7f7e3",
+    "/home/qy/DVGC/JIT/src/jit_dvgc/config.py": "7dca5c7c6679498d8999faf1c761df463fb2843376814dece80c779002de2123",
+    "/home/qy/DVGC/JIT/src/jit_dvgc/rewards.py": "6ca5acd949326866c2e1645c645497a8b71d4bab5498fe1c35a4d1d9b6774e01",
+    "/home/qy/DVGC/JIT/src/jit_dvgc/semantics.py": "e7c07a53a52e428fe900b0a1073a7f2fd999860b85b67b45290a47e25ca4f024",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source.xml": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/compiled.xml": "099144b0410dc8061ae69e36ceda7f701e6fc95a556a7116041cb1f196d3ae56",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/source_audit.json": "3e380ce60bd51624a7a9492daf0d1d13e58f773054978a28d4fd427516037993",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/rearwheel.STL": "59dcb77f41abba48f69cf42704223e9a430d9504ca6f875078a69dcb77e115fc",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/base_link.STL": "1c28df6c0b818860b2071fad83c309036b9482a37b5e1fe47679ef2625fa400e",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/base_link2.STL": "fec35fa29a0bb18c3223604a5e3c3635b615ef02e98d9dfff3f7c54a1158f4c1",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/steer.STL": "f2ea9acdba9058c517c1ce9bc4c6b7b234320dac1a2d1a12dc69b375c3e6d95b",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/uparm.STL": "616829c806da9ec31d0d9b10f49d0b3e57d4af2ee28a875274dff81db3c5cd3a",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/frontwheel.STL": "c3933b6da0aa7c38cdfb01d00c6c861f2e71b8fab4af2c9130088fe8cfc0bf78",
+    "/home/qy/ISAAC\u2014\u2014SIM/model/meshes/downarm.STL": "fd9a241e04cd8f388697326e9e125f63c444942ff9151a1543a48e5eaccf50c2"
+  },
+  "spec": {
+    "schema": "isaac-source-ppo-fresh-v1",
+    "backend_required": "PhysX",
+    "requested_training_transitions": 9977856,
+    "initial_actor": null,
+    "reward": {
+      "action_coeff": 1.5,
+      "action_magnitude_scale": 0.1,
+      "action_smoothness_scale": 0.0001,
+      "apex_success_bonus": 50.0,
+      "desired_velocity": 2.0,
+      "failed_episode_return": -100.0,
+      "height_coeff": 40.0,
+      "illegal_contact_penalty": 0.0,
+      "joint_energy_penalty_coeff": 2.0,
+      "jump_reward_min_height": 0.35,
+      "jump_zone_missed_penalty": 200.0,
+      "low_height_penalty": 5.0,
+      "low_height_penalty_full_at": 0.15,
+      "max_beneficial_height": 0.8,
+      "peak_reward_height": 0.5,
+      "physical_failure_penalty": 30.0,
+      "pitch_angular_velocity_coeff": 0.15,
+      "pitch_coeff": 1.0,
+      "rear_wheel_action_diff_penalty": 2.0,
+      "roll_coeff": 3.0,
+      "roll_pitch_failure_penalty": 400.0,
+      "speed_coeff": 1.0,
+      "speed_sigma": 0.5,
+      "steering_action_diff_penalty": 1.0,
+      "steering_magnitude_penalty": 0.25,
+      "stuck_penalty": 100.0,
+      "survival_reward": 1.5,
+      "timeout_penalty": 10.0,
+      "total_max": 50.0,
+      "total_min": -400.0,
+      "yaw_coeff": 0.3,
+      "yaw_limit_penalty": 100.0
+    },
+    "reset": {
+      "airborne_rsi_probability": 0.08,
+      "airborne_rsi_vx_max": 2.2,
+      "airborne_rsi_vx_min": 1.8,
+      "airborne_rsi_vz_max": 3.6,
+      "airborne_rsi_vz_min": 3.0,
+      "airborne_rsi_x_max": 2.9,
+      "airborne_rsi_x_min": 2.7,
+      "airborne_rsi_z_max": 0.45,
+      "airborne_rsi_z_min": 0.38,
+      "initial_forward_velocity": 2.0,
+      "keyframe": "initial_state"
+    },
+    "target_drive_gains": {
+      "rearwheel_joint": {
+        "kp": 0.0,
+        "kd": 5.0
+      },
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      },
+      "hip_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      },
+      "knee_joint": {
+        "kp": 100.0,
+        "kd": 6.0
+      }
+    },
+    "contact_required": {
+      "mode": "forward_axis_matched_isotropic",
+      "static_friction": 0.5,
+      "dynamic_friction": 0.5,
+      "combine": "min",
+      "source_initial_forward_coefficient": 0.5,
+      "source_lateral_coefficient_not_preserved": 5.0
+    },
+    "physics_dt": 0.001,
+    "control_dt": 0.02,
+    "episode_horizon": 400,
+    "best_selection": {
+      "metric": "mean undiscounted episode return on fixed development resets",
+      "seeds": [
+        1820701,
+        1820702,
+        1820703,
+        1820704,
+        1820717,
+        1820735,
+        1820740,
+        1820756
+      ],
+      "eval_interval_training_transitions": 24576,
+      "tie_break": "earlier checkpoint",
+      "test_seeds": [
+        2820701,
+        2820702,
+        2820703,
+        2820704,
+        2820723,
+        2820731,
+        2820733,
+        2820760
+      ],
+      "panel": "4 original ground resets + 4 original airborne resets, seeds selected by reset type only before policy scoring; not training distribution weighting",
+      "physics_reset": "independent eight-environment persistent PhysX process; world reset before scoring; exact repeatability not established"
+    },
+    "launch_ready": false,
+    "actuator_mode": {
+      "rearwheel_joint": "native_implicit",
+      "steering_joint": "native_implicit",
+      "hip_joint": "explicit_PD_capped",
+      "knee_joint": "explicit_PD_capped"
+    },
+    "ppo": {
+      "batch_size": 16,
+      "clipping_epsilon": 0.2,
+      "discounting": 0.99,
+      "entropy_cost": 0.01,
+      "episode_horizon": 400,
+      "gae_lambda": 0.95,
+      "held_out_seeds": [
+        980001,
+        980002,
+        980003,
+        980004,
+        980005,
+        980006,
+        980007,
+        980008
+      ],
+      "learning_rate": 0.0001,
+      "max_grad_norm": 0.5,
+      "num_eval_envs": 8,
+      "num_evals": 407,
+      "num_minibatches": 24,
+      "num_parallel_envs": 384,
+      "num_updates_per_batch": 8,
+      "requested_transitions": 9977856,
+      "reward_scaling": 0.1,
+      "seed": 820701,
+      "unroll_length": 64
+    },
+    "implementation_notes": [
+      "Fresh training: no pretrained Actor, critic, observation statistics or optimizer loaded.",
+      "Original Brax network initialization using global PRNG split from seed820701; zero Welford count, zero means/unit initial standard deviations, fresh Adam.",
+      "Original PPO/network/reward/reset parameters preserved;384 environments x64 steps,24 minibatches x8 epochs.",
+      "PhysX CPU physics1ms/control20ms; calibrated PD and wheel0.5/min preserved; source lateral5 and exact solver/sensor equivalence not preserved.",
+      "406 complete blocks=9977856 new training transitions; earlier erroneous continuation run and engineering interactions are excluded.",
+      "Independent fixed eight-case development panel selects best each block; evaluation protocol is an addition, not copied from source sparse evaluation.",
+      "Complete logical lane resets; per-lane contact-cache equivalence unproven. Previous repeatability6/8 exact; new policy repeatability recorded separately."
+    ],
+    "verification": {
+      "previous_physics_and_ppo_gate": "results/ppo_port_audit_20260926/launch_gate.json",
+      "fresh_initializer_tests": "results/ppo_port_audit_20260926/fresh_tests.log",
+      "fresh_engineering_gate": "results/ppo_port_audit_20260926/fresh_block/status.json",
+      "fresh_initializer_evidence": "results/ppo_port_audit_20260926/fresh_initialization_verification.json",
+      "fresh_engineering_training_transitions": 24576
+    },
+    "evaluation_seed_role": "development and test namespaces fixed, 4 identical deterministic ground resets + 4 sampled airborne resets",
+    "source_ppo_port": true,
+    "initial_checkpoint": null,
+    "initialization": "fresh",
+    "configuration_reference_checkpoint": "/home/qy/DVGC/JIT/runs/phase_u/phase_u_v4_speed2_roll400_missed200_9977856_seed820701_20260826/checkpoints/transition_4988928",
+    "configuration_reference_identity": {
+      "action_order": [
+        "steer",
+        "rear_wheel_drive",
+        "hip",
+        "knee"
+      ],
+      "actor_frame_fields": [
+        "gravity_x",
+        "gravity_y",
+        "gravity_z",
+        "angular_velocity_x",
+        "angular_velocity_y",
+        "angular_velocity_z",
+        "acceleration_x",
+        "acceleration_y",
+        "acceleration_z",
+        "steering_position",
+        "hip_position",
+        "knee_position",
+        "steering_velocity",
+        "hip_velocity",
+        "knee_velocity",
+        "front_wheel_velocity",
+        "rear_wheel_velocity",
+        "last_action_steer",
+        "last_action_rear_wheel_drive",
+        "last_action_hip",
+        "last_action_knee",
+        "estimated_forward_velocity",
+        "obstacle_relative_x",
+        "root_height",
+        "history_valid"
+      ],
+      "actor_task_fields": [
+        "jump_signal"
+      ],
+      "config_sha256": "baae0efb9be3d35daad6ecfd0a6e36afdbf3aecc9d2f45f4699e0eca6997284d",
+      "payload_sha256": "b388de198628b56309e83b3b4993ecf0c655f341c259883a2d43f19e954c6f5e",
+      "training_transitions": 4988928,
+      "xml_sha256": "0b56d3672773ef05a2b5982117fa53a7fdffcaf2b7f3f04a7a7941233d6e9c8a"
+    },
+    "diagnostic_role": "single original-policy ground-reset engineering probe; no training; not task qualification",
+    "diagnostic_variant": "source_both",
+    "diagnostic_changes": {
+      "rearwheel_joint": {
+        "kp": 0.0,
+        "kd": 5.0
+      },
+      "steering_joint": {
+        "kp": 10.0,
+        "kd": 0.1
+      }
+    }
+  },
+  "num_envs": 1,
+  "seed": 1820701,
+  "ground_only": true,
+  "reset": "new process, hard solver reset, keyframe ground reset with zero joint velocity",
+  "initial_forward_velocity": 2.0,
+  "requested_control_steps": 100,
+  "maximum_duration_s": 2.0,
+  "physics_substeps_per_control_step": 20,
+  "rollout_physics_substep_budget": 2000,
+  "training_transitions": 0,
+  "stop": "first true environment done or declared engineering cap",
+  "ignored_training_metadata": [
+    "ppo",
+    "best_selection",
+    "initial_actor",
+    "initial_checkpoint",
+    "initialization",
+    "requested_training_transitions",
+    "launch_ready"
+  ],
+  "trace_layout": {
+    "time_s": [
+      0,
+      1
+    ],
+    "root_xyz_m": [
+      1,
+      4
+    ],
+    "root_wxyz": [
+      4,
+      8
+    ],
+    "q_rad": [
+      8,
+      13
+    ],
+    "qd_rad_s": [
+      13,
+      18
+    ],
+    "root_velocity_m_s": [
+      18,
+      21
+    ],
+    "world_omega_rad_s": [
+      21,
+      24
+    ],
+    "acceleration_m_s2": [
+      24,
+      27
+    ],
+    "control_targets": [
+      27,
+      31
+    ]
+  },
+  "simulation_app": {
+    "headless": true,
+    "disable_viewport_updates": true,
+    "limit_cpu_threads": 4
+  }
+}

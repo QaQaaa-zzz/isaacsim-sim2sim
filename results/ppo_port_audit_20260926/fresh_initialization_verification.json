@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "initialization": "fresh",
+  "pretrained_checkpoint": null,
+  "pretrained_parent": null,
+  "initial_normalizer_count": 0,
+  "zero_mean_unit_std": true,
+  "all_actor_layers_differ_from_pretrained": {
+    "hidden_0_kernel": true,
+    "hidden_1_kernel": true,
+    "hidden_2_kernel": true,
+    "hidden_3_kernel": true
+  },
+  "ppo_reward_reset_exact_source_config": true,
+  "initializer_matches_original_brax_test": "tests/test_brax_physx_learner.py",
+  "full_test_result": "26 passed in 10.64s",
+  "engineering_block_not_yet_formal": true
+}

@@ -1,0 +1,6 @@
+{"role":"corrected geometry target development screen; original and source-selected DR actor","cases":[
+{"name":"corrected_original","mode":"policy","duration":3},
+{"name":"corrected_dr","mode":"policy","duration":3,"actor":"results/dr_training/update_0016/actor.npz"},
+{"name":"corrected_original_mid","mode":"policy","duration":3,"friction":1.58113883},
+{"name":"corrected_dr_mid","mode":"policy","duration":3,"friction":1.58113883,"actor":"results/dr_training/update_0016/actor.npz"}
+]}

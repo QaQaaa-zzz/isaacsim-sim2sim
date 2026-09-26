@@ -1,0 +1,6 @@
+{
+  "name": "cooked256",
+  "mode": "zero",
+  "duration": 0.1,
+  "hull_vertices": 256
+}

@@ -1,0 +1,9 @@
+{
+  "name": "rotor_torque_1_0.0001",
+  "model": "rotor",
+  "mode": "torque",
+  "joint": "rearwheel_joint",
+  "input": 0.02,
+  "dt": 0.0001,
+  "duration": 0.02
+}

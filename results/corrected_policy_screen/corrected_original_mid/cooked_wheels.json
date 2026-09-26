@@ -1,0 +1,358 @@
+[
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector1",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector2",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector3",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector4",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector5",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06998613348512563,
+    "max_rel_support_error": 0.9998020409260627,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector6",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06998613348512563,
+    "max_rel_support_error": 0.9998020409260627,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector7",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector8",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector9",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector10",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector11",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector12",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector13",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector14",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/rearwheel/rearwheel_collision_g9_sector15",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector1",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector2",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector3",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector4",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector5",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06998613348512563,
+    "max_rel_support_error": 0.9998020409260627,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector6",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06998613348512563,
+    "max_rel_support_error": 0.9998020409260627,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector7",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector8",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector9",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector10",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector11",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector12",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.026787839829921722,
+      0.07000000029802322,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector13",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.06999793854891372,
+    "max_rel_support_error": 0.9999705536641164,
+    "bounds": [
+      0.04949747398495674,
+      0.06467156857252121,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector14",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.06467156857252121,
+      0.04949747398495674,
+      0.05000000074505806
+    ]
+  },
+  {
+    "prim": "/World/Bike/frontwheel/frontwheel_collision_g15_sector15",
+    "vertices": 37,
+    "max_abs_support_error_m": 0.0699995801374441,
+    "max_rel_support_error": 0.9999940020865207,
+    "bounds": [
+      0.07000000029802322,
+      0.026787839829921722,
+      0.05000000074505806
+    ]
+  },
+  {
+    "union_max_abs_support_error_m": 0.00064064665558973,
+    "union_max_rel_support_error": 0.020296521599000118
+  }
+]

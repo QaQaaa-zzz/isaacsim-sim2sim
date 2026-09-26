@@ -1,0 +1,23 @@
+{
+  "role": "interface verification",
+  "cases": [
+    {
+      "name": "airborne_zero",
+      "mode": "zero",
+      "no_contact": true,
+      "duration": 0.1
+    },
+    {
+      "name": "cooked64",
+      "mode": "zero",
+      "duration": 0.1,
+      "hull_vertices": 64
+    },
+    {
+      "name": "cooked256",
+      "mode": "zero",
+      "duration": 0.1,
+      "hull_vertices": 256
+    }
+  ]
+}

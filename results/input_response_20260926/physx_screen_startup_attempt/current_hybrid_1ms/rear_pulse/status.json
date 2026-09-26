@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "candidate": "current_hybrid_1ms",
+  "case": "rear_pulse",
+  "training_transitions": 0,
+  "endpoint": "declared_duration",
+  "recorded_samples": 121,
+  "recorded_transition_rows": 120,
+  "physics_steps_completed": 120,
+  "physics_steps_attempted": 120,
+  "initialization_physics_steps": 2,
+  "rollout_physics_events": 120,
+  "total_physics_steps": 122,
+  "duration_s": 0.12,
+  "wall_s": 0.9462926690466702
+}

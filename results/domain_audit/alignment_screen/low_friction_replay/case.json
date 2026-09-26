@@ -1,0 +1,6 @@
+{
+  "name": "low_friction_replay",
+  "mode": "replay",
+  "friction": 0.5,
+  "hull_vertices": 256
+}
